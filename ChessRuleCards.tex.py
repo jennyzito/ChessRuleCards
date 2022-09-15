@@ -66,8 +66,8 @@ def TikZ_card(card):
     \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
     { 
     \begin{center} {\fontsize{90pt}{90pt}\selectfont ''',
-    r'''}\\
-
+    r'''}\\\end{center}
+    \begin{center}
     {\captionfontsize \textsf{\textbf{''',
     r'''}}}\\ 
         \end{center}
@@ -158,7 +158,7 @@ cards = [
     {
      'stripsymbol':'♙',
      'topcaption':'BEROLINA PAWNS',
-     'topcontent':'Pawns move diagonally and take forward. They may move 2 squares diagonally when leaving their starting square.',
+     'topcontent':'Pawns move diagonally and take forward.',
         'bottomcontent':r'''Berolina is the female personification of Berlin and the allegorical female figure symbolizing the city. ---Wikipedia''',
      },
     {
@@ -279,61 +279,55 @@ cards = [
      'stripsymbol':'\ding{72}',
      'topcaption':'UNFAIR',
      'topcontent':'Deal a card. It only applies to white or black; white decides. Repeat for black decides.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson''',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'UNFAIR',
      'topcontent':'Deal a card. It only applies to white or black; white decides. Repeat for black decides.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson''',
      },
     {
      'stripsymbol':'\ding{114}',
      'topcaption':'BOUNCE',
      'topcontent':'The board continues by reflection in the outer ranks and files.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''Success is how high you bounce when you hit bottom. ---George S. Patton''',
      },
     {
      'stripsymbol':'\ding{114}',
      'topcaption':'CYLINDER',
      'topcontent':'Pieces may move as if the right and left side of the board are adjacent to each other.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''Everything in nature takes its form from the sphere, the cone and the cylinder. ---Paul Cezanne''',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'PROFESSIONAL COURTESY',
      'topcontent':'Pieces do not attack or capture a piece of the same type. Pawns are not professional.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''Courtesy is contagious - let's start an epidemic. ---Evan Esar''',
      },
     {
      'stripsymbol':'\ding{114}',
      'topcaption':'INSANE CYLINDER',
      'topcontent':'Pieces do not move/take backwards. The top and bottom of the board are considered adjacent.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''There's a fine line between genius and insanity. I have erased this line. ---Oscar Levant''',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'MOVE THROUGH FRIENDLY PIECES',
      'topcontent':'Friendly pieces do not block movement.',
-     'bottomcontent':'''Quote needed''',
-     },
-    {
-     'stripsymbol':'\ding{72}',
-     'topcaption':'MOVE TWICE',
-     'topcontent':'Move twice, or any other action once.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''True friends stab you in the front. ---Oscar Wilde''',
      },
     {
      'stripsymbol':'++',
      'topcaption':'COMPLICATE',
      'topcontent':'Deal two more cards.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''When all else fails, complicate matters. ---Aaron Allston''',
      },
     {
      'stripsymbol':'++',
      'topcaption':'COMPLICATE',
      'topcontent':'Deal two more cards.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''Progress is man's ability to complicate simplicity. ---Thor Heyerdahl''',
      },
     {
      'stripsymbol':'+++',
@@ -345,37 +339,43 @@ cards = [
      'stripsymbol':'\ding{72}',
      'topcaption':'SUPREME SACRIFICE',
      'topcontent':'You may remove any number of friendly pieces before your turn.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''The speed of your success is limited only by your dedication and what you're willing to sacrifice. ---Nathan W. Morris''',
+     },
+    {
+     'stripsymbol':'\ding{72}',
+     'topcaption':'MOVE TWICE',
+     'topcontent':'Move twice, or any other action once.',
+     'bottomcontent':'''When someone says you can't do something, do it twice and take pictures. ---Anonymous''',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'TAKE TWICE',
      'topcontent':'Take twice, or any other action once.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''As long as I breathe, I attack. ---Bernaud Hinault''',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'EXTINCTION',
      'topcontent':'You lose if you lose all of any piece.',
-     'bottomcontent':'''Quote needed''',
+        'bottomcontent':'''Extinction is the rule. Survival is the exception. ---Carl Sagan''',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'CROWDSURFING',
      'topcontent':'Any non-King piece can crowdsurf.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''The joy of surfing is so many things combined, from the physical exertion of it to the challenge of it, to the mental side of the sport. ---Kelly Slater''',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'OOBLEK',
      'topcontent':'Pieces must move as far as legally possible.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''To me, if life boils down to one thing, it's movement. To live is to keep moving. ---Jerry Seinfeld''',
      },
     {
-     'stripsymbol':'\ding{72}+',
+     'stripsymbol':'\ding{114}+',
      'topcaption':'10x10 BOARD',
      'topcontent':'The legal playing area now surrounds the board. Draw another card.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin''',
      },
     {
      'stripsymbol':'?',
@@ -387,7 +387,7 @@ cards = [
      'stripsymbol':'♘♗',
      'topcaption':'MINOR TENET',
      'topcontent':'Bishops move and take backwards like Knights. Knights move and take backward like Bishops.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''Bold I'm Fine With. I Thought You Were Gonna Say Nuts. ---Mahir''',
      },
     {
      'stripsymbol':'♘♗',
@@ -402,13 +402,13 @@ cards = [
      },
     { 'stripsymbol':'♕',
      'topcaption':'BISHOP-KNIGHT QUEEN',
-     'topcontent':'Queens move and take like Bishop+Knight.',
-     'bottomcontent': r'''Archbishop''',
+     'topcontent':'Queens move and take like Bishop+Knight. Fairy chess Archbishop.',
+     'bottomcontent': r'''If people want a sense of purpose they should get it from their archbishop. They should certainly not get it from their politicians. ---Harold MacMillan''',
      },
     { 'stripsymbol':'♕',
      'topcaption':'ROOK-KNIGHT QUEEN',
-     'topcontent':'Queens move and take like Rook+Knight.',
-     'bottomcontent': r'''Chancellor''',
+     'topcontent':'Queens move and take like Rook+Knight. Fairy chess Chancellor.',
+     'bottomcontent': r'''When I'm stirring a saucepan, I don't say to myself, 'Now the chancellor is stirring a saucepan'. ---Angela Merkel''',
      },
     { 'stripsymbol':'♗',
      'topcaption':'CROWNED BISHOP',
@@ -432,18 +432,18 @@ cards = [
      },
     { 'stripsymbol':'♖',
      'topcaption':'IMMOBILIZER',
-     'topcontent':'Pieces adjacent to an enemy Rook may not move. Rooks may not capture.',
-     'bottomcontent': r'''Quote needed''',
+     'topcontent':'Pieces adjacent to an enemy Rook may not move. Rooks may not capture. Ultima Chess.',
+     'bottomcontent': r'''The activity of worrying keeps you immobilized. ---Wayne Dyer''',
      },
     { 'stripsymbol':'♖♗',
      'topcaption':'ROYAL REVERSE',
      'topcontent':'Bishops and Rooks may move and take backwards like a Queen.',
-     'bottomcontent': r'''Quote needed''',
+     'bottomcontent': r'''To the royal guards of this realm, we are all victims in-waiting. ---Cheshire Cat''',
      },
     { 'stripsymbol':'♖♕',
      'topcaption':'ROOK-QUEEN SWAP',
      'topcontent':'Queens and Rooks move normally, but take like each other.',
-     'bottomcontent': r'''Quote needed''',
+     'bottomcontent': r'''I am definitely the queen. I definitely see myself as the queen. ---Lil' Kim''',
      },
     { 'stripsymbol':'♘♔',
      'topcaption':'KNIGHT-KING SWAP',
@@ -453,7 +453,7 @@ cards = [
     { 'stripsymbol':'♔',
      'topcaption':'KING CHAMELEON',
      'topcontent':'Kings may also move/take like any piece attacking them.',
-     'bottomcontent': r'''Quote needed''',
+     'bottomcontent': r'''I can kind of be a chameleon. ---Sasha Spielberg''',
      },
     {'striptext':'SUMMONER',
      'stripsymbol':'♗',
@@ -470,29 +470,29 @@ cards = [
      'bottomcontent': r'''Omega Chess Champion'''
      },
     {'stripsymbol':'♗',
-     'topcaption':'BISHOP RETREATER',
+     'topcaption':'RETREATER',
      'topcontent':'Bishops move like a queen, but take by moving away from an adjacent piece.',
-     'bottomcontent': r'''Ultima'''
+     'bottomcontent': r'''He who fights and runs away, lives to fight another day. ---Proverb'''
      },
     {'stripsymbol':'♗',
-     'topcaption':'BISHOP BANISHER',
+     'topcaption':'BANISHER',
      'topcontent':'Bishops can banish any adjacent enemy piece to any empty square. Bishops move like Queens, but cannot capture.',
-     'bottomcontent': r'''Quote needed'''
+     'bottomcontent': r'''I know that you cannot banish the truth permanently, you can only cloud it temporarily. ---Javed Jaffrey'''
      },
     {'stripsymbol':'♗',
      'topcaption':'BISHOP CHAMELEON',
-     'topcontent':'Bishops move normally, but only attack pieces that attack them. Bishops attack each other normally.',
+     'topcontent':'Bishops move normally, but only attack pieces that attack them. Bishops attack each other normally. Ultima Chess.',
      'bottomcontent': r'''Quote needed'''
      },
     {'stripsymbol':'♗',
      'topcaption':'BISHOP LONG LEAPER',
-     'topcontent':'Bishops move like a queen, but take by leaping over a piece.',
-     'bottomcontent': r'''Ultima'''
+     'topcontent':'Bishops move like a queen, but take by leaping over a piece. Ultima Chess.',
+     'bottomcontent': r'''That's one small step for a man, one giant leap for mankind. ---Neil Armstrong'''
      },
     {'stripsymbol':'♗',
      'topcaption':'CLERICAL CLONES',
      'topcontent':'Bishops may move/take like the last piece the opponent moved.',
-     'bottomcontent': r'''Quote needed'''
+     'bottomcontent': r'''I'm starting to see players copy what I do. I'm flattered. ---Dennis Rodman'''
      },
     ]
         # body.append('\nTHE QUICK BROWN FOX jumped over the lazy dog.♔♕♖♗
