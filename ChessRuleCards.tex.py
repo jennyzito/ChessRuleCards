@@ -52,8 +52,10 @@ def TikZ_card(card):
     r'''\begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{4mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
-    \pgfmathsetmacro{\cardwidth}{5.9}
-    \pgfmathsetmacro{\cardheight}{9.2}
+    % \pgfmathsetmacro{\cardwidth}{5.9}
+    % \pgfmathsetmacro{\cardheight}{9.2}
+    \pgfmathsetmacro{\cardwidth}{5.7}
+    \pgfmathsetmacro{\cardheight}{8.9}
     \pgfmathsetmacro{\stripwidth}{1.2}
     \pgfmathsetmacro{\strippadding}{0.1}
     \pgfmathsetmacro{\textpadding}{0.3}
@@ -67,15 +69,14 @@ def TikZ_card(card):
     { 
     \begin{center} {\fontsize{90pt}{90pt}\selectfont ''',
     r'''}\\\end{center}
-    \begin{center}
+\begin{center}
     {\captionfontsize \textsf{\textbf{''',
-    r'''}}}\\ 
-        \end{center}
+    r'''}}}\end{center}
         {\textfontsize ''',
     r'''}\\
         \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
         {\quotefontsize \textit{''',
-    r'''}}\\
+    r'''}}\\[-2\baselineskip]
     };
     \end{tikzpicture}%''',
     ]
@@ -91,9 +92,9 @@ def TikZ_card(card):
 def buildTeX(cards):
     TEX_HEADER = r'''
     % latexmk -pdflatex='lualatex' -pdf FontExhibition.tex
-    \documentclass[parskip]{scrartcl}
+    \documentclass[parskip,landscape,letter]{scrartcl}
     \usepackage{fontspec}
-    \usepackage[margin=5mm]{geometry}
+    \usepackage[margin=10mm,left=30mm]{geometry}
     \usepackage{tikz}
     \usepackage{pifont}
     \usepackage{graphicx}
@@ -126,7 +127,7 @@ def buildTeX(cards):
     for i, card in enumerate(cards):
         # TikZ_sidebar_card(card)
         TikZ_card(card)
-        if i%3==2:
+        if i%4==3:
             print(r'\\[-\lineskip]')
     print(TEX_FOOTER)
 
@@ -162,6 +163,12 @@ cards = [
         'bottomcontent':r'''Berolina is the female personification of Berlin and the allegorical female figure symbolizing the city. ---Wikipedia''',
      },
     {
+     'stripsymbol':'♙',
+     'topcaption':'BEROLINA PAWNS II',
+     'topcontent':'Pawns move diagonally. The take forward and sideways.',
+        'bottomcontent':r'''Berolina is the female personification of Berlin and the allegorical female figure symbolizing the city. ---Wikipedia''',
+     },
+    {
      'stripsymbol':'♙+',
      'topcaption':'SHOGI PAWNS',
      'topcontent':'Pawns move and take one square forward. Two Shogi Pawns may not be placed in the same file. Draw another card.',
@@ -182,14 +189,9 @@ cards = [
     {
      'stripsymbol':'♙',
      'topcaption':'CHINESE CHECKERS',
-     'topcontent':'Pawns take normally, but move like Chinese checkers (king move + hopping over other pawns).',
+     'topcontent':'Pawns take normally, but move like Chinese checkers.',
+     # 'topcontent':'Pawns take normally, but move like Chinese checkers (king move + hopping over other pawns).',
      'bottomcontent':r'''\tiny The Pentagon banned the army from using Chinese-made berets. In a more veiled slap at the Chinese, the Pentagon also banned any alternative form of checkers. ---Jimmy Fallon''',
-     },
-    {
-     'stripsymbol':'♙+',
-     'topcaption':'SIDE PAWNS',
-     'topcontent':'Pawns may also capture sideways. Draw another card.',
-     'bottomcontent':'''Quote needed''',
      },
     {
      'stripsymbol':'♘',
@@ -255,7 +257,7 @@ cards = [
      'stripsymbol':'\ding{72}+',
      'topcaption':'SACRIFICE',
      'topcontent':'You may take your own pieces. Draw another card.',
-     'bottomcontent':'''Quote needed''',
+     'bottomcontent':'''You can't achieve anything in life without a small amount of sacrifice. ---Shakira''',
      },
     {
      'stripsymbol':'\ding{72}',
@@ -401,34 +403,39 @@ cards = [
      'bottomcontent': r'''Night's King was only a man by light of day, Old Nan would always say, but the night was his to rule. ---Brandon Stark''',
      },
     { 'stripsymbol':'♕',
-     'topcaption':'BISHOP-KNIGHT QUEEN',
+     'topcaption':'ARCHBISHOP',
      'topcontent':'Queens move and take like Bishop+Knight. Fairy chess Archbishop.',
      'bottomcontent': r'''If people want a sense of purpose they should get it from their archbishop. They should certainly not get it from their politicians. ---Harold MacMillan''',
      },
     { 'stripsymbol':'♕',
-     'topcaption':'ROOK-KNIGHT QUEEN',
+     'topcaption':'CHANCELLOR',
      'topcontent':'Queens move and take like Rook+Knight. Fairy chess Chancellor.',
      'bottomcontent': r'''When I'm stirring a saucepan, I don't say to myself, 'Now the chancellor is stirring a saucepan'. ---Angela Merkel''',
      },
     { 'stripsymbol':'♗',
      'topcaption':'CROWNED BISHOP',
      'topcontent':'Bishops may also move/take live a King.',
-     'bottomcontent': r'''Quote needed''',
+     'bottomcontent': r'''In the land of the blind the one-eyed man is king. ---Efren Ramirez''',
      },
     { 'stripsymbol':'♖',
      'topcaption':'CROWNED CASTLE',
      'topcontent':'Rooks may also move/take live a King.',
-     'bottomcontent': r'''Quote needed''',
+     'bottomcontent': r'''In the land of the skunks, he who has half a nose is king. ---Chris Farley''',
+     },
+    { 'stripsymbol':'♖+',
+     'topcaption':'BLOCKADE',
+     'topcontent':'At the end of a Rook move, it may be inverted. Upside-down rooks cannot be taken or attack. Draw another card.',
+     'bottomcontent': r'''Everyone thinks at some point if what they are doing has any meaning or not. ---William Macbeth''',
      },
     { 'stripsymbol':'♖',
      'topcaption':'CHINESE CANNON',
      'topcontent':'A rook takes by throwing a friendly piece so that it jumps the rook in a rook direction.',
-     'bottomcontent': r'''Quote needed''',
+     'bottomcontent': r'''I spend most of my life feeling like I've been shot out of a cannon. ---Molly Ivins''',
      },
     { 'stripsymbol':'♖',
      'topcaption':'SIEGE TOWER',
      'topcontent':'A piece may move legally to where there is a rook. It goes on top making a combined piece. The combination acts as the bottom rook. The piece on top can move off as a normal action. Stacks are ok. Multi-color is ok.',
-     'bottomcontent': r'''Quote needed''',
+     'bottomcontent': r'''{}''',
      },
     { 'stripsymbol':'♖',
      'topcaption':'IMMOBILIZER',
@@ -448,16 +455,15 @@ cards = [
     { 'stripsymbol':'♘♔',
      'topcaption':'KNIGHT-KING SWAP',
      'topcontent':'Knights and Kings move/take like each other.',
-     'bottomcontent': r'''Quote needed''',
+     'bottomcontent': r'''If I was King for just one day, I would give it all away. --Thompson Twins''',
      },
     { 'stripsymbol':'♔',
      'topcaption':'KING CHAMELEON',
      'topcontent':'Kings may also move/take like any piece attacking them.',
      'bottomcontent': r'''I can kind of be a chameleon. ---Sasha Spielberg''',
      },
-    {'striptext':'SUMMONER',
+    {
      'stripsymbol':'♗',
-     'stripcolor':'cyan',
      'topcaption':'SUMMONER',
      'topcontent':'Bishops may summon a friendly non-King piece to an adjacent square',
      'bottomcaption':'Q m,x N+K',
@@ -467,7 +473,8 @@ cards = [
      'topcaption':'BISHOP CHAMPION',
      'topcontent':'Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.',
      'bottomcaption':'B m,x [2,2],[1,0],[2,0]',
-     'bottomcontent': r'''Omega Chess Champion'''
+     'bottomcontent': r'''Every absurdity has a champion to defend it. ---Oliver Goldsmith''',
+     'origin':'Omega chess',
      },
     {'stripsymbol':'♗',
      'topcaption':'RETREATER',
@@ -476,13 +483,13 @@ cards = [
      },
     {'stripsymbol':'♗',
      'topcaption':'BANISHER',
-     'topcontent':'Bishops can banish any adjacent enemy piece to any empty square. Bishops move like Queens, but cannot capture.',
+     'topcontent':r'''Bishops only move like Queens and banish an adjacent non-King enemy piece to any empty square.''',
      'bottomcontent': r'''I know that you cannot banish the truth permanently, you can only cloud it temporarily. ---Javed Jaffrey'''
      },
     {'stripsymbol':'♗',
      'topcaption':'BISHOP CHAMELEON',
      'topcontent':'Bishops move normally, but only attack pieces that attack them. Bishops attack each other normally. Ultima Chess.',
-     'bottomcontent': r'''Quote needed'''
+     'bottomcontent': r'''I could spend the rest of my life in copying a chair. ---Alberto Giacometti'''
      },
     {'stripsymbol':'♗',
      'topcaption':'BISHOP LONG LEAPER',
