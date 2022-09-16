@@ -50,7 +50,7 @@ def TikZ_sidebar_card(card):
 def TikZ_card(card):
     CARD_TEMPLATE = [
     r'''\begin{tikzpicture}
-    \pgfmathsetmacro{\cardroundingradius}{4mm}
+    \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
     % \pgfmathsetmacro{\cardwidth}{5.9}
     % \pgfmathsetmacro{\cardheight}{9.2}
@@ -65,9 +65,10 @@ def TikZ_card(card):
     \providecommand{\textfontsize}{\Large}
     \providecommand{\quotefontsize}{\small}
     \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
     \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
     { 
-    \begin{center} {\fontsize{90pt}{90pt}\selectfont ''',
+    \begin{center} {\fontsize{80pt}{60pt}\selectfont ''',
     r'''}\\\end{center}
 \begin{center}
     {\captionfontsize \textsf{\textbf{''',
@@ -78,10 +79,15 @@ def TikZ_card(card):
         {\quotefontsize \textit{''',
     r'''}}\\[-2\baselineskip]
     };
+    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){''',
+    r'''};
     \end{tikzpicture}%''',
     ]
 
-    CARD_DATA = [card['stripsymbol'],card['topcaption'], card['topcontent'], card['bottomcontent']]
+    origin = '?'
+    if 'origin' in card:
+        origin = card['origin']
+    CARD_DATA = [card['stripsymbol'],card['topcaption'], card['topcontent'], card['bottomcontent'], origin]
     # CARD_DATA = [card['stripcolor'], striptext, card['topcaption'], card['topcontent'], card['bottomcaption'], card['bottomcontent']]
     CARD_TEX = itertools.chain(*itertools.zip_longest(CARD_TEMPLATE, CARD_DATA, fillvalue=''))
     # for v in CARD_TEX:
@@ -96,6 +102,7 @@ def buildTeX(cards):
     \usepackage{fontspec}
     \usepackage[margin=10mm,left=30mm]{geometry}
     \usepackage{tikz}
+    \usetikzlibrary{matrix}
     \usepackage{pifont}
     \usepackage{graphicx}
     \usepackage{diagram}
@@ -137,6 +144,7 @@ cards = [
      'topcaption':'LEND ME YOUR HORSE',
      'topcontent':'Non-pawn pieces protected by a knight may also move/take like a knight.',
      'bottomcontent':'''"You should know better than to mount another's war-horse", I said with a smirk. ---Jessica Leake''',
+    'origin':'C',
      },
     {
      'stripsymbol':'♘',
@@ -149,6 +157,7 @@ cards = [
      'topcaption':'PRECOCIOUS PAWNS',
      'topcontent':'Pawns start on the third rank. Draw another card.',
      'bottomcontent':'''Precocious was not the same as smart, much less the same as wise, and the perfect opposite of informed. ---Lionel Shriver''',
+    'origin':'I',
      },
     {
      'stripsymbol':'♙',
@@ -161,18 +170,21 @@ cards = [
      'topcaption':'BEROLINA PAWNS',
      'topcontent':'Pawns move diagonally and take forward.',
         'bottomcontent':r'''Berolina is the female personification of Berlin and the allegorical female figure symbolizing the city. ---Wikipedia''',
+    'origin':'I',
      },
     {
      'stripsymbol':'♙',
      'topcaption':'BEROLINA PAWNS II',
      'topcontent':'Pawns move diagonally. The take forward and sideways.',
         'bottomcontent':r'''Berolina is the female personification of Berlin and the allegorical female figure symbolizing the city. ---Wikipedia''',
+    'origin':'I',
      },
     {
      'stripsymbol':'♙+',
      'topcaption':'SHOGI PAWNS',
      'topcontent':'Pawns move and take one square forward. Two Shogi Pawns may not be placed in the same file. Draw another card.',
      'bottomcontent':'''If there is mate with a Pawn drop, there is a legal mate too. ---Shogi proverb''',
+     'origin':'S',
      },
     {
      'stripsymbol':'♙+',
@@ -196,26 +208,29 @@ cards = [
     {
      'stripsymbol':'♘',
      'topcaption':'NIGHT WIZARD',
-     'topcontent':'Move/take life a giraffe [1,3], or one square diagonally [1,1]. Omega Chess Wizard.',
+     'topcontent':'Move/take life a giraffe [1,3], or one square diagonally [1,1].',
      'bottomcontent':'''Do not meddle in the affairs of Wizards, for they are subtle and quick to anger. ---J. R. R. Tolkien''',
+     'origin':'Ω',
      },
     {
      'stripsymbol':'♘',
      'topcaption':'TALLADEGA KNIGHTS',
      'topcontent':'Knights on your color may move/take like Rooks. Knights on your opponents colore may move/take like Bishops.',
      'bottomcontent':'''If you ain't first, you're last. ---Ricky Bobby''',
+    'origin':'C',
      },
     {
      'stripsymbol':'♔+',
      'topcaption':'TOUCHDOWN',
-     'topcontent':'If your king is on the last rank at the end of your turn, you win. Draw another card.',
-     'bottomcontent':'''Quote needed''',
+     'topcontent':'If your king is on the last rank at the end of your turn, you win.',
+        'bottomcontent':'''It's one of those things: I would 100 percent pancake a guy and steal his soul over scoring a touchdown. ---George Kittle''',
      },
     {
      'stripsymbol':'♔+',
      'topcaption':'SUMO KING',
-     'topcontent':'Kings may take normally or shove billiards style. Pieces that fall of the edge die. Draw another card.',
+     'topcontent':'Kings may take normally or shove billiards style. Pieces that fall of the edge die.',
      'bottomcontent':'''Good spirit! But you should push an opponent with more force! ---E. Honda''',
+    'origin':'C',
      },
     {
      'stripsymbol':'♔',
@@ -232,20 +247,23 @@ cards = [
     {
      'stripsymbol':'♔+',
      'topcaption':'KING OF THE HILL',
-     'topcontent':'If your King makes a legal move into the center four squares, you win Mark. Draw another card.',
-     'bottomcontent':'''Quote needed''',
+     'topcontent':'If your King makes a legal move into the center four squares, you win Mark.',
+     'bottomcontent':'''Why do you hate what you don't understand? ---Bobby Hill''',
+    'origin':'I',
      },
     {
      'stripsymbol':'\ding{72}',
-     'topcaption':'ANYTHING CAPTURES EN PASSANT',
-     'topcontent':'Pieces may capture a piece that just moved through an area they attack.',
-     'bottomcontent':'''Quote needed''',
+     'topcaption':'ALL PASSANT',
+     'topcontent':'Any piece may capture any piece en passant.',
+     'bottomcontent':'''You never advance without losing something en passant, and you lose it because you're paying so much attention to the new thing. ---Ninette de Valois''',
+    'origin':'C',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'CAMOUFLAGE',
      'topcontent':'You can move through pieces on squares matching your color.',
-     'bottomcontent':'''Camouflage is a game we all like to play, but our secrets are as surely revealed by what we want to seem to be as by what we want to conceal. ---Russell Lynes''',
+     'bottomcontent':r'''\tiny Camouflage is a game we all like to play, but our secrets are as surely revealed by what we want to seem to be as by what we want to conceal. ---Russell Lynes''',
+    'origin':'C',
      },
     {
      'stripsymbol':'\ding{72}+',
@@ -282,24 +300,28 @@ cards = [
      'topcaption':'UNFAIR',
      'topcontent':'Deal a card. It only applies to white or black; white decides. Repeat for black decides.',
      'bottomcontent':'''I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson''',
+    'origin':'C',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'UNFAIR',
      'topcontent':'Deal a card. It only applies to white or black; white decides. Repeat for black decides.',
      'bottomcontent':'''I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson''',
+    'origin':'C',
      },
     {
      'stripsymbol':'\ding{114}',
      'topcaption':'BOUNCE',
      'topcontent':'The board continues by reflection in the outer ranks and files.',
      'bottomcontent':'''Success is how high you bounce when you hit bottom. ---George S. Patton''',
+    'origin':'I',
      },
     {
      'stripsymbol':'\ding{114}',
      'topcaption':'CYLINDER',
      'topcontent':'Pieces may move as if the right and left side of the board are adjacent to each other.',
      'bottomcontent':'''Everything in nature takes its form from the sphere, the cone and the cylinder. ---Paul Cezanne''',
+    'origin':'I',
      },
     {
      'stripsymbol':'\ding{72}',
@@ -312,6 +334,7 @@ cards = [
      'topcaption':'INSANE CYLINDER',
      'topcontent':'Pieces do not move/take backwards. The top and bottom of the board are considered adjacent.',
      'bottomcontent':'''There's a fine line between genius and insanity. I have erased this line. ---Oscar Levant''',
+    'origin':'I',
      },
     {
      'stripsymbol':'\ding{72}',
@@ -324,30 +347,35 @@ cards = [
      'topcaption':'COMPLICATE',
      'topcontent':'Deal two more cards.',
      'bottomcontent':'''When all else fails, complicate matters. ---Aaron Allston''',
+    'origin':'C',
      },
     {
      'stripsymbol':'++',
      'topcaption':'COMPLICATE',
      'topcontent':'Deal two more cards.',
      'bottomcontent':'''Progress is man's ability to complicate simplicity. ---Thor Heyerdahl''',
+    'origin':'C',
      },
     {
      'stripsymbol':'+++',
      'topcaption':'CHAOS',
      'topcontent':'Deal three more cards.',
      'bottomcontent':'''Life is nothing without a little chaos to make it interesting. ---Amelia Atwater-Rhodes''',
+    'origin':'C',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'SUPREME SACRIFICE',
      'topcontent':'You may remove any number of friendly pieces before your turn.',
      'bottomcontent':'''The speed of your success is limited only by your dedication and what you're willing to sacrifice. ---Nathan W. Morris''',
+    'origin':'C',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'MOVE TWICE',
      'topcontent':'Move twice, or any other action once.',
      'bottomcontent':'''When someone says you can't do something, do it twice and take pictures. ---Anonymous''',
+    'origin':'I',
      },
     {
      'stripsymbol':'\ding{72}',
@@ -360,36 +388,42 @@ cards = [
      'topcaption':'EXTINCTION',
      'topcontent':'You lose if you lose all of any piece.',
         'bottomcontent':'''Extinction is the rule. Survival is the exception. ---Carl Sagan''',
+    'origin':'I',
      },
     {
      'stripsymbol':'\ding{72}',
-     'topcaption':'CROWDSURFING',
+     'topcaption':'CROWDSURF',
      'topcontent':'Any non-King piece can crowdsurf.',
      'bottomcontent':'''The joy of surfing is so many things combined, from the physical exertion of it to the challenge of it, to the mental side of the sport. ---Kelly Slater''',
+    'origin':'C',
      },
     {
      'stripsymbol':'\ding{72}',
      'topcaption':'OOBLEK',
      'topcontent':'Pieces must move as far as legally possible.',
      'bottomcontent':'''To me, if life boils down to one thing, it's movement. To live is to keep moving. ---Jerry Seinfeld''',
+    'origin':'C',
      },
     {
      'stripsymbol':'\ding{114}+',
      'topcaption':'10x10 BOARD',
      'topcontent':'The legal playing area now surrounds the board. Draw another card.',
      'bottomcontent':'''I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin''',
+    'origin':'I',
      },
     {
      'stripsymbol':'?',
      'topcaption':'TELEPORTER',
      'topcontent':'Identify the piece type adjacent to the King towards the center as a teleporter. Teleporters may move to any square adjacent to a pawn.',
      'bottomcontent':'''If I could teleport, I'd probably still be late. --Anonymous''',
+    'origin':'C',
      },
     {
      'stripsymbol':'♘♗',
      'topcaption':'MINOR TENET',
      'topcontent':'Bishops move and take backwards like Knights. Knights move and take backward like Bishops.',
      'bottomcontent':'''Bold I'm Fine With. I Thought You Were Gonna Say Nuts. ---Mahir''',
+    'origin':'C',
      },
     {
      'stripsymbol':'♘♗',
@@ -406,26 +440,31 @@ cards = [
      'topcaption':'ARCHBISHOP',
      'topcontent':'Queens move and take like Bishop+Knight. Fairy chess Archbishop.',
      'bottomcontent': r'''If people want a sense of purpose they should get it from their archbishop. They should certainly not get it from their politicians. ---Harold MacMillan''',
+    'origin':'F',
      },
     { 'stripsymbol':'♕',
      'topcaption':'CHANCELLOR',
      'topcontent':'Queens move and take like Rook+Knight. Fairy chess Chancellor.',
      'bottomcontent': r'''When I'm stirring a saucepan, I don't say to myself, 'Now the chancellor is stirring a saucepan'. ---Angela Merkel''',
+    'origin':'F',
      },
     { 'stripsymbol':'♗',
      'topcaption':'CROWNED BISHOP',
      'topcontent':'Bishops may also move/take live a King.',
      'bottomcontent': r'''In the land of the blind the one-eyed man is king. ---Efren Ramirez''',
+    'origin':'I',
      },
     { 'stripsymbol':'♖',
      'topcaption':'CROWNED CASTLE',
      'topcontent':'Rooks may also move/take live a King.',
      'bottomcontent': r'''In the land of the skunks, he who has half a nose is king. ---Chris Farley''',
+    'origin':'I',
      },
     { 'stripsymbol':'♖+',
      'topcaption':'BLOCKADE',
      'topcontent':'At the end of a Rook move, it may be inverted. Upside-down rooks cannot be taken or attack. Draw another card.',
      'bottomcontent': r'''Everyone thinks at some point if what they are doing has any meaning or not. ---William Macbeth''',
+    'origin':'C',
      },
     { 'stripsymbol':'♖',
      'topcaption':'CHINESE CANNON',
@@ -441,11 +480,13 @@ cards = [
      'topcaption':'IMMOBILIZER',
      'topcontent':'Pieces adjacent to an enemy Rook may not move. Rooks may not capture. Ultima Chess.',
      'bottomcontent': r'''The activity of worrying keeps you immobilized. ---Wayne Dyer''',
+     'origin':'U',
      },
     { 'stripsymbol':'♖♗',
      'topcaption':'ROYAL REVERSE',
      'topcontent':'Bishops and Rooks may move and take backwards like a Queen.',
      'bottomcontent': r'''To the royal guards of this realm, we are all victims in-waiting. ---Cheshire Cat''',
+     'origin':'C',
      },
     { 'stripsymbol':'♖♕',
      'topcaption':'ROOK-QUEEN SWAP',
@@ -456,50 +497,70 @@ cards = [
      'topcaption':'KNIGHT-KING SWAP',
      'topcontent':'Knights and Kings move/take like each other.',
      'bottomcontent': r'''If I was King for just one day, I would give it all away. --Thompson Twins''',
+     'origin':'I',
+     },
+    { 'stripsymbol':'♘',
+     'topcaption':'GOLD GENERAL',
+     'topcontent':r'''%
+     \begin{tikzpicture}\draw[step=0.5cm,color=gray] (-1,-1) grid (1,1);
+     \matrix[matrix of nodes,nodes={inner sep=0pt,text width=.5cm,align=center,minimum height=.5cm}]{
+     \otimes&&&\\
+     \otimes&&&\\
+     \otimes&&&\\
+     \otimes&&&\\
+     };
+     \end{tikzpicture}''',
+     'bottomcontent': r'''If I was King for just one day, I would give it all away. --Thompson Twins''',
+     'origin':'I',
      },
     { 'stripsymbol':'♔',
      'topcaption':'KING CHAMELEON',
      'topcontent':'Kings may also move/take like any piece attacking them.',
      'bottomcontent': r'''I can kind of be a chameleon. ---Sasha Spielberg''',
+    'origin':'I',
      },
     {
      'stripsymbol':'♗',
      'topcaption':'SUMMONER',
      'topcontent':'Bishops may summon a friendly non-King piece to an adjacent square',
      'bottomcaption':'Q m,x N+K',
-     'bottomcontent': r'''My name is Mortimer Alexander and I am a licensed summoner." "Darn. I'd hoped you were the pizza delivery guy. ---Jana Oliver'''
+     'bottomcontent': r'''My name is Mortimer Alexander and I am a licensed summoner." "Darn. I'd hoped you were the pizza delivery guy. ---Jana Oliver''',
      },
     {'stripsymbol':'♗',
      'topcaption':'BISHOP CHAMPION',
      'topcontent':'Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.',
      'bottomcaption':'B m,x [2,2],[1,0],[2,0]',
      'bottomcontent': r'''Every absurdity has a champion to defend it. ---Oliver Goldsmith''',
-     'origin':'Omega chess',
+     'origin':'Ω',
      },
     {'stripsymbol':'♗',
      'topcaption':'RETREATER',
      'topcontent':'Bishops move like a queen, but take by moving away from an adjacent piece.',
-     'bottomcontent': r'''He who fights and runs away, lives to fight another day. ---Proverb'''
+     'bottomcontent': r'''He who fights and runs away, lives to fight another day. ---Proverb''',
+     'origin':'U',
      },
     {'stripsymbol':'♗',
      'topcaption':'BANISHER',
      'topcontent':r'''Bishops only move like Queens and banish an adjacent non-King enemy piece to any empty square.''',
-     'bottomcontent': r'''I know that you cannot banish the truth permanently, you can only cloud it temporarily. ---Javed Jaffrey'''
+     'bottomcontent': r'''I know that you cannot banish the truth permanently, you can only cloud it temporarily. ---Javed Jaffrey''',
      },
     {'stripsymbol':'♗',
      'topcaption':'BISHOP CHAMELEON',
      'topcontent':'Bishops move normally, but only attack pieces that attack them. Bishops attack each other normally. Ultima Chess.',
-     'bottomcontent': r'''I could spend the rest of my life in copying a chair. ---Alberto Giacometti'''
+     'bottomcontent': r'''I could spend the rest of my life in copying a chair. ---Alberto Giacometti''',
+     'origin':'U',
      },
     {'stripsymbol':'♗',
      'topcaption':'BISHOP LONG LEAPER',
      'topcontent':'Bishops move like a queen, but take by leaping over a piece. Ultima Chess.',
-     'bottomcontent': r'''That's one small step for a man, one giant leap for mankind. ---Neil Armstrong'''
+     'bottomcontent': r'''That's one small step for a man, one giant leap for mankind. ---Neil Armstrong''',
+     'origin':'U',
      },
     {'stripsymbol':'♗',
      'topcaption':'CLERICAL CLONES',
      'topcontent':'Bishops may move/take like the last piece the opponent moved.',
-     'bottomcontent': r'''I'm starting to see players copy what I do. I'm flattered. ---Dennis Rodman'''
+     'bottomcontent': r'''I'm starting to see players copy what I do. I'm flattered. ---Dennis Rodman''',
+    'origin':'C',
      },
     ]
         # body.append('\nTHE QUICK BROWN FOX jumped over the lazy dog.♔♕♖♗
