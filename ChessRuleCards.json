@@ -1,0 +1,431 @@
+{ "textcards":
+  [
+    {
+      "caption": "LEND ME YOUR HORSE",
+      "description": "Non-pawn pieces protected by a knight may also move/take like a knight.",
+      "origin": "C",
+      "quote": "\"You should know better than to mount another's war-horse\", I said with a smirk. ---Jessica Leake",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "JEDI KNIGHT",
+      "description": "If you only have one knight on the board, it can also move and take like a Queen.",
+      "quote": "In my experience, when you think you understand the Force, you realize just how little you know. ---Ahsoka Tano",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "PRECOCIOUS PAWNS",
+      "description": "Pawns start on the third rank. Draw another card.",
+      "origin": "I",
+      "quote": "Precocious was not the same as smart, much less the same as wise, and the perfect opposite of informed. ---Lionel Shriver",
+      "symbol": "\u2659+"
+    },
+    {
+      "caption": "CHECKERS",
+      "description": "Pawns move and take like checkers.",
+      "quote": "These guys are playing checkers. I'm out here playing chess. When they figure it out, it's too late. ---Max Holloway",
+      "symbol": "\u2659"
+    },
+    {
+      "caption": "BEROLINA PAWNS",
+      "description": "Pawns move diagonally and take forward.",
+      "origin": "I",
+      "quote": "Berolina is the female personification of Berlin and the allegorical female figure symbolizing the city. ---Wikipedia",
+      "symbol": "\u2659"
+    },
+    {
+      "caption": "BEROLINA PAWNS II",
+      "description": "Pawns move diagonally. The take forward and sideways.",
+      "origin": "I",
+      "quote": "Berolina is the female personification of Berlin and the allegorical female figure symbolizing the city. ---Wikipedia",
+      "symbol": "\u2659"
+    },
+    {
+      "caption": "SHOGI PAWNS",
+      "description": "Pawns move and take one square forward. Two Shogi Pawns may not be placed in the same file. Draw another card.",
+      "origin": "S",
+      "quote": "If there is mate with a Pawn drop, there is a legal mate too. ---Shogi proverb",
+      "symbol": "\u2659+"
+    },
+    {
+      "caption": "FAST PAWNS",
+      "description": "Pawns capture normally, but may move any number of squares forward. Draw another card.",
+      "quote": " In ceremonies of the horsemen, even the pawn must hold a grudge. ---Bob Dylan",
+      "symbol": "\u2659+"
+    },
+    {
+      "caption": "BRIBE",
+      "description": "On your turn you can do an action by an enemy pawn instead. Draw another card.",
+      "quote": "Never underestimate the effectiveness of a straight cash bribe. ---Claud Cockburn",
+      "symbol": "\u2659+"
+    },
+    {
+      "caption": "CHINESE CHECKERS",
+      "description": "Pawns take normally, but move like Chinese checkers.",
+      "quote": "\\tiny The Pentagon banned the army from using Chinese-made berets. In a more veiled slap at the Chinese, the Pentagon also banned any alternative form of checkers. ---Jimmy Fallon",
+      "symbol": "\u2659"
+    },
+    {
+      "caption": "NIGHT WIZARD",
+      "description": "Move/take life a giraffe [1,3], or one square diagonally [1,1].",
+      "origin": "\u03a9",
+      "quote": "Do not meddle in the affairs of Wizards, for they are subtle and quick to anger. ---J. R. R. Tolkien",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "TALLADEGA KNIGHTS",
+      "description": "Knights on your color may move/take like Rooks. Knights on your opponents colore may move/take like Bishops.",
+      "origin": "C",
+      "quote": "If you ain't first, you're last. ---Ricky Bobby",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "TOUCHDOWN",
+      "description": "If your king is on the last rank at the end of your turn, you win.",
+      "quote": "It's one of those things: I would 100 percent pancake a guy and steal his soul over scoring a touchdown. ---George Kittle",
+      "symbol": "\u2654+"
+    },
+    {
+      "caption": "SUMO KING",
+      "description": "Kings may take normally or shove billiards style. Pieces that fall of the edge die.",
+      "origin": "C",
+      "quote": "Good spirit! But you should push an opponent with more force! ---E. Honda",
+      "symbol": "\u2654+"
+    },
+    {
+      "caption": "FAR MIMIC",
+      "description": "Kings act only as any friendly piece which can move to it. No castling. If pawn can move to king and king is on rank 2, can move 2 as pawn and be taken en-passant.",
+      "quote": "Quote needed",
+      "symbol": "\u2654"
+    },
+    {
+      "caption": "NEAR MIMIC",
+      "description": "Kings act only as any adjacent friendly piece. No castling. If pawn can move to king and king is on rank 2, can move 2 as pawn and be taken en-passant.",
+      "quote": "Quote needed",
+      "symbol": "\u2654"
+    },
+    {
+      "caption": "ALL PASSANT",
+      "description": "Any piece may capture any piece en passant.",
+      "origin": "C",
+      "quote": "You never advance without losing something en passant, and you lose it because you're paying so much attention to the new thing. ---Ninette de Valois",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "CAMOUFLAGE",
+      "description": "You can move through pieces on squares matching your color.",
+      "origin": "C",
+      "quote": "\\tiny Camouflage is a game we all like to play, but our secrets are as surely revealed by what we want to seem to be as by what we want to conceal. ---Russell Lynes",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "PARACHUTE",
+      "description": "You may pick up friendly pieces. Draw another card.",
+      "quote": "Quote needed",
+      "symbol": "\\ding{72}+"
+    },
+    {
+      "caption": "SACRIFICE",
+      "description": "You may take your own pieces. Draw another card.",
+      "quote": "You can't achieve anything in life without a small amount of sacrifice. ---Shakira",
+      "symbol": "\\ding{72}+"
+    },
+    {
+      "caption": "NEAR SWAP",
+      "description": "Two adjacent friendly pieces may swap places.",
+      "quote": "Quote needed",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "KNIGHT SWAP",
+      "description": "Two friendly pieces which are a standard knight move apart may swap places.",
+      "quote": "Quote needed",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "MOVE SWAP",
+      "description": "Two friendly pieces may swap places if one can move to or take the other.",
+      "quote": "Quote needed",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "UNFAIR",
+      "description": "Deal a card. It only applies to white or black; white decides. Repeat for black decides.",
+      "origin": "C",
+      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "UNFAIR",
+      "description": "Deal a card. It only applies to white or black; white decides. Repeat for black decides.",
+      "origin": "C",
+      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "BOUNCE",
+      "description": "The board continues by reflection in the outer ranks and files.",
+      "origin": "I",
+      "quote": "Success is how high you bounce when you hit bottom. ---George S. Patton",
+      "symbol": "\\ding{114}"
+    },
+    {
+      "caption": "CYLINDER",
+      "description": "Pieces may move as if the right and left side of the board are adjacent to each other.",
+      "origin": "I",
+      "quote": "Everything in nature takes its form from the sphere, the cone and the cylinder. ---Paul Cezanne",
+      "symbol": "\\ding{114}"
+    },
+    {
+      "caption": "PROFESSIONAL COURTESY",
+      "description": "Pieces do not attack or capture a piece of the same type. Pawns are not professional.",
+      "quote": "Courtesy is contagious - let's start an epidemic. ---Evan Esar",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "INSANE CYLINDER",
+      "description": "Pieces do not move/take backwards. The top and bottom of the board are considered adjacent.",
+      "origin": "I",
+      "quote": "There's a fine line between genius and insanity. I have erased this line. ---Oscar Levant",
+      "symbol": "\\ding{114}"
+    },
+    {
+      "caption": "MOVE THROUGH FRIENDLY PIECES",
+      "description": "Friendly pieces do not block movement.",
+      "quote": "True friends stab you in the front. ---Oscar Wilde",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "COMPLICATE",
+      "description": "Deal two more cards.",
+      "origin": "C",
+      "quote": "When all else fails, complicate matters. ---Aaron Allston",
+      "symbol": "++"
+    },
+    {
+      "caption": "COMPLICATE",
+      "description": "Deal two more cards.",
+      "origin": "C",
+      "quote": "Progress is man's ability to complicate simplicity. ---Thor Heyerdahl",
+      "symbol": "++"
+    },
+    {
+      "caption": "CHAOS",
+      "description": "Deal three more cards.",
+      "origin": "C",
+      "quote": "Life is nothing without a little chaos to make it interesting. ---Amelia Atwater-Rhodes",
+      "symbol": "+++"
+    },
+    {
+      "caption": "SUPREME SACRIFICE",
+      "description": "You may remove any number of friendly pieces before your turn.",
+      "origin": "C",
+      "quote": "The speed of your success is limited only by your dedication and what you're willing to sacrifice. ---Nathan W. Morris",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "MOVE TWICE",
+      "description": "Move twice, or any other action once.",
+      "origin": "I",
+      "quote": "When someone says you can't do something, do it twice and take pictures. ---Anonymous",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "TAKE TWICE",
+      "description": "Take twice, or any other action once.",
+      "quote": "As long as I breathe, I attack. ---Bernaud Hinault",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "EXTINCTION",
+      "description": "You lose if you lose all of any piece.",
+      "origin": "I",
+      "quote": "Extinction is the rule. Survival is the exception. ---Carl Sagan",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "CROWDSURF",
+      "description": "Any non-King piece can crowdsurf.",
+      "origin": "C",
+      "quote": "The joy of surfing is so many things combined, from the physical exertion of it to the challenge of it, to the mental side of the sport. ---Kelly Slater",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "OOBLEK",
+      "description": "Pieces must move as far as legally possible.",
+      "origin": "C",
+      "quote": "To me, if life boils down to one thing, it's movement. To live is to keep moving. ---Jerry Seinfeld",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "10x10 BOARD",
+      "description": "The legal playing area now surrounds the board. Draw another card.",
+      "origin": "I",
+      "quote": "I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin",
+      "symbol": "\\ding{114}+"
+    },
+    {
+      "caption": "TELEPORTER",
+      "description": "Identify the piece type adjacent to the King towards the center as a teleporter. Teleporters may move to any square adjacent to a pawn.",
+      "origin": "C",
+      "quote": "If I could teleport, I'd probably still be late. --Anonymous",
+      "symbol": "?"
+    },
+    {
+      "caption": "MINOR TENET",
+      "description": "Bishops move and take backwards like Knights. Knights move and take backward like Bishops.",
+      "origin": "C",
+      "quote": "Bold I'm Fine With. I Thought You Were Gonna Say Nuts. ---Mahir",
+      "symbol": "\u2658\u2657"
+    },
+    {
+      "caption": "BISHOP-KNIGHT SWAP",
+      "description": "Bishops take like Knights. Knights take backward like Bishops. Both move normally.",
+      "quote": "Quote needed",
+      "symbol": "\u2658\u2657"
+    },
+    {
+      "caption": "NIGHT KING QUEEN",
+      "description": "Queens move and take like Knight+King.",
+      "quote": "Night's King was only a man by light of day, Old Nan would always say, but the night was his to rule. ---Brandon Stark",
+      "symbol": "\u2655"
+    },
+    {
+      "caption": "ARCHBISHOP",
+      "description": "Queens move and take like Bishop+Knight. Fairy chess Archbishop.",
+      "origin": "F",
+      "quote": "If people want a sense of purpose they should get it from their archbishop. They should certainly not get it from their politicians. ---Harold MacMillan",
+      "symbol": "\u2655"
+    },
+    {
+      "caption": "CHANCELLOR",
+      "description": "Queens move and take like Rook+Knight. Fairy chess Chancellor.",
+      "origin": "F",
+      "quote": "When I'm stirring a saucepan, I don't say to myself, 'Now the chancellor is stirring a saucepan'. ---Angela Merkel",
+      "symbol": "\u2655"
+    },
+    {
+      "caption": "CROWNED BISHOP",
+      "description": "Bishops may also move/take live a King.",
+      "origin": "I",
+      "quote": "In the land of the blind the one-eyed man is king. ---Efren Ramirez",
+      "symbol": "\u2657"
+    },
+    {
+      "caption": "CROWNED CASTLE",
+      "description": "Rooks may also move/take live a King.",
+      "origin": "I",
+      "quote": "In the land of the skunks, he who has half a nose is king. ---Chris Farley",
+      "symbol": "\u2656"
+    },
+    {
+      "caption": "BLOCKADE",
+      "description": "At the end of a Rook move, it may be inverted. Upside-down rooks cannot be taken or attack. Draw another card.",
+      "origin": "C",
+      "quote": "Everyone thinks at some point if what they are doing has any meaning or not. ---William Macbeth",
+      "symbol": "\u2656+"
+    },
+    {
+      "caption": "CHINESE CANNON",
+      "description": "A rook takes by throwing a friendly piece so that it jumps the rook in a rook direction.",
+      "quote": "I spend most of my life feeling like I've been shot out of a cannon. ---Molly Ivins",
+      "symbol": "\u2656"
+    },
+    {
+      "caption": "SIEGE TOWER",
+      "description": "A piece may move legally to where there is a rook. It goes on top making a combined piece. The combination acts as the bottom rook. The piece on top can move off as a normal action. Stacks are ok. Multi-color is ok.",
+      "quote": "{}",
+      "symbol": "\u2656"
+    },
+    {
+      "caption": "IMMOBILIZER",
+      "description": "Pieces adjacent to an enemy Rook may not move. Rooks may not capture. Ultima Chess.",
+      "origin": "U",
+      "quote": "The activity of worrying keeps you immobilized. ---Wayne Dyer",
+      "symbol": "\u2656"
+    },
+    {
+      "caption": "ROYAL REVERSE",
+      "description": "Bishops and Rooks may move and take backwards like a Queen.",
+      "origin": "C",
+      "quote": "To the royal guards of this realm, we are all victims in-waiting. ---Cheshire Cat",
+      "symbol": "\u2656\u2657"
+    },
+    {
+      "caption": "ROOK-QUEEN SWAP",
+      "description": "Queens and Rooks move normally, but take like each other.",
+      "quote": "I am definitely the queen. I definitely see myself as the queen. ---Lil' Kim",
+      "symbol": "\u2656\u2655"
+    },
+    {
+      "caption": "KNIGHT-KING SWAP",
+      "description": "Knights and Kings move/take like each other.",
+      "origin": "I",
+      "quote": "If I was King for just one day, I would give it all away. --Thompson Twins",
+      "symbol": "\u2658\u2654"
+    },
+    {
+      "caption": "KING CHAMELEON",
+      "description": "Kings may also move/take like any piece attacking them.",
+      "origin": "I",
+      "quote": "I can kind of be a chameleon. ---Sasha Spielberg",
+      "symbol": "\u2654"
+    },
+    {
+      "bottomcaption": "Q m,x N+K",
+      "caption": "SUMMONER",
+      "description": "Bishops may summon a friendly non-King piece to an adjacent square",
+      "quote": "My name is Mortimer Alexander and I am a licensed summoner.\" \"Darn. I'd hoped you were the pizza delivery guy. ---Jana Oliver",
+      "symbol": "\u2657"
+    },
+    {
+      "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
+      "caption": "BISHOP CHAMPION",
+      "description": "Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.",
+      "origin": "\u03a9",
+      "quote": "Every absurdity has a champion to defend it. ---Oliver Goldsmith",
+      "symbol": "\u2657"
+    },
+    {
+      "caption": "RETREATER",
+      "description": "Bishops move like a queen, but take by moving away from an adjacent piece.",
+      "origin": "U",
+      "quote": "He who fights and runs away, lives to fight another day. ---Proverb",
+      "symbol": "\u2657"
+    },
+    {
+      "caption": "BANISHER",
+      "description": "Bishops only move like Queens and banish an adjacent non-King enemy piece to any empty square.",
+      "quote": "I know that you cannot banish the truth permanently, you can only cloud it temporarily. ---Javed Jaffrey",
+      "symbol": "\u2657"
+    },
+    {
+      "caption": "BISHOP CHAMELEON",
+      "description": "Bishops move normally, but only attack pieces that attack them. Bishops attack each other normally. Ultima Chess.",
+      "origin": "U",
+      "quote": "I could spend the rest of my life in copying a chair. ---Alberto Giacometti",
+      "symbol": "\u2657"
+    },
+    {
+      "caption": "BISHOP LONG LEAPER",
+      "description": "Bishops move like a queen, but take by leaping over a piece. Ultima Chess.",
+      "origin": "U",
+      "quote": "That's one small step for a man, one giant leap for mankind. ---Neil Armstrong",
+      "symbol": "\u2657"
+    },
+    {
+      "caption": "CLERICAL CLONES",
+      "description": "Bishops may move/take like the last piece the opponent moved.",
+      "origin": "C",
+      "quote": "I'm starting to see players copy what I do. I'm flattered. ---Dennis Rodman",
+      "symbol": "\u2657"
+    },
+    {
+      "caption": "GOLD GENERAL",
+      "description": "%\n     \\begin{tikzpicture}\\draw[step=0.5cm,color=gray] (-1,-1) grid (1,1);\n     \\matrix[matrix of nodes,nodes={inner sep=0pt,text width=.5cm,align=center,minimum height=.5cm}]{\n     \\otimes&&&\\\\\n     \\otimes&&&\\\\\n     \\otimes&&&\\\\\n     \\otimes&&&\\\\\n     };\n     \\end{tikzpicture}",
+      "origin": "I",
+      "quote": "",
+      "symbol": "\u2658"
+    }
+  ]
+}
