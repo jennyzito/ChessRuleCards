@@ -115,7 +115,7 @@
       "caption": "CAMOUFLAGE",
       "description": "You can move through pieces on squares matching your color.",
       "origin": "C",
-      "quote": "\\tiny Camouflage is a game we all like to play, but our secrets are as surely revealed by what we want to seem to be as by what we want to conceal. ---Russell Lynes",
+      "quote": "\\footnotesize Camouflage is a game we all like to play, but our secrets are as surely revealed by what we want to seem to be as by what we want to conceal. ---Russell Lynes",
       "symbol": "\\ding{72}"
     },
     {
@@ -333,7 +333,7 @@
     },
     {
       "caption": "SIEGE TOWER",
-      "description": "A piece may move legally to where there is a rook. It goes on top making a combined piece. The combination acts as the bottom rook. The piece on top can move off as a normal action. Stacks are ok. Multi-color is ok.",
+      "description": "\\small A piece may move legally to where there is a rook. It goes on top making a combined piece. The combination acts as the bottom rook. The piece on top can move off as a normal action. Stacks are ok. Multi-color is ok.",
       "quote": "{}",
       "symbol": "\u2656"
     },
@@ -395,7 +395,7 @@
     },
     {
       "caption": "BANISHER",
-      "description": "Bishops only move like Queens and banish an adjacent non-King enemy piece to any empty square.",
+      "description": "\\small Bishops only move like Queens and banish an adjacent non-King enemy piece to any empty square.",
       "quote": "I know that you cannot banish the truth permanently, you can only cloud it temporarily. ---Javed Jaffrey",
       "symbol": "\u2657"
     },
