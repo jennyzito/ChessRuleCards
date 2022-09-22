@@ -7,7 +7,7 @@ main: ChessRuleCards.pdf ChessRuleCards.png
 ChessRuleCards.tex: ChessRuleCards.tex.py ChessRuleCards.json
 
 %.tex: %.tex.py
-	python $< > $@
+	python3 $< > $@
 
 %.pdf: %.tex
 	mkdir -p $(TEXTMP)

@@ -130,6 +130,9 @@ if __name__ == '__main__':
     # with open('cards.json', 'w') as outfile:
         # json.dump(cards, outfile, indent=2, sort_keys=True)
     with open(cardfile, 'r') as infile:
-        cards = json.load(infile)['textcards']
+        json_dict = json.load(infile)
+    cards = json_dict['text_cards']
+    gcards = json_dict['graphic_cards']
         # cards = json.load(infile)
     buildTeX(cards)
+    buildTeX(gcards)

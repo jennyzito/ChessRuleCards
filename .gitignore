@@ -8,11 +8,13 @@
 *.toc
 *.fmt
 *.fot
+*.sol
 *.cb
 *.cb2
 .*.lb
 
 ## Intermediate documents:
+*.pdf
 *.dvi
 *.xdv
 *-converted-to.*

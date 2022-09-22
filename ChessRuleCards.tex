@@ -1905,6 +1905,24 @@
     };
     \node[circle,draw,text=black](c) at (.5,\cardheight-.5){C};
     \end{tikzpicture}%
+
+    \end{document}
+    
+
+    % latexmk -pdflatex='lualatex' -pdf FontExhibition.tex
+    \documentclass[parskip,landscape,letter]{scrartcl}
+    \usepackage{fontspec}
+    \usepackage[margin=10mm,left=30mm]{geometry}
+    \usepackage{tikz}
+    \usetikzlibrary{matrix}
+    \usepackage{pifont}
+    \usepackage{graphicx}
+    \usepackage{diagram}
+    \usepackage{setspace}
+
+    \begin{document}
+    \setmainfont[Extension={.ttf},ItalicFont={DejaVuSerif-Italic}]{FreeSerif}
+    
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1926,22 +1944,14 @@
     { 
     \begin{center} {\fontsize{80pt}{60pt}\selectfont ♘}\\\end{center}
 \begin{center}
-    {\captionfontsize \textsf{\textbf{GOLD GENERAL}}}\end{center}
-        {\textfontsize %
-     \begin{tikzpicture}\draw[step=0.5cm,color=gray] (-1,-1) grid (1,1);
-     \matrix[matrix of nodes,nodes={inner sep=0pt,text width=.5cm,align=center,minimum height=.5cm}]{
-     \otimes&&&\\
-     \otimes&&&\\
-     \otimes&&&\\
-     \otimes&&&\\
-     };
-     \end{tikzpicture}}\\
+    {\captionfontsize \textsf{\textbf{KNIGHT+[2,2]}}}\end{center}
+        {\textfontsize \begin{tikzpicture}
+\foreach \x in {-1,-.5,0,.5,1}\n    \foreach \y in {-1,-.5,0,.5,1}\n    {\n      \draw (\x,\y) +(-.25,-.25) rectangle ++(.25,.25);\n      % \draw (\x,\y) node{\symknight};\n    };\n    \draw (0,0) node{\textbf{\symknight}};\n    \draw (.5,1) node{$\otimes$};\n    \draw (1,1) node{$\otimes$};\n    \draw (1,.5) node{$\otimes$};\n    \draw (-.5,1) node{$\otimes$};\n    \draw (-1,1) node{$\otimes$};\n    \draw (-1,.5) node{$\otimes$};\n    \draw (-.5,-1) node{$\otimes$};\n    \draw (-1,-1) node{$\otimes$};\n    \draw (-1,-.5) node{$\otimes$};\n    \draw (.5,-1) node{$\otimes$};\n    \draw (1,-1) node{$\otimes$};\n    \draw (1,-.5) node{$\otimes$};\n\end{tikzpicture}}\\
         \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
         {\quotefontsize \textit{}}\\[-2\baselineskip]
     };
     \node[circle,draw,text=black](c) at (.5,\cardheight-.5){I};
     \end{tikzpicture}%
-\\[-\lineskip]
 
     \end{document}
     
