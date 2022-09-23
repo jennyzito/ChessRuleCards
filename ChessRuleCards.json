@@ -1,10 +1,62 @@
 { "text_cards":
   [
     {
-      "caption": "CAMOUFLAGE",
-      "description": "You can move through friendly pieces on squares matching your color.",
+      "caption": "PARACHUTE",
+      "description": "You may pick up a friendly piece as a move.",
+      "quote": "Another mode of accumulating power arises from lifting a weight and then allowing it to fall. ---Charles Babbage",
+      "symbol": "\\ding{72}+"
+    },
+    {
+      "caption": "NEAR SWAP",
+      "description": "Two adjacent friendly pieces may swap places.",
+      "quote": "Would I swap what I have achieved as a cook if I could have been as successful as a footballer? Definitely. ---Gordon Ramsay",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "KNIGHT SWAP",
+      "description": "Two friendly pieces which are a standard knight move apart may swap places.",
+      "quote": "Don't swap horses in crossing a stream. --Abraham Lincoln",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "SIEGE TOWER",
+      "description": "\\small A piece may move legally to where there is a rook. It goes on top making a combined piece. The combination acts as the bottom rook. The piece on top can move off as a normal action. Stacks are ok. Multi-color is ok.",
+      "quote": "A siege is an act of war. ---Noam Chomsky",
+      "symbol": "\u2656"
+    },
+    {
+      "caption": "FAR MIMIC",
+      "description": "Kings act only as any friendly piece which can move to it. No castling.",
+      "quote": "I've been imitated so well I've heard people copy my mistakes. ---Jimi Hendrix",
       "origin": "C",
-      "quote": "\\footnotesize Camouflage is a game we all like to play, but our secrets are as surely revealed by what we want to seem to be as by what we want to conceal. ---Russell Lynes",
+      "symbol": "\u2654"
+    },
+    {
+      "caption": "CROWNED CASTLE",
+      "description": "Rooks may also move/take like a King.",
+      "origin": "I",
+      "quote": "In the land of the skunks, he who has half a nose is king. ---Chris Farley",
+      "symbol": "\u2656"
+    },
+    {
+      "caption": "CROWNED BISHOP",
+      "description": "Bishops may also move/take like a King.",
+      "origin": "I",
+      "quote": "In the land of the blind the one-eyed man is king. ---Efren Ramirez",
+      "symbol": "\u2657"
+    },
+    {
+      "caption": "NEAR MIMIC",
+      "description": "Kings act only as any adjacent friendly piece. No castling.",
+      "quote": "You can't really copy what I do because I don't do anything. ---David Bailey",
+      "origin": "C",
+      "symbol": "\u2654"
+    },
+    {
+      "caption": "CAMOUFLAGE",
+      "description": "You can move through friendly pieces on your color squares.",
+      "origin": "C",
+      "quote": "Three things cannot be long hidden: the sun, the moon, and the truth. ---Buddha",
       "symbol": "\\ding{72}"
     },
     {
@@ -76,13 +128,6 @@
       "symbol": "\\ding{72}"
     },
     {
-      "caption": "CROWNED BISHOP",
-      "description": "Bishops may also move/take like a King.",
-      "origin": "I",
-      "quote": "In the land of the blind the one-eyed man is king. ---Efren Ramirez",
-      "symbol": "\u2657"
-    },
-    {
       "caption": "LEND ME YOUR HORSE",
       "description": "Non-pawn pieces protected by a knight may also move/take like a knight.",
       "origin": "C",
@@ -92,7 +137,7 @@
     {
       "caption": "JEDI KNIGHT",
       "description": "If you only have one knight on the board, it can also move and take like a Queen.",
-      "quote": "In my experience, when you think you understand the Force, you realize just how little you know. ---Ahsoka Tano",
+      "quote": "If you strike me down, I shall become more powerful than you can possibly imagine. ---Obi-Wan Kenobi",
       "symbol": "\u2658"
     },
     {
@@ -162,18 +207,6 @@
       "symbol": "\u2654+"
     },
     {
-      "caption": "FAR MIMIC",
-      "description": "Kings act only as any friendly piece which can move to it. No castling. If pawn can move to king and king is on rank 2, can move 2 as pawn and be taken en-passant.",
-      "quote": "Quote needed",
-      "symbol": "\u2654"
-    },
-    {
-      "caption": "NEAR MIMIC",
-      "description": "Kings act only as any adjacent friendly piece. No castling. If pawn can move to king and king is on rank 2, can move 2 as pawn and be taken en-passant.",
-      "quote": "Quote needed",
-      "symbol": "\u2654"
-    },
-    {
       "caption": "ALL PASSANT",
       "description": "Any piece may capture any piece en passant.",
       "origin": "C",
@@ -181,28 +214,10 @@
       "symbol": "\\ding{72}"
     },
     {
-      "caption": "PARACHUTE",
-      "description": "You may pick up friendly pieces. Draw another card.",
-      "quote": "Quote needed",
-      "symbol": "\\ding{72}+"
-    },
-    {
       "caption": "SACRIFICE",
       "description": "You may take your own pieces. Draw another card.",
       "quote": "You can't achieve anything in life without a small amount of sacrifice. ---Shakira",
       "symbol": "\\ding{72}+"
-    },
-    {
-      "caption": "NEAR SWAP",
-      "description": "Two adjacent friendly pieces may swap places.",
-      "quote": "Quote needed",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "KNIGHT SWAP",
-      "description": "Two friendly pieces which are a standard knight move apart may swap places.",
-      "quote": "Quote needed",
-      "symbol": "\\ding{72}"
     },
     {
       "caption": "MOVE SWAP",
@@ -348,15 +363,8 @@
       "symbol": "\u2655"
     },
     {
-      "caption": "CROWNED CASTLE",
-      "description": "Rooks may also move/take live a King.",
-      "origin": "I",
-      "quote": "In the land of the skunks, he who has half a nose is king. ---Chris Farley",
-      "symbol": "\u2656"
-    },
-    {
       "caption": "BLOCKADE",
-      "description": "At the end of a Rook move, it may be inverted. Upside-down rooks cannot be taken or attack. Draw another card.",
+      "description": "At the end of a Rook move, it may be inverted. Upside-down rooks cannot be taken or attack.",
       "origin": "C",
       "quote": "Everyone thinks at some point if what they are doing has any meaning or not. ---William Macbeth",
       "symbol": "\u2656+"
@@ -365,12 +373,6 @@
       "caption": "CHINESE CANNON",
       "description": "A rook takes by throwing a friendly piece so that it jumps the rook in a rook direction.",
       "quote": "I spend most of my life feeling like I've been shot out of a cannon. ---Molly Ivins",
-      "symbol": "\u2656"
-    },
-    {
-      "caption": "SIEGE TOWER",
-      "description": "\\small A piece may move legally to where there is a rook. It goes on top making a combined piece. The combination acts as the bottom rook. The piece on top can move off as a normal action. Stacks are ok. Multi-color is ok.",
-      "quote": "{}",
       "symbol": "\u2656"
     },
     {
