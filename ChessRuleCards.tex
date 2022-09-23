@@ -4,10 +4,10 @@
     \usepackage{fontspec}
     \usepackage[margin=10mm,left=30mm]{geometry}
     \usepackage{tikz}
-    \usetikzlibrary{matrix}
+    \usetikzlibrary{matrix,backgrounds}
     \usepackage{pifont}
     \usepackage{graphicx}
-    \usepackage{diagram}
+    \usepackage{chessfss}
     \usepackage{setspace}
 
     \begin{document}
@@ -1905,6 +1905,55 @@
     };
     \node[circle,draw,text=black](c) at (.5,\cardheight-.5){C};
     \end{tikzpicture}%
+\begin{tikzpicture}
+    \pgfmathsetmacro{\cardroundingradius}{5mm}
+    \pgfmathsetmacro{\striproundingradius}{3mm}
+    % \pgfmathsetmacro{\cardwidth}{5.9}
+    % \pgfmathsetmacro{\cardheight}{9.2}
+    \pgfmathsetmacro{\cardwidth}{5.7}
+    \pgfmathsetmacro{\cardheight}{8.9}
+    \pgfmathsetmacro{\stripwidth}{1.2}
+    \pgfmathsetmacro{\strippadding}{0.1}
+    \pgfmathsetmacro{\textpadding}{0.3}
+    \pgfmathsetmacro{\ruleheight}{0.1}
+    \providecommand{\stripfontsize}{\Huge}
+    \providecommand{\captionfontsize}{\LARGE}
+    \providecommand{\textfontsize}{\Large}
+    \providecommand{\quotefontsize}{\small}
+    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
+    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
+    { 
+    \begin{center} {\fontsize{80pt}{60pt}\selectfont ♘}\\\end{center}
+\begin{center}
+    {\captionfontsize \textsf{\textbf{KNIGHT+[2,2]}}}\end{center}
+        {\textfontsize \begin{tikzpicture}
+\foreach \x in {-1,-.5,0,.5,1}
+    \foreach \y in {-1,-.5,0,.5,1}
+    {
+      \draw (\x,\y) +(-.25,-.25) rectangle ++(.25,.25);
+      % \draw (\x,\y) node{\symknight};
+    };
+    \draw (0,0) node{\textbf{\symknight}};
+    \draw (.5,1) node{$\otimes$};
+    \draw (1,1) node{$\otimes$};
+    \draw (1,.5) node{$\otimes$};
+    \draw (-.5,1) node{$\otimes$};
+    \draw (-1,1) node{$\otimes$};
+    \draw (-1,.5) node{$\otimes$};
+    \draw (-.5,-1) node{$\otimes$};
+    \draw (-1,-1) node{$\otimes$};
+    \draw (-1,-.5) node{$\otimes$};
+    \draw (.5,-1) node{$\otimes$};
+    \draw (1,-1) node{$\otimes$};
+    \draw (1,-.5) node{$\otimes$};
+\end{tikzpicture}}\\
+        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
+        {\quotefontsize \textit{}}\\[-2\baselineskip]
+    };
+    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){I};
+    \end{tikzpicture}%
+\\[-\lineskip]
 
     \end{document}
     
@@ -1914,10 +1963,10 @@
     \usepackage{fontspec}
     \usepackage[margin=10mm,left=30mm]{geometry}
     \usepackage{tikz}
-    \usetikzlibrary{matrix}
+    \usetikzlibrary{matrix,backgrounds}
     \usepackage{pifont}
     \usepackage{graphicx}
-    \usepackage{diagram}
+    \usepackage{chessfss}
     \usepackage{setspace}
 
     \begin{document}

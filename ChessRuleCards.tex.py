@@ -102,10 +102,10 @@ def buildTeX(cards):
     \usepackage{fontspec}
     \usepackage[margin=10mm,left=30mm]{geometry}
     \usepackage{tikz}
-    \usetikzlibrary{matrix}
+    \usetikzlibrary{matrix,backgrounds}
     \usepackage{pifont}
     \usepackage{graphicx}
-    \usepackage{diagram}
+    \usepackage{chessfss}
     \usepackage{setspace}
 
     \begin{document}
@@ -133,6 +133,5 @@ if __name__ == '__main__':
         json_dict = json.load(infile)
     cards = json_dict['text_cards']
     gcards = json_dict['graphic_cards']
-        # cards = json.load(infile)
     buildTeX(cards)
-    buildTeX(gcards)
+    # buildTeX(gcards)

@@ -450,6 +450,13 @@
       "origin": "C",
       "quote": "I'm starting to see players copy what I do. I'm flattered. ---Dennis Rodman",
       "symbol": "\u2657"
+    },
+    {
+      "caption": "KNIGHT+[2,2]",
+      "description": "\\begin{tikzpicture}\n\\foreach \\x in {-1,-.5,0,.5,1}\n    \\foreach \\y in {-1,-.5,0,.5,1}\n    {\n      \\draw (\\x,\\y) +(-.25,-.25) rectangle ++(.25,.25);\n      % \\draw (\\x,\\y) node{\\symknight};\n    };\n    \\draw (0,0) node{\\textbf{\\symknight}};\n    \\draw (.5,1) node{$\\otimes$};\n    \\draw (1,1) node{$\\otimes$};\n    \\draw (1,.5) node{$\\otimes$};\n    \\draw (-.5,1) node{$\\otimes$};\n    \\draw (-1,1) node{$\\otimes$};\n    \\draw (-1,.5) node{$\\otimes$};\n    \\draw (-.5,-1) node{$\\otimes$};\n    \\draw (-1,-1) node{$\\otimes$};\n    \\draw (-1,-.5) node{$\\otimes$};\n    \\draw (.5,-1) node{$\\otimes$};\n    \\draw (1,-1) node{$\\otimes$};\n    \\draw (1,-.5) node{$\\otimes$};\n\\end{tikzpicture}",
+      "origin": "I",
+      "quote": "",
+      "symbol": "\u2658"
     }
   ],
   "graphic_cards":[
