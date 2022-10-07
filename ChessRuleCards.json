@@ -1,6 +1,70 @@
 { "text_cards":
   [
     {
+      "caption": "ROYAL REVERSE",
+      "description": "Bishops and Rooks may move and take backwards like an Orthodox Queen.",
+      "origin": "C",
+      "quote": "To the royal guards of this realm, we are all victims in-waiting. ---Cheshire Cat",
+      "symbol": "\u2656\u2657"
+    },
+    
+    {
+      "caption": "COOLDOWN",
+      "description": "You may not use the same piece on two consecutive turns.",
+      "origin": "C",
+      "quote": "Quote needed",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "CONJOINED TWINS",
+      "description": "Pieces may move to another friendly piece to form a single, conjoined piece. Conjoined pieces cannot be separated or conjoined futher.",
+      "origin": "C",
+      "quote": "Quote needed",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "MOVE SWAP",
+      "description": "Two friendly pieces may swap places if one can move to or take the other.",
+      "origin": "C",
+      "quote": "Trading is very competitive and you have to be able to handle getting your butt kicked. ---Paul Tudor Jones",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "NO CLONING THEOREM",
+      "description": "You cannot act with a non-pawn piece your opponent just used.",
+      "origin": "C",
+      "quote": "There should be a list of people who can and cannot clone themselves. ---Ted Danson",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "TELEPORTER",
+      "description": "Identify the piece type adjacent to the King towards the center as a teleporter. Teleporters may move to any open square adjacent to a friendly pawn.",
+      "origin": "C",
+      "quote": "If I could teleport, I'd probably still be late. --Anonymous",
+      "symbol": "?"
+    },
+    {
+      "caption": "BRIBE",
+      "description": "On your turn you can do an action by an enemy pawn instead. Draw another card.",
+      "quote": "Never underestimate the effectiveness of a straight cash bribe. ---Claud Cockburn",
+      "origin": "C",
+      "symbol": "\u2659+"
+    },
+    {
+      "caption": "CHINESE CHECKERS",
+      "description": "Pawns take normally, but move like Chinese checkers.",
+      "origin": "C",
+      "quote": "\\tiny The Pentagon banned the army from using Chinese-made berets. In a more veiled slap at the Chinese, the Pentagon also banned any alternative form of checkers. ---Jimmy Fallon",
+      "symbol": "\u2659"
+    },
+    {
+      "caption": "MAXIMUM EFFORT",
+      "description": "Pieces must act as far as legally possible.",
+      "origin": "C",
+      "quote": "Your crazy matches my crazy. Big time. ---Deadpool",
+      "symbol": "\\ding{72}"
+    },
+    {
       "caption": "PARACHUTE",
       "description": "You may pick up a friendly piece as a move.",
       "quote": "Another mode of accumulating power arises from lifting a weight and then allowing it to fall. ---Charles Babbage",
@@ -103,7 +167,7 @@
     },
     {
       "caption": "BISHOP CHAMELEON",
-      "description": "Bishops move normally, but only attack pieces that attack them. Bishops attack each other normally.",
+      "description": "Bishops move normally, but only takes X as X would take. Bishops attack each other normally.",
       "origin": "U",
       "quote": "I could spend the rest of my life in copying a chair. ---Alberto Giacometti",
       "symbol": "\u2657"
@@ -138,6 +202,7 @@
       "caption": "JEDI KNIGHT",
       "description": "If you only have one knight on the board, it can also move and take like a Queen.",
       "quote": "If you strike me down, I shall become more powerful than you can possibly imagine. ---Obi-Wan Kenobi",
+      "origin": "C",
       "symbol": "\u2658"
     },
     {
@@ -168,20 +233,8 @@
       "symbol": "\u2659+"
     },
     {
-      "caption": "BRIBE",
-      "description": "On your turn you can do an action by an enemy pawn instead. Draw another card.",
-      "quote": "Never underestimate the effectiveness of a straight cash bribe. ---Claud Cockburn",
-      "symbol": "\u2659+"
-    },
-    {
-      "caption": "CHINESE CHECKERS",
-      "description": "Pawns take normally, but move like Chinese checkers.",
-      "quote": "\\tiny The Pentagon banned the army from using Chinese-made berets. In a more veiled slap at the Chinese, the Pentagon also banned any alternative form of checkers. ---Jimmy Fallon",
-      "symbol": "\u2659"
-    },
-    {
       "caption": "NIGHT WIZARD",
-      "description": "Move/take life a giraffe [1,3], or one square diagonally [1,1].",
+      "description": "Move/take life a giraffe [1,3], or one square diagonally [1,1]. May not be dropped for check.",
       "origin": "\u03a9",
       "quote": "Do not meddle in the affairs of Wizards, for they are subtle and quick to anger. ---J. R. R. Tolkien",
       "symbol": "\u2658"
@@ -220,12 +273,6 @@
       "symbol": "\\ding{72}+"
     },
     {
-      "caption": "MOVE SWAP",
-      "description": "Two friendly pieces may swap places if one can move to or take the other.",
-      "quote": "Quote needed",
-      "symbol": "\\ding{72}"
-    },
-    {
       "caption": "UNFAIR",
       "description": "Deal a card. It only applies to white or black; white decides. Repeat for black decides.",
       "origin": "C",
@@ -256,6 +303,7 @@
     {
       "caption": "PROFESSIONAL COURTESY",
       "description": "Pieces do not attack or capture a piece of the same type. Pawns are not professional.",
+      "origin": "C",
       "quote": "Courtesy is contagious - let's start an epidemic. ---Evan Esar",
       "symbol": "\\ding{72}"
     },
@@ -315,25 +363,11 @@
       "symbol": "\\ding{72}"
     },
     {
-      "caption": "OOBLEK",
-      "description": "Pieces must move as far as legally possible.",
-      "origin": "C",
-      "quote": "To me, if life boils down to one thing, it's movement. To live is to keep moving. ---Jerry Seinfeld",
-      "symbol": "\\ding{72}"
-    },
-    {
       "caption": "10x10 BOARD",
       "description": "The legal playing area now surrounds the board. Draw another card.",
       "origin": "I",
       "quote": "I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin",
       "symbol": "\\ding{114}+"
-    },
-    {
-      "caption": "TELEPORTER",
-      "description": "Identify the piece type adjacent to the King towards the center as a teleporter. Teleporters may move to any square adjacent to a pawn.",
-      "origin": "C",
-      "quote": "If I could teleport, I'd probably still be late. --Anonymous",
-      "symbol": "?"
     },
     {
       "caption": "MINOR TENET",
@@ -381,13 +415,6 @@
       "origin": "U",
       "quote": "The activity of worrying keeps you immobilized. ---Wayne Dyer",
       "symbol": "\u2656"
-    },
-    {
-      "caption": "ROYAL REVERSE",
-      "description": "Bishops and Rooks may move and take backwards like a Queen.",
-      "origin": "C",
-      "quote": "To the royal guards of this realm, we are all victims in-waiting. ---Cheshire Cat",
-      "symbol": "\u2656\u2657"
     },
     {
       "caption": "ROOK-QUEEN SWAP",
