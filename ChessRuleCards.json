@@ -1,6 +1,27 @@
 { "text_cards":
   [
     {
+      "caption": "STRAIGHT FROM THE HORSE'S MOUTH",
+      "description": "\\small After an action, knights may be reoriented to face any of the eight adjacent squares, initially facing forward. Knights may capture pieces on the faced square without moving.",
+      "origin": "C",
+      "quote": "\\tiny A team of horses cannot overtake a word that has left the mouth. ---Wu Cheng'en",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "THE ANTS GO MARCHING",
+      "description": "If a non-pawn action was taken, then you must move a pawn one square forward if possible.",
+      "quote": "We are not as strong as we think we are. ---Rich Mullins",
+      "origin": "C",
+      "symbol": "\u2659"
+    },
+    {
+      "caption": "PRISON BREAK",
+      "description": "\\small All knights start off the board in jail. If a bishop ends it turn on the last rank, knights of the same color are now available to be dropped by the owner.",
+      "quote": "\\tiny Preparation can only take you so far. After that, you have to take a few leaps of faith. ---Michael Scofield",
+      "origin": "C",
+      "symbol": "\u2658\u2657"
+    },
+    {
       "caption": "ROYAL REVERSE",
       "description": "Bishops and Rooks may move and take backwards like an Orthodox Queen.",
       "origin": "C",
@@ -12,14 +33,14 @@
       "caption": "COOLDOWN",
       "description": "You may not use the same piece on two consecutive turns.",
       "origin": "C",
-      "quote": "Quote needed",
+      "quote": "It’s easier to cool down a fanatic than to warm up a corpse. ---Michael L. Brown",
       "symbol": "\\ding{72}"
     },
     {
       "caption": "CONJOINED TWINS",
-      "description": "Pieces may move to another friendly piece to form a single, conjoined piece. Conjoined pieces cannot be separated or conjoined futher.",
+      "description": "\\small Pieces may move to another friendly piece to form a single, conjoined piece. Conjoined pieces cannot be separated or conjoined futher.",
       "origin": "C",
-      "quote": "Quote needed",
+      "quote": "\\tiny There are two things in life for which we are never truly prepared: twins. ---Josh Billings",
       "symbol": "\\ding{72}"
     },
     {
@@ -367,7 +388,7 @@
       "description": "The legal playing area now surrounds the board. Draw another card.",
       "origin": "I",
       "quote": "I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin",
-      "symbol": "\\ding{114}+"
+      "symbol": "\\ding{114}"
     },
     {
       "caption": "MINOR TENET",
@@ -407,13 +428,6 @@
       "caption": "CHINESE CANNON",
       "description": "A rook takes by throwing a friendly piece so that it jumps the rook in a rook direction.",
       "quote": "I spend most of my life feeling like I've been shot out of a cannon. ---Molly Ivins",
-      "symbol": "\u2656"
-    },
-    {
-      "caption": "IMMOBILIZER",
-      "description": "Pieces adjacent to an enemy Rook may not move. Rooks may not capture.",
-      "origin": "U",
-      "quote": "The activity of worrying keeps you immobilized. ---Wayne Dyer",
       "symbol": "\u2656"
     },
     {

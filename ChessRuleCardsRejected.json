@@ -1,0 +1,17 @@
+{ "text_cards":
+  [
+    {
+      "caption": "IMMOBILIZER",
+      "description": "Pieces adjacent to an enemy Rook may not move. Rooks may not capture.",
+      "origin": "U",
+      "quote": "The activity of worrying keeps you immobilized. ---Wayne Dyer",
+      "symbol": "\u2656"
+    },
+    {
+      "caption": "BANISHER",
+      "description": "\\small Bishops only move like Queens and banish an adjacent non-King enemy piece to any empty square.",
+      "quote": "I know that you cannot banish the truth permanently, you can only cloud it temporarily. ---Javed Jaffrey",
+      "symbol": "\u2657"
+    },
+  ]
+}
