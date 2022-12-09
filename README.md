@@ -12,3 +12,7 @@ Have fun playing!
 # Example card rule page
 ![ChessRuleCards](https://github.com/SmoothDragon/ChessRuleCards/blob/main/ChessRuleCards.png)
 
+# Master rules
+- Rules refer to how a piece currently moves/takes/acts, given the application of previous rules. "Orthodox piece" refers the original piece.
+- The "+" indicates extra cards to be drawn. (Optional) Only the first "+" card seen draws additional cards.
+- Any piece "moving as a pawn", may be taken en passant.
