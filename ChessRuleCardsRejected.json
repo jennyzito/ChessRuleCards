@@ -1,6 +1,13 @@
 { "text_cards":
   [
     {
+      "caption": "NIGHT WIZARD",
+      "description": "Move/take life a giraffe [1,3], or one square diagonally [1,1]. May not be dropped for check.",
+      "origin": "\u03a9",
+      "quote": "Do not meddle in the affairs of Wizards, for they are subtle and quick to anger. ---J. R. R. Tolkien",
+      "symbol": "\u2658"
+    },
+    {
       "caption": "IMMOBILIZER",
       "description": "Pieces adjacent to an enemy Rook may not move. Rooks may not capture.",
       "origin": "U",

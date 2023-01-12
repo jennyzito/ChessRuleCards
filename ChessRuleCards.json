@@ -1,6 +1,20 @@
 { "text_cards":
   [
     {
+      "caption": "META RULES",
+      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item A piece may take at most one action per turn.\n\\item A piece acting like a pawn may always use en passant to capture another piece acting like a pawn.\n\\item A king may only castle when moving as a canonical king.\n\\item Non-king pieces may never castle.\n\\item Properties gained on a board are lost when a piece is removed from the board.\n\\end{enumerate}\n",
+      "origin": "C",
+      "quote": "",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "CHAIN REACTION",
+      "description": "If a pawn capture is made, another action may be taken with a piece that has not moved yet this turn.",
+      "quote": "We never know which of us will start the chain reaction. But one of us will. ---Colin Beavan",
+      "origin": "C",
+      "symbol": "\u2659"
+    },
+    {
       "caption": "STRAIGHT FROM THE HORSE'S MOUTH",
       "description": "\\small After an action, knights may be reoriented to face any of the eight adjacent squares, initially facing forward. Knights may capture pieces on the faced square without moving.",
       "origin": "C",
@@ -9,7 +23,7 @@
     },
     {
       "caption": "THE ANTS GO MARCHING",
-      "description": "If a non-pawn action was taken, then you must move a pawn one square forward if possible.",
+      "description": "If a non-pawn action was taken, you may move a pawn one square forward.",
       "quote": "We are not as strong as we think we are. ---Rich Mullins",
       "origin": "C",
       "symbol": "\u2659"
@@ -252,13 +266,6 @@
       "description": "Pawns capture normally, but may move any number of squares forward. Draw another card.",
       "quote": " In ceremonies of the horsemen, even the pawn must hold a grudge. ---Bob Dylan",
       "symbol": "\u2659+"
-    },
-    {
-      "caption": "NIGHT WIZARD",
-      "description": "Move/take life a giraffe [1,3], or one square diagonally [1,1]. May not be dropped for check.",
-      "origin": "\u03a9",
-      "quote": "Do not meddle in the affairs of Wizards, for they are subtle and quick to anger. ---J. R. R. Tolkien",
-      "symbol": "\u2658"
     },
     {
       "caption": "TALLADEGA KNIGHTS",

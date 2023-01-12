@@ -150,7 +150,7 @@ def Magic_TikZ_card(card):
     {\captionfontsize \textsf{\textbf{''',
     r'''}}}\end{center}
         {\textfontsize ''',
-    r'''}\\
+    r'''}
         \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
         {\quotefontsize \textit{''',
     r'''}}\\[-2\baselineskip]
@@ -183,6 +183,7 @@ def buildMagicTeX(cards):
     \usepackage{graphicx}
     \usepackage{chessfss}
     \usepackage{setspace}
+    \usepackage{enumitem}
 
     \begin{document}
     \setmainfont[Extension={.ttf},ItalicFont={DejaVuSerif-Italic}]{FreeSerif}
