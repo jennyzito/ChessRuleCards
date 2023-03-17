@@ -1,11 +1,74 @@
 { "text_cards":
   [
     {
+      "caption": "IT FOLLOWS",
+      "description": "After moving a non-pawn piece, the leading pawn in line with the opponents king moves one space forward.",
+      "quote": "Love make us poets, and the approach of death should make us philosophers.---George Santayana",
+      "origin": "C",
+      "symbol": "\u2659\u2654"
+    },
+    {
+      "caption": "PRISON BREAK",
+      "description": "\\small All knights start off the board in jail. If a bishop moves/attacks, ending on the last rank, knights of the same color are now available to be dropped by the owner.",
+      "quote": "\\tiny Preparation can only take you so far. After that, you have to take a few leaps of faith. ---Michael Scofield",
+      "origin": "C",
+      "symbol": "\u2658\u2657"
+    },
+    {
+      "caption": "REARGUARD",
+      "description": "Whenever a Queen moves (not drop), it may summon a pawn to the square behind it.",
+      "quote": "If you think you're going to be a backup, you're going to be a backup. ---Nick Foles",
+      "symbol": "\u2655"
+    },
+    {
+      "caption": "UNFAIR",
+      "description": "Deal a card. It only applies to white. Deal a second card. It only applies to black. Deal with it.",
+      "origin": "C",
+      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "UNFAIR",
+      "description": "Deal a card. It only applies to white. Deal a second card. It only applies to black. Deal with it.",
+      "origin": "C",
+      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "BRIBE",
+      "description": "On your turn you can do an action by an enemy pawn instead.",
+      "quote": "Never underestimate the effectiveness of a straight cash bribe. ---Claud Cockburn",
+      "origin": "C",
+      "symbol": "\u2659+"
+    },
+    {
+      "caption": "NO CLONING THEOREM",
+      "description": "You cannot act with a non-pawn, non-king, non-knight piece your opponent just used.",
+      "description": "If your opponent just moved a bishop, rook or queen, you may not act with a piece of the same type.",
+      "origin": "C",
+      "quote": "There should be a list of people who can and cannot clone themselves. ---Ted Danson",
+      "symbol": "\\fontsize{60pt}{45pt}\\selectfont\u2655\u2656\u2657"
+    },
+    {
+      "caption": "THE ANTS GO MARCHING",
+      "description": "If a non-pawn action was taken, you must move a pawn one square forward if possible.",
+      "quote": "We are not as strong as we think we are. ---Rich Mullins",
+      "origin": "C",
+      "symbol": "\u2659"
+    },
+    {
+      "caption": "UNFAIR",
+      "description": "Deal a card. It only applies to white. Deal a second card. It only applies to black. Deal with it.",
+      "origin": "C",
+      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
+      "symbol": "\\ding{72}"
+    },
+    {
       "caption": "META RULES",
-      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item A piece may take at most one action per turn.\n\\item A piece acting like a pawn may always use en passant to capture another piece acting like a pawn.\n\\item A king may only castle when moving as a canonical king.\n\\item Non-king pieces may never castle.\n\\item Properties gained on a board are lost when a piece is removed from the board.\n\\end{enumerate}\n",
+      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item A piece may take at most one action per turn.\n\\item A piece acting like a pawn may always use en passant to capture another piece acting like a pawn.\n\\item A king may only castle when moving as a canonical king.\n\\item Non-king pieces may never castle.\n\\item Only the first + is applied.\n\\item Properties gained on a board are lost when a piece is removed from the board.\n\\end{enumerate}\n",
       "origin": "C",
       "quote": "",
-      "symbol": "\\ding{72}"
+      "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
     },
     {
       "caption": "CHAIN REACTION",
@@ -20,20 +83,6 @@
       "origin": "C",
       "quote": "\\tiny A team of horses cannot overtake a word that has left the mouth. ---Wu Cheng'en",
       "symbol": "\u2658"
-    },
-    {
-      "caption": "THE ANTS GO MARCHING",
-      "description": "If a non-pawn action was taken, you may move a pawn one square forward.",
-      "quote": "We are not as strong as we think we are. ---Rich Mullins",
-      "origin": "C",
-      "symbol": "\u2659"
-    },
-    {
-      "caption": "PRISON BREAK",
-      "description": "\\small All knights start off the board in jail. If a bishop ends it turn on the last rank, knights of the same color are now available to be dropped by the owner.",
-      "quote": "\\tiny Preparation can only take you so far. After that, you have to take a few leaps of faith. ---Michael Scofield",
-      "origin": "C",
-      "symbol": "\u2658\u2657"
     },
     {
       "caption": "ROYAL REVERSE",
@@ -65,25 +114,11 @@
       "symbol": "\\ding{72}"
     },
     {
-      "caption": "NO CLONING THEOREM",
-      "description": "You cannot act with a non-pawn piece your opponent just used.",
-      "origin": "C",
-      "quote": "There should be a list of people who can and cannot clone themselves. ---Ted Danson",
-      "symbol": "\\ding{72}"
-    },
-    {
       "caption": "TELEPORTER",
       "description": "Identify the piece type adjacent to the King towards the center as a teleporter. Teleporters may move to any open square adjacent to a friendly pawn.",
       "origin": "C",
       "quote": "If I could teleport, I'd probably still be late. --Anonymous",
       "symbol": "?"
-    },
-    {
-      "caption": "BRIBE",
-      "description": "On your turn you can do an action by an enemy pawn instead. Draw another card.",
-      "quote": "Never underestimate the effectiveness of a straight cash bribe. ---Claud Cockburn",
-      "origin": "C",
-      "symbol": "\u2659+"
     },
     {
       "caption": "CHINESE CHECKERS",
@@ -143,13 +178,6 @@
       "origin": "I",
       "quote": "In the land of the blind the one-eyed man is king. ---Efren Ramirez",
       "symbol": "\u2657"
-    },
-    {
-      "caption": "NEAR MIMIC",
-      "description": "Kings act only as any adjacent friendly piece. No castling.",
-      "quote": "You can't really copy what I do because I don't do anything. ---David Bailey",
-      "origin": "C",
-      "symbol": "\u2654"
     },
     {
       "caption": "CAMOUFLAGE",
@@ -248,13 +276,6 @@
       "symbol": "\u2659"
     },
     {
-      "caption": "BEROLINA PAWNS II",
-      "description": "Pawns move diagonally. The take forward and sideways.",
-      "origin": "I",
-      "quote": "Berolina is the female personification of Berlin and the allegorical female figure symbolizing the city. ---Wikipedia",
-      "symbol": "\u2659"
-    },
-    {
       "caption": "SHOGI PAWNS",
       "description": "Pawns move and take one square forward. Two Shogi Pawns may not be placed in the same file. Draw another card.",
       "origin": "S",
@@ -299,20 +320,6 @@
       "description": "You may take your own pieces. Draw another card.",
       "quote": "You can't achieve anything in life without a small amount of sacrifice. ---Shakira",
       "symbol": "\\ding{72}+"
-    },
-    {
-      "caption": "UNFAIR",
-      "description": "Deal a card. It only applies to white or black; white decides. Repeat for black decides.",
-      "origin": "C",
-      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "UNFAIR",
-      "description": "Deal a card. It only applies to white or black; white decides. Repeat for black decides.",
-      "origin": "C",
-      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
-      "symbol": "\\ding{72}"
     },
     {
       "caption": "BOUNCE",
