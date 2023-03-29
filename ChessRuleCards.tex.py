@@ -107,7 +107,8 @@ def buildTeX(cards):
     \usepackage{graphicx}
     \usepackage{chessfss}
     \usepackage{setspace}
-
+    \usepackage{stackengine,scalerel}
+    %\providecommand{\move}{\stackengine{0pt}{\u2194}{\u2195}{O}{c}{F}{F}{L}}
     \begin{document}
     \setmainfont[Extension={.ttf},ItalicFont={DejaVuSerif-Italic}]{FreeSerif}
     '''
@@ -184,6 +185,30 @@ def buildMagicTeX(cards):
     \usepackage{chessfss}
     \usepackage{setspace}
     \usepackage{enumitem}
+    \usepackage{graphicx,calc}
+    \newlength\myheight
+    \newlength\mydepth
+    \settototalheight\myheight{Xygp}
+    \settodepth\mydepth{Xygp}
+    \setlength\fboxsep{0pt}
+    \newcommand*\inlinegraphics[1]{%
+      \settototalheight\myheight{Xygp}%
+      \settodepth\mydepth{Xygp}%
+      \raisebox{-\mydepth}{\includegraphics[height=\myheight]{#1}}%
+    }
+    \providecommand{\Knight}{♘}
+    \providecommand{\Pawn}{♙}
+    \providecommand{\King}{♔}
+    \providecommand{\Queen}{♕}
+    \providecommand{\Bishop}{♗}
+    \providecommand{\Rook}{♖}
+    \providecommand{\Move}{\inlinegraphics{move.png}}
+    \providecommand{\Attack}{\inlinegraphics{attack.png}}
+    \providecommand{\Same}{\inlinegraphics{identical.png}}
+    \providecommand{\Jump}{\inlinegraphics{jump.png}}
+    \providecommand{\Back}{\inlinegraphics{back.png}}
+    \providecommand{\Sym}{\fontsize{20pt}{15pt}\selectfont}
+    \providecommand{\PM}{±}
 
     \begin{document}
     \setmainfont[Extension={.ttf},ItalicFont={DejaVuSerif-Italic}]{FreeSerif}
