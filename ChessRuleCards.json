@@ -1,6 +1,13 @@
 { "text_cards":
   [
     {
+      "caption": "MAGNETO",
+      "description": "Bishops move any color piece from one square they can move to to another.",
+      "origin": "C",
+      "quote": "Mankind has always feared what it doesn't understand. ---Magneto",
+      "symbol": "\u2657"
+    },
+    {
       "caption": "TRADING PLACES",
       "description": "You may swap the locations of a friendly knight and bishop for your turn.", 
       "quote": "You'll all be very, very sorry. ---Louis Winthorpe",
