@@ -1,0 +1,6 @@
+If you move your king, you may move another friendly piece.
+Pawns move like elephants. Take normally
+Bishop champion graphic
+Bishops and rooks in major/minor X/+
+Blockade rooks can always move, they are just in attack or blocking mode
+Invert after turn option. Inverted rooks behave like bishops.
