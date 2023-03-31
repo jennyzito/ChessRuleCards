@@ -1,8 +1,47 @@
 { "text_cards":
   [
     {
+      "caption": "MINOR X KNIGHT",
+      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[1,1]",
+      "origin": "I",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MINORX.pdf}",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "MAJOR X KNIGHT",
+      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[2,2]",
+      "origin": "I",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MAJORX.pdf}",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "MINOR + KNIGHT",
+      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[0,1]",
+      "origin": "I",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MINORPLUS.pdf}",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "MAJOR + KNIGHT",
+      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[0,2]",
+      "origin": "I",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MAJORPLUS.pdf}",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "DROP DELAY",
+      "description": "You may not use a piece dropped on the previous turn.",
+      "origin": "C",
+      "quote": "It’s easier to cool down a fanatic than to warm up a corpse. ---Michael L. Brown",
+      "symbol": "\\ding{72}"
+    },
+    {
       "caption": "MAGNETO",
-      "description": "Bishops move any color piece from one square they can move to to another.",
+      "description": "Bishops can't attack, and in addition to moving, may move any color piece from one square they can move to to another.",
       "origin": "C",
       "quote": "Mankind has always feared what it doesn't understand. ---Magneto",
       "symbol": "\u2657"
@@ -10,6 +49,7 @@
     {
       "caption": "TRADING PLACES",
       "description": "You may swap the locations of a friendly knight and bishop for your turn.", 
+      "origin": "C",
       "quote": "You'll all be very, very sorry. ---Louis Winthorpe",
       "symbol": "\u2658\u2657"
     },
@@ -118,6 +158,7 @@
       "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
       "caption": "BISHOP CHAMPION",
       "description": "Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.",
+      "description": "\\Sym\\Bishop\\Move\\Attack:\n\\hspace{1cm}\\includegraphics{CHAMPION.pdf}", 
       "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[0,1], \\PM[2,2], \\PM[2,0]", 
       "origin": "\u03a9",
       "quote": "Every absurdity has a champion to defend it. ---Oliver Goldsmith",
@@ -135,34 +176,6 @@
       "description": "\\Sym\\Knight\\Attack: \\Bishop\\Attack\\newline\\Bishop\\Attack: \\Knight\\Attack", 
       "quote": "It's time to bait a trap. ---Katie Reus",
       "symbol": "\u2658\u2657"
-    },
-    {
-      "caption": "KNIGHT+ v1",
-      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[1,1]",
-      "origin": "I",
-      "quote": "Graphic needed.",
-      "symbol": "\u2658"
-    },
-    {
-      "caption": "KNIGHT+ v2",
-      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[2,2]",
-      "origin": "I",
-      "quote": "Graphic needed.",
-      "symbol": "\u2658"
-    },
-    {
-      "caption": "KNIGHT+ v3",
-      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[0,1]",
-      "origin": "I",
-      "quote": "Graphic needed.",
-      "symbol": "\u2658"
-    },
-    {
-      "caption": "KNIGHT+ v4",
-      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[0,2]",
-      "origin": "I",
-      "quote": "Graphic needed.",
-      "symbol": "\u2658"
     },
     {
       "caption": "PRISON BREAK",
@@ -247,14 +260,6 @@
       "origin": "C",
       "quote": "To the royal guards of this realm, we are all victims in-waiting. ---Cheshire Cat",
       "symbol": "\u2656\u2657"
-    },
-    
-    {
-      "caption": "COOLDOWN",
-      "description": "You may not use the same piece on two consecutive turns.",
-      "origin": "C",
-      "quote": "It’s easier to cool down a fanatic than to warm up a corpse. ---Michael L. Brown",
-      "symbol": "\\ding{72}"
     },
     {
       "caption": "CONJOINED TWINS",

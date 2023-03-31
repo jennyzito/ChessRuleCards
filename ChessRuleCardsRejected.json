@@ -1,6 +1,13 @@
 { "text_cards":
   [
     {
+      "caption": "COOLDOWN",
+      "description": "You may not use the same piece on two consecutive turns.",
+      "origin": "C",
+      "quote": "It’s easier to cool down a fanatic than to warm up a corpse. ---Michael L. Brown",
+      "symbol": "\\ding{72}"
+    },
+    {
       "caption": "BEROLINA PAWNS II",
       "description": "Pawns move diagonally. The take forward and sideways.",
       "origin": "I",

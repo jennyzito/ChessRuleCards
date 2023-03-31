@@ -164,6 +164,8 @@ def Magic_TikZ_card(card):
     origin = '?'
     if 'origin' in card:
         origin = card['origin']
+    if 'graphic' in card:
+        card['quote'] = card['graphic']
     CARD_DATA = [card['symbol'],card['caption'], card['description'], card['quote'], origin]
     # CARD_DATA = [card['stripcolor'], striptext, card['caption'], card['description'], card['bottomcaption'], card['quote']]
     CARD_TEX = itertools.chain(*itertools.zip_longest(CARD_TEMPLATE, CARD_DATA, fillvalue=''))
@@ -186,6 +188,7 @@ def buildMagicTeX(cards):
     \usepackage{setspace}
     \usepackage{enumitem}
     \usepackage{graphicx,calc}
+    \graphicspath{{./graphics/}}
     \newlength\myheight
     \newlength\mydepth
     \settototalheight\myheight{Xygp}
