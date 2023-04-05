@@ -65,7 +65,7 @@ def backrow(d8,d12,d20):
     return row
 
 # logging.basicConfig(level=logging.DEBUG)
-print(backrow(d8,d12,d20))
+# print(backrow(d8,d12,d20))
 
 d = {}
 d['Q'] = [0]*8
@@ -76,14 +76,23 @@ d['R'] = [0]*8
 
 left = collections.defaultdict(int)
 
+shift = {-1:collections.defaultdict(int),0:collections.defaultdict(int),1:collections.defaultdict(int),2:collections.defaultdict(int),3:collections.defaultdict(int),4:collections.defaultdict(int)}
 for i in range(960):
     d8  = i%8
-    d12 = i%12
-    d20 = i%20
+    d12 = (i//8)%12
+    d20 = (i//96)%20
+    # print((d8,d12,d20))
     row = backrow(d8,d12,d20)
+    # print(row)
+
     for i in range(8):
         d[row[i]][i] += 1
         if row[i] == 'K' and i<4:
-            left[row[i+4]] += 1
+            shift[-1][row[i-1]] += 1
+            shift[0][row[i-1]+row[i+1]] += 1
+            for j in range(1,5):
+                shift[j][row[i+j]] += 1
 print(d)
-print(left)
+print(shift)
+
+
