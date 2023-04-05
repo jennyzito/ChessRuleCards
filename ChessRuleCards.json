@@ -1,8 +1,50 @@
 { "text_cards":
   [
     {
+      "caption": "TELEPORTER",
+      "description": "\\KIV\\ may move to any open square adjacent to a friendly pawn.",
+      "origin": "C",
+      "quote": "If I could teleport, I'd probably still be late. --Anonymous",
+      "symbol": "\\KIV"
+    },
+    {
+      "caption": "MAGNETO",
+      "description": "Bishops can't attack, and in addition to moving, may move any friendly piece from one square they can move to to another.",
+      "origin": "C",
+      "quote": "Mankind has always feared what it doesn't understand. ---Magneto",
+      "symbol": "\\Bishop"
+    },
+    {
+      "caption": "MINOR X",
+      "description": "\\Sym\\KI$\\Move^+\\Attack^+$: \\PM[1,1]",
+      "origin": "I",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MINORX.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
+      "caption": "BISHOP CHAMPION",
+      "description": "Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.",
+      "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[0,1], \\PM[2,2], \\PM[2,0]", 
+      "description": "",
+      "origin": "\u03a9",
+      "quote": "Every absurdity has a champion to defend it. ---Oliver Goldsmith",
+      "graphic": "\\hspace{1cm}\\includegraphics{CHAMPION.pdf}",
+      "symbol": "\u2657"
+    },
+    {
+      "caption": "BISHOP COCHAMPION",
+      "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[1,1], \\PM[2,2], \\PM[2,0]", 
+      "description": "",
+      "origin": "C",
+      "quote": "Between two evils, I always pick the one I've never tried before. ---Mae West",
+      "graphic": "\\hspace{1cm}\\includegraphics{COCHAMPION.pdf}",
+      "symbol": "\u2657"
+    },
+    {
       "caption": "PENALTY BOX",
-      "description": "If an enemy piece captures last turn, you may move it to any empty square.",
+      "description": "If an enemy piece captured last turn, you may move it to any empty square.",
       "origin": "C",
       "quote": "I believe that people would be alive today if there were a death penalty. ---Nancy Reagan",
       "symbol": "\\ding{72}"
@@ -19,7 +61,7 @@
       "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[1,1]",
       "origin": "I",
       "quote": "Graphic needed.",
-      "graphic": "\\hspace{1cm}\\includegraphics{MINORX.pdf}",
+      "graphic": "\\hspace{1cm}\\includegraphics{MINORXKNIGHT.pdf}",
       "symbol": "\u2658"
     },
     {
@@ -52,13 +94,6 @@
       "origin": "C",
       "quote": "It’s easier to cool down a fanatic than to warm up a corpse. ---Michael L. Brown",
       "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "MAGNETO",
-      "description": "Bishops can't attack, and in addition to moving, may move any color piece from one square they can move to to another.",
-      "origin": "C",
-      "quote": "Mankind has always feared what it doesn't understand. ---Magneto",
-      "symbol": "\u2657"
     },
     {
       "caption": "TRADING PLACES",
@@ -169,23 +204,6 @@
       "symbol": "\\ding{72}"
     },
     {
-      "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
-      "caption": "BISHOP CHAMPION",
-      "description": "Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.",
-      "description": "\\Sym\\Bishop\\Move\\Attack:\n\\hspace{1cm}\\includegraphics{CHAMPION.pdf}", 
-      "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[0,1], \\PM[2,2], \\PM[2,0]", 
-      "origin": "\u03a9",
-      "quote": "Every absurdity has a champion to defend it. ---Oliver Goldsmith",
-      "symbol": "\u2657"
-    },
-    {
-      "caption": "BISHOP COCHAMPION",
-      "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[1,1], \\PM[2,2], \\PM[2,0]", 
-      "origin": "C",
-      "quote": "Between two evils, I always pick the one I've never tried before. ---Mae West",
-      "symbol": "\u2657"
-    },
-    {
       "caption": "BISHOP-KNIGHT SWAP",
       "description": "\\Sym\\Knight\\Attack: \\Bishop\\Attack\\newline\\Bishop\\Attack: \\Knight\\Attack", 
       "quote": "It's time to bait a trap. ---Katie Reus",
@@ -288,13 +306,6 @@
       "origin": "C",
       "quote": "Trading is very competitive and you have to be able to handle getting your butt kicked. ---Paul Tudor Jones",
       "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "TELEPORTER",
-      "description": "Identify the piece type adjacent to the King towards the center as a teleporter. Teleporters may move to any open square adjacent to a friendly pawn.",
-      "origin": "C",
-      "quote": "If I could teleport, I'd probably still be late. --Anonymous",
-      "symbol": "?"
     },
     {
       "caption": "CHINESE CHECKERS",

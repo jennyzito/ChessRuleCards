@@ -189,29 +189,7 @@ def buildMagicTeX(cards):
     \usepackage{enumitem}
     \usepackage{graphicx,calc}
     \graphicspath{{./graphics/}}
-    \newlength\myheight
-    \newlength\mydepth
-    \settototalheight\myheight{Xygp}
-    \settodepth\mydepth{Xygp}
-    \setlength\fboxsep{0pt}
-    \newcommand*\inlinegraphics[1]{%
-      \settototalheight\myheight{Xygp}%
-      \settodepth\mydepth{Xygp}%
-      \raisebox{-\mydepth}{\includegraphics[height=\myheight]{#1}}%
-    }
-    \providecommand{\Knight}{♘}
-    \providecommand{\Pawn}{♙}
-    \providecommand{\King}{♔}
-    \providecommand{\Queen}{♕}
-    \providecommand{\Bishop}{♗}
-    \providecommand{\Rook}{♖}
-    \providecommand{\Move}{\inlinegraphics{move.png}}
-    \providecommand{\Attack}{\inlinegraphics{attack.png}}
-    \providecommand{\Same}{\inlinegraphics{identical.png}}
-    \providecommand{\Jump}{\inlinegraphics{jump.png}}
-    \providecommand{\Back}{\inlinegraphics{back.png}}
-    \providecommand{\Sym}{\fontsize{20pt}{15pt}\selectfont}
-    \providecommand{\PM}{±}
+    \input{symbols.tex}
 
     \begin{document}
     \setmainfont[Extension={.ttf},ItalicFont={DejaVuSerif-Italic}]{FreeSerif}

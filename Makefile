@@ -4,7 +4,7 @@ TEXTMP=.textmp
 
 main: ChessRuleCards.pdf ChessRuleCards.png
 
-ChessRuleCards.tex: ChessRuleCards.tex.py ChessRuleCards.json
+ChessRuleCards.tex: ChessRuleCards.tex.py ChessRuleCards.json symbols.tex
 
 %.tex: %.tex.py
 	python3 $< > $@
