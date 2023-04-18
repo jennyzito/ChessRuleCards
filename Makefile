@@ -1,10 +1,11 @@
 .PHONY: main clean FORCE
 
 TEXTMP=.textmp
+GRAPHICS= $(wildcard graphics/*.pdf)
 
 main: ChessRuleCards.pdf ChessRuleCards.png
 
-ChessRuleCards.tex: ChessRuleCards.tex.py ChessRuleCards.json symbols.tex
+ChessRuleCards.tex: ChessRuleCards.tex.py ChessRuleCards.json symbols.tex $(GRAPHICS)
 
 %.tex: %.tex.py
 	python3 $< > $@

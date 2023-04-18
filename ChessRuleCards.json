@@ -1,26 +1,162 @@
 { "text_cards":
   [
     {
-      "caption": "TELEPORTER",
-      "description": "\\KIV\\ may move to any open square adjacent to a friendly pawn.",
+      "caption": "NO STALLING",
+      "description": "Captured pieces are placed in a staging area. You may only remove a piece from the staging area if your partner has a piece there.",
       "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny Patience is not simply the ability to wait - it's how we behave while we're waiting. ---Joyce Meyer",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "TWO FACED",
+      "description": "Rooks may invert after an action. Inverted rooks act like bishops.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "God has given you one face, and you make yourself another. ---William Shakespeare",
+      "symbol": "\\Rook"
+    },
+    {
+      "caption": "CROWDSURF",
+      "description": "\\NoKing${\\Action}^+$: Any non-King piece can crowdsurf.",
+      "genre": "+",
+      "origin": "C",
+      "quote": "\\tiny The joy of surfing is so many things combined, from the physical exertion of it to the challenge of it, to the mental side of the sport. ---Kelly Slater",
+      "symbol": "\\NoKing"
+    },
+    {
+      "caption": "THREE'S A CROWD",
+      "description": "You may not have more that two of any \\NoPawn\\ on the board, including promoted pieces.",
+      "genre": "-",
+      "origin": "C",
+      "quote": "Every crowd has a silver lining. ---P.T. Barnum",
+      "symbol": "\\NoPawn"
+    },
+    {
+      "caption": "NEAR SWAP",
+      "description": "\\NoKing${\\Action}^+$: Two adjacent friendly \\NoKing\\ pieces may swap places.",
+      "genre": "+",
+      "origin": "C",
+      "quote": "\\tiny Would I swap what I have achieved as a cook if I could have been as successful as a footballer? Definitely. ---Gordon Ramsay",
+      "symbol": "\\ding{72}",
+      "symbol": "\\NoKing"
+    },
+    {
+      "caption": "KNIGHT SWAP",
+      "description": "\\NoKing${\\Action}^+$: Two friendly \\NoKing\\ pieces which are a standard knight move apart may swap places.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Don't swap horses in crossing a stream. --Abraham Lincoln",
+      "symbol": "\\NoKing"
+    },
+    {
+      "caption": "MAJOR X",
+      "description": "\\Sym\\KI$\\Move^+\\Attack^+$: \\PM[2,2]",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MAJORX.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "MINOR +",
+      "description": "\\Sym\\KII$\\Move^+\\Attack^+$: \\PM[0,1]",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MINORPLUS.pdf}",
+      "symbol": "\\KII"
+    },
+    {
+      "caption": "MAJOR +",
+      "description": "\\Sym\\KI$\\Move^+\\Attack^+$: \\PM[0,2]",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MAJORPLUS.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "8x10 BOARD",
+      "description": "The legal playing area includes an additional file on the right and left.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "The Bureau doesn't have any secret files. ---W. Mark Felt",
+      "symbol": "\\ding{114}+",
+      "symbol": "\\Board+"
+    },
+    {
+      "caption": "10x8 BOARD",
+      "description": "Add and additional rank on the top and bottom.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny He who joyfully marches to music in rank and file has already earned my contempt. He has been given a large brain by mistake, since for him the spinal cord would suffice. ---Albert Einstein",
+      "symbol": "\\Board+"
+    },
+    {
+      "caption": "FLOOR IS LAVA",
+      "description": "Pieces ending their turn on the four central squares die. Pieces may move over lava.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny Zeal is a volcano, the peak of which the grass of indecisiveness does not grow. ---Khalil Gibran",
+      "symbol": "\\Board+"
+    },
+    {
+      "caption": "BLOCKADE",
+      "description": "At the end of a Rook action, it may be inverted. Upside-down rooks move normally, but cannot be taken or attack.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Everyone thinks at some point if what they are doing has any meaning or not. ---William Macbeth",
+      "symbol": "\\Rook"
+    },
+    {
+      "caption": "SHOGI PAWN REBELLION",
+      "description": "Pawns take one square forward and may not move two squares initially. No drop restriction.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "The thing worse than rebellion is the thing that causes rebellion. ---Frederick Douglass",
+      "symbol": "\u2659"
+    },
+    {
+      "caption": "RUNAWAYS",
+      "description": "Bishops may also take by retreating.\\newline\\Bishop$\\Attack^+$: \\Back\\Bishop\\Move",
+      "origin": "C",
+      "genre": "+",
+      "quote": "When danger reared it's ugly head, he bravely turned his tail and fled. ---Sir Robin's minstrel",
+      "symbol": "\u2295\\Bishop",
+      "symbol": "\\Bishop\u2020",
+      "symbol": "\\Bishop"
+    },
+    {
+      "caption": "TELEPORTER",
+      "description": "\\KII\\ may move to any open square adjacent to a friendly pawn.",
+      "origin": "C",
+      "genre": "+",
       "quote": "If I could teleport, I'd probably still be late. --Anonymous",
-      "symbol": "\\KIV"
+      "symbol": "\\KII"
     },
     {
       "caption": "MAGNETO",
-      "description": "Bishops can't attack, and in addition to moving, may move any friendly piece from one square they can move to to another.",
+      "description": "\\Bishop\\Action: move any friendly piece from one square they can move to to another.\\newline\\Bishop\\Attack:$\\varnothing$",
       "origin": "C",
+      "genre":"\\diff",
       "quote": "Mankind has always feared what it doesn't understand. ---Magneto",
       "symbol": "\\Bishop"
     },
     {
-      "caption": "MINOR X",
-      "description": "\\Sym\\KI$\\Move^+\\Attack^+$: \\PM[1,1]",
+      "caption": "META RULES 2",
+      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\\item Action=Move, Attack or Drop\\end{enumerate}\n",
+      "origin": "C",
+      "quote": "",
+      "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
+    },
+    {
+      "caption": "10x10 BOARD",
+      "description": "The legal playing area now surrounds the board.",
       "origin": "I",
-      "quote": "Graphic needed.",
-      "graphic": "\\hspace{1cm}\\includegraphics{MINORX.pdf}",
-      "symbol": "\\KI"
+      "genre": "+",
+      "quote": "I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin",
+      "symbol": "\\Board+"
     },
     {
       "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
@@ -29,6 +165,7 @@
       "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[0,1], \\PM[2,2], \\PM[2,0]", 
       "description": "",
       "origin": "\u03a9",
+      "genre":"\\diff",
       "quote": "Every absurdity has a champion to defend it. ---Oliver Goldsmith",
       "graphic": "\\hspace{1cm}\\includegraphics{CHAMPION.pdf}",
       "symbol": "\u2657"
@@ -38,6 +175,7 @@
       "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[1,1], \\PM[2,2], \\PM[2,0]", 
       "description": "",
       "origin": "C",
+      "genre":"\\diff",
       "quote": "Between two evils, I always pick the one I've never tried before. ---Mae West",
       "graphic": "\\hspace{1cm}\\includegraphics{COCHAMPION.pdf}",
       "symbol": "\u2657"
@@ -46,52 +184,32 @@
       "caption": "PENALTY BOX",
       "description": "If an enemy piece captured last turn, you may move it to any empty square.",
       "origin": "C",
+      "genre": "+",
       "quote": "I believe that people would be alive today if there were a death penalty. ---Nancy Reagan",
       "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "CAVALRY",
-      "description": "A knight can make two captures in one turn.",
-      "origin": "C",
-      "quote": "It's hard to lead a cavalry charge if you think you look funny on a horse. ---Adlai Stevenson",
-      "symbol": "\u2658"
     },
     {
       "caption": "MINOR X KNIGHT",
       "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[1,1]",
       "origin": "I",
+      "genre": "+",
       "quote": "Graphic needed.",
       "graphic": "\\hspace{1cm}\\includegraphics{MINORXKNIGHT.pdf}",
       "symbol": "\u2658"
     },
     {
-      "caption": "MAJOR X KNIGHT",
-      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[2,2]",
-      "origin": "I",
-      "quote": "Graphic needed.",
-      "graphic": "\\hspace{1cm}\\includegraphics{MAJORX.pdf}",
-      "symbol": "\u2658"
-    },
-    {
-      "caption": "MINOR + KNIGHT",
-      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[0,1]",
-      "origin": "I",
-      "quote": "Graphic needed.",
-      "graphic": "\\hspace{1cm}\\includegraphics{MINORPLUS.pdf}",
-      "symbol": "\u2658"
-    },
-    {
-      "caption": "MAJOR + KNIGHT",
-      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[0,2]",
-      "origin": "I",
-      "quote": "Graphic needed.",
-      "graphic": "\\hspace{1cm}\\includegraphics{MAJORPLUS.pdf}",
+      "caption": "CAVALRY",
+      "description": "A knight can make two captures in one turn.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "It's hard to lead a cavalry charge if you think you look funny on a horse. ---Adlai Stevenson",
       "symbol": "\u2658"
     },
     {
       "caption": "DROP DELAY",
       "description": "You may not use a piece dropped on the previous turn.",
       "origin": "C",
+      "genre": "--",
       "quote": "It’s easier to cool down a fanatic than to warm up a corpse. ---Michael L. Brown",
       "symbol": "\\ding{72}"
     },
@@ -99,6 +217,7 @@
       "caption": "TRADING PLACES",
       "description": "You may swap the locations of a friendly knight and bishop for your turn.", 
       "origin": "C",
+      "genre": "+",
       "quote": "You'll all be very, very sorry. ---Louis Winthorpe",
       "symbol": "\u2658\u2657"
     },
@@ -106,6 +225,7 @@
       "caption": "CHINESE SHOGI PAWNS",
       "description": "Pawns take one square forward and move like Chinese checkers. Drop only in file without friendly pawns.",
       "origin": "S",
+      "genre": "X",
       "quote": "If there is mate with a Pawn drop, there is a legal mate too. ---Shogi proverb",
       "symbol": "\u2659"
     },
@@ -114,6 +234,7 @@
       "description": "Bishops move like a queen, but take by moving away from an adjacent piece.",
       "description": "\\Sym\\Bishop$\\Move$: \\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\Back\\Queen\\Move",
       "origin": "U",
+      "genre": "X",
       "quote": "He who fights and runs away, lives to fight another day. ---Proverb",
       "symbol": "\u2657"
     },
@@ -174,13 +295,6 @@
       "origin": "I",
       "quote": "In the land of the blind the one-eyed man is king. ---Efren Ramirez",
       "symbol": "\u2657"
-    },
-    {
-      "caption": "THREE'S A CROWD",
-      "description": "You may not have more that two of any non-pawn piece on the board, including promted pieces.",
-      "origin": "C",
-      "quote": "Every crowd has a silver lining. ---P.T. Barnum",
-      "symbol": "\\ding{72}"
     },
     {
       "caption": "NIGHT WIZARD",
@@ -326,18 +440,6 @@
       "description": "You may pick up a friendly piece as a move.",
       "quote": "Another mode of accumulating power arises from lifting a weight and then allowing it to fall. ---Charles Babbage",
       "symbol": "\\ding{72}+"
-    },
-    {
-      "caption": "NEAR SWAP",
-      "description": "Two adjacent friendly pieces may swap places.",
-      "quote": "Would I swap what I have achieved as a cook if I could have been as successful as a footballer? Definitely. ---Gordon Ramsay",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "KNIGHT SWAP",
-      "description": "Two friendly pieces which are a standard knight move apart may swap places.",
-      "quote": "Don't swap horses in crossing a stream. --Abraham Lincoln",
-      "symbol": "\\ding{72}"
     },
     {
       "caption": "SIEGE TOWER",
@@ -523,20 +625,6 @@
       "symbol": "\\ding{72}"
     },
     {
-      "caption": "CROWDSURF",
-      "description": "Any non-King piece can crowdsurf.",
-      "origin": "C",
-      "quote": "The joy of surfing is so many things combined, from the physical exertion of it to the challenge of it, to the mental side of the sport. ---Kelly Slater",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "10x10 BOARD",
-      "description": "The legal playing area now surrounds the board. Draw another card.",
-      "origin": "I",
-      "quote": "I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin",
-      "symbol": "\\ding{114}"
-    },
-    {
       "caption": "MINOR TENET",
       "description": "Bishops move and take backwards like Knights. Knights move and take backward like Bishops.",
       "origin": "C",
@@ -556,13 +644,6 @@
       "origin": "F",
       "quote": "When I'm stirring a saucepan, I don't say to myself, 'Now the chancellor is stirring a saucepan'. ---Angela Merkel",
       "symbol": "\u2655"
-    },
-    {
-      "caption": "BLOCKADE",
-      "description": "At the end of a Rook move, it may be inverted. Upside-down rooks cannot be taken or attack.",
-      "origin": "C",
-      "quote": "Everyone thinks at some point if what they are doing has any meaning or not. ---William Macbeth",
-      "symbol": "\u2656+"
     },
     {
       "caption": "CHINESE CANNON",

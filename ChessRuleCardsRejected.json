@@ -1,6 +1,51 @@
 { "text_cards":
   [
     {
+      "caption": "MINOR X",
+      "description": "\\Sym\\KI$\\Move^+\\Attack^+$: \\PM[1,1]",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MINORX.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "MINOR X KNIGHT",
+      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[1,1]",
+      "origin": "I",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MINORXKNIGHT.pdf}",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "MAJOR X KNIGHT",
+      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[2,2]",
+      "origin": "I",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MAJORX.pdf}",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "MINOR + KNIGHT",
+      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[0,1]",
+      "origin": "I",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MINORPLUS.pdf}",
+      "symbol": "\u2658"
+    },
+    {
+      "caption": "MAJOR + KNIGHT",
+      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[0,2]",
+      "origin": "I",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MAJORPLUS.pdf}",
+      "symbol": "\u2658"
+    },
+    {
       "caption": "COOLDOWN",
       "description": "You may not use the same piece on two consecutive turns.",
       "origin": "C",

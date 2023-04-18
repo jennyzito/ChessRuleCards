@@ -158,15 +158,20 @@ def Magic_TikZ_card(card):
     };
     \node[circle,draw,text=black](c) at (.5,\cardheight-.5){''',
     r'''};
+    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){''',
+    r'''};
     \end{tikzpicture}%''',
     ]
 
     origin = '?'
+    genre = '?'
     if 'origin' in card:
         origin = card['origin']
+    if 'genre' in card:
+        genre = card['genre']
     if 'graphic' in card:
         card['quote'] = card['graphic']
-    CARD_DATA = [card['symbol'],card['caption'], card['description'], card['quote'], origin]
+    CARD_DATA = [card['symbol'],card['caption'], card['description'], card['quote'], origin, genre]
     # CARD_DATA = [card['stripcolor'], striptext, card['caption'], card['description'], card['bottomcaption'], card['quote']]
     CARD_TEX = itertools.chain(*itertools.zip_longest(CARD_TEMPLATE, CARD_DATA, fillvalue=''))
     # for v in CARD_TEX:
@@ -187,6 +192,7 @@ def buildMagicTeX(cards):
     \usepackage{chessfss}
     \usepackage{setspace}
     \usepackage{enumitem}
+    \usepackage{amssymb}
     \usepackage{graphicx,calc}
     \graphicspath{{./graphics/}}
     \input{symbols.tex}
