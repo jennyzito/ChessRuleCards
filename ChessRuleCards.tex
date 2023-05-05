@@ -37,10 +37,191 @@
     \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
     \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
     { 
+    \begin{center} {\fontsize{80pt}{60pt}\selectfont \Bishop}\\\end{center}
+\begin{center}
+    {\captionfontsize \textsf{\textbf{SITH}}}\end{center}
+        {\textfontsize If one \Bishop\ is captured, the other is as well. When dropped both must be placed on adjacent squares.}
+        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
+        {\quotefontsize \textit{Always two, there are. No more, no less. A master and an apprentice. ---Yoda}}\\[-2\baselineskip]
+    };
+    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){C};
+    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){\diff};
+    \end{tikzpicture}%
+\hspace{1pt}%
+\begin{tikzpicture}
+    \pgfmathsetmacro{\cardroundingradius}{5mm}
+    \pgfmathsetmacro{\striproundingradius}{3mm}
+    % \pgfmathsetmacro{\cardwidth}{5.9}
+    % \pgfmathsetmacro{\cardheight}{9.2}
+    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
+    \pgfmathsetmacro{\cardheight}{8.6}
+    \pgfmathsetmacro{\stripwidth}{1.2}
+    \pgfmathsetmacro{\strippadding}{0.1}
+    \pgfmathsetmacro{\textpadding}{0.3}
+    \pgfmathsetmacro{\ruleheight}{0.1}
+    \providecommand{\stripfontsize}{\Huge}
+    \providecommand{\captionfontsize}{\LARGE}
+    \providecommand{\textfontsize}{\Large}
+    \providecommand{\quotefontsize}{\small}
+    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
+    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
+    { 
+    \begin{center} {\fontsize{80pt}{60pt}\selectfont \Queen}\\\end{center}
+\begin{center}
+    {\captionfontsize \textsf{\textbf{AGENT SMITH}}}\end{center}
+        {\textfontsize Your \Queen\ may switch positions with any friendly \NoKing\ piece.}
+        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
+        {\quotefontsize \textit{Me, me, me. ---Agent Smith}}\\[-2\baselineskip]
+    };
+    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){C};
+    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
+    \end{tikzpicture}%
+\hspace{1pt}%
+\begin{tikzpicture}
+    \pgfmathsetmacro{\cardroundingradius}{5mm}
+    \pgfmathsetmacro{\striproundingradius}{3mm}
+    % \pgfmathsetmacro{\cardwidth}{5.9}
+    % \pgfmathsetmacro{\cardheight}{9.2}
+    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
+    \pgfmathsetmacro{\cardheight}{8.6}
+    \pgfmathsetmacro{\stripwidth}{1.2}
+    \pgfmathsetmacro{\strippadding}{0.1}
+    \pgfmathsetmacro{\textpadding}{0.3}
+    \pgfmathsetmacro{\ruleheight}{0.1}
+    \providecommand{\stripfontsize}{\Huge}
+    \providecommand{\captionfontsize}{\LARGE}
+    \providecommand{\textfontsize}{\Large}
+    \providecommand{\quotefontsize}{\small}
+    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
+    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
+    { 
+    \begin{center} {\fontsize{80pt}{60pt}\selectfont ☯}\\\end{center}
+\begin{center}
+    {\captionfontsize \textsf{\textbf{FAIR UNFAIR}}}\end{center}
+        {\textfontsize Reveal cards until two '+' cards are found. The first applies to white, the second applies to black.}
+        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
+        {\quotefontsize \textit{I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson}}\\[-2\baselineskip]
+    };
+    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){C};
+    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
+    \end{tikzpicture}%
+\hspace{1pt}%
+\begin{tikzpicture}
+    \pgfmathsetmacro{\cardroundingradius}{5mm}
+    \pgfmathsetmacro{\striproundingradius}{3mm}
+    % \pgfmathsetmacro{\cardwidth}{5.9}
+    % \pgfmathsetmacro{\cardheight}{9.2}
+    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
+    \pgfmathsetmacro{\cardheight}{8.6}
+    \pgfmathsetmacro{\stripwidth}{1.2}
+    \pgfmathsetmacro{\strippadding}{0.1}
+    \pgfmathsetmacro{\textpadding}{0.3}
+    \pgfmathsetmacro{\ruleheight}{0.1}
+    \providecommand{\stripfontsize}{\Huge}
+    \providecommand{\captionfontsize}{\LARGE}
+    \providecommand{\textfontsize}{\Large}
+    \providecommand{\quotefontsize}{\small}
+    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
+    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
+    { 
+    \begin{center} {\fontsize{80pt}{60pt}\selectfont \Board}\\\end{center}
+\begin{center}
+    {\captionfontsize \textsf{\textbf{BOUNCE}}}\end{center}
+        {\textfontsize The board continues by reflection in the outer ranks and files.}
+        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
+        {\quotefontsize \textit{Success is how high you bounce when you hit bottom. ---George S. Patton}}\\[-2\baselineskip]
+    };
+    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){I};
+    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
+    \end{tikzpicture}%
+\hspace{1pt}%
+\\[-.5\lineskip]
+\begin{tikzpicture}
+    \pgfmathsetmacro{\cardroundingradius}{5mm}
+    \pgfmathsetmacro{\striproundingradius}{3mm}
+    % \pgfmathsetmacro{\cardwidth}{5.9}
+    % \pgfmathsetmacro{\cardheight}{9.2}
+    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
+    \pgfmathsetmacro{\cardheight}{8.6}
+    \pgfmathsetmacro{\stripwidth}{1.2}
+    \pgfmathsetmacro{\strippadding}{0.1}
+    \pgfmathsetmacro{\textpadding}{0.3}
+    \pgfmathsetmacro{\ruleheight}{0.1}
+    \providecommand{\stripfontsize}{\Huge}
+    \providecommand{\captionfontsize}{\LARGE}
+    \providecommand{\textfontsize}{\Large}
+    \providecommand{\quotefontsize}{\small}
+    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
+    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
+    { 
+    \begin{center} {\fontsize{80pt}{60pt}\selectfont \Board}\\\end{center}
+\begin{center}
+    {\captionfontsize \textsf{\textbf{CYLINDER}}}\end{center}
+        {\textfontsize Pieces may move as if the right and left side of the board are adjacent to each other.}
+        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
+        {\quotefontsize \textit{\tiny Everything in nature takes its form from the sphere, the cone and the cylinder. ---Paul Cezanne}}\\[-2\baselineskip]
+    };
+    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){I};
+    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
+    \end{tikzpicture}%
+\hspace{1pt}%
+\begin{tikzpicture}
+    \pgfmathsetmacro{\cardroundingradius}{5mm}
+    \pgfmathsetmacro{\striproundingradius}{3mm}
+    % \pgfmathsetmacro{\cardwidth}{5.9}
+    % \pgfmathsetmacro{\cardheight}{9.2}
+    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
+    \pgfmathsetmacro{\cardheight}{8.6}
+    \pgfmathsetmacro{\stripwidth}{1.2}
+    \pgfmathsetmacro{\strippadding}{0.1}
+    \pgfmathsetmacro{\textpadding}{0.3}
+    \pgfmathsetmacro{\ruleheight}{0.1}
+    \providecommand{\stripfontsize}{\Huge}
+    \providecommand{\captionfontsize}{\LARGE}
+    \providecommand{\textfontsize}{\Large}
+    \providecommand{\quotefontsize}{\small}
+    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
+    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
+    { 
+    \begin{center} {\fontsize{80pt}{60pt}\selectfont \KMI}\\\end{center}
+\begin{center}
+    {\captionfontsize \textsf{\textbf{CHAMELEON}}}\end{center}
+        {\textfontsize {\Sym\KMI\Move: \Same\newline\KMI\Attack:} \KMI\ takes X only as X would take.}
+        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
+        {\quotefontsize \textit{Everybody in life is a chameleon. ---Melanie Chisholm}}\\[-2\baselineskip]
+    };
+    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){C};
+    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){\diff};
+    \end{tikzpicture}%
+\hspace{1pt}%
+\begin{tikzpicture}
+    \pgfmathsetmacro{\cardroundingradius}{5mm}
+    \pgfmathsetmacro{\striproundingradius}{3mm}
+    % \pgfmathsetmacro{\cardwidth}{5.9}
+    % \pgfmathsetmacro{\cardheight}{9.2}
+    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
+    \pgfmathsetmacro{\cardheight}{8.6}
+    \pgfmathsetmacro{\stripwidth}{1.2}
+    \pgfmathsetmacro{\strippadding}{0.1}
+    \pgfmathsetmacro{\textpadding}{0.3}
+    \pgfmathsetmacro{\ruleheight}{0.1}
+    \providecommand{\stripfontsize}{\Huge}
+    \providecommand{\captionfontsize}{\LARGE}
+    \providecommand{\textfontsize}{\Large}
+    \providecommand{\quotefontsize}{\small}
+    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
+    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
+    { 
     \begin{center} {\fontsize{80pt}{60pt}\selectfont \ding{72}}\\\end{center}
 \begin{center}
     {\captionfontsize \textsf{\textbf{NO STALLING}}}\end{center}
-        {\textfontsize Captured pieces are placed in a staging area. You may only remove a piece from the staging area if your partner has a piece there.}
+        {\textfontsize \small Captured pieces are placed in a staging area. You may not drop a piece from the staging area if your partner has two or more pieces staged than than you.}
         \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
         {\quotefontsize \textit{\tiny Patience is not simply the ability to wait - it's how we behave while we're waiting. ---Joyce Meyer}}\\[-2\baselineskip]
     };
@@ -78,6 +259,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -138,7 +320,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){-};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -199,6 +380,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -259,7 +441,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -320,6 +501,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -380,7 +562,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -441,6 +622,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){\diff};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -501,7 +683,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -556,7 +737,7 @@
     {\captionfontsize \textsf{\textbf{META RULES 2}}}\end{center}
         {\textfontsize \tiny
 \begin{enumerate}[wide=0pt]
-\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\item Action=Move, Attack or Drop\end{enumerate}
+\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\item Action=Move, Attack or Drop\item Retreat=Move away from an adjacent piece and capture\end{enumerate}
 }
         \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
         {\quotefontsize \textit{}}\\[-2\baselineskip]
@@ -565,6 +746,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -625,7 +807,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){\diff};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -686,6 +867,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -746,7 +928,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -807,6 +988,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){+};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -867,7 +1049,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){X};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -928,6 +1109,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -988,7 +1170,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1049,6 +1230,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1109,7 +1291,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1170,6 +1351,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1230,7 +1412,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1291,67 +1472,67 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\begin{tikzpicture}
-    \pgfmathsetmacro{\cardroundingradius}{5mm}
-    \pgfmathsetmacro{\striproundingradius}{3mm}
-    % \pgfmathsetmacro{\cardwidth}{5.9}
-    % \pgfmathsetmacro{\cardheight}{9.2}
-    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
-    \pgfmathsetmacro{\cardheight}{8.6}
-    \pgfmathsetmacro{\stripwidth}{1.2}
-    \pgfmathsetmacro{\strippadding}{0.1}
-    \pgfmathsetmacro{\textpadding}{0.3}
-    \pgfmathsetmacro{\ruleheight}{0.1}
-    \providecommand{\stripfontsize}{\Huge}
-    \providecommand{\captionfontsize}{\LARGE}
-    \providecommand{\textfontsize}{\Large}
-    \providecommand{\quotefontsize}{\small}
-    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
-    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
-    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
-    { 
-    \begin{center} {\fontsize{80pt}{60pt}\selectfont \ding{72}}\\\end{center}
-\begin{center}
-    {\captionfontsize \textsf{\textbf{UNFAIR}}}\end{center}
-        {\textfontsize Deal a card. It only applies to white. Deal a second card. It only applies to black. Deal with it.}
-        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
-        {\quotefontsize \textit{I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson}}\\[-2\baselineskip]
-    };
-    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){C};
-    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
-    \end{tikzpicture}%
-\hspace{1pt}%
-\begin{tikzpicture}
-    \pgfmathsetmacro{\cardroundingradius}{5mm}
-    \pgfmathsetmacro{\striproundingradius}{3mm}
-    % \pgfmathsetmacro{\cardwidth}{5.9}
-    % \pgfmathsetmacro{\cardheight}{9.2}
-    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
-    \pgfmathsetmacro{\cardheight}{8.6}
-    \pgfmathsetmacro{\stripwidth}{1.2}
-    \pgfmathsetmacro{\strippadding}{0.1}
-    \pgfmathsetmacro{\textpadding}{0.3}
-    \pgfmathsetmacro{\ruleheight}{0.1}
-    \providecommand{\stripfontsize}{\Huge}
-    \providecommand{\captionfontsize}{\LARGE}
-    \providecommand{\textfontsize}{\Large}
-    \providecommand{\quotefontsize}{\small}
-    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
-    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
-    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
-    { 
-    \begin{center} {\fontsize{80pt}{60pt}\selectfont \ding{72}}\\\end{center}
-\begin{center}
-    {\captionfontsize \textsf{\textbf{UNFAIR}}}\end{center}
-        {\textfontsize Deal a card. It only applies to white. Deal a second card. It only applies to black. Deal with it.}
-        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
-        {\quotefontsize \textit{I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson}}\\[-2\baselineskip]
-    };
-    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){C};
-    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
-    \end{tikzpicture}%
-\hspace{1pt}%
 \\[-.5\lineskip]
+\begin{tikzpicture}
+    \pgfmathsetmacro{\cardroundingradius}{5mm}
+    \pgfmathsetmacro{\striproundingradius}{3mm}
+    % \pgfmathsetmacro{\cardwidth}{5.9}
+    % \pgfmathsetmacro{\cardheight}{9.2}
+    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
+    \pgfmathsetmacro{\cardheight}{8.6}
+    \pgfmathsetmacro{\stripwidth}{1.2}
+    \pgfmathsetmacro{\strippadding}{0.1}
+    \pgfmathsetmacro{\textpadding}{0.3}
+    \pgfmathsetmacro{\ruleheight}{0.1}
+    \providecommand{\stripfontsize}{\Huge}
+    \providecommand{\captionfontsize}{\LARGE}
+    \providecommand{\textfontsize}{\Large}
+    \providecommand{\quotefontsize}{\small}
+    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
+    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
+    { 
+    \begin{center} {\fontsize{80pt}{60pt}\selectfont \ding{72}}\\\end{center}
+\begin{center}
+    {\captionfontsize \textsf{\textbf{UNFAIR}}}\end{center}
+        {\textfontsize Deal a card. It only applies to white. Deal a second card. It only applies to black. Deal with it.}
+        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
+        {\quotefontsize \textit{I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson}}\\[-2\baselineskip]
+    };
+    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){C};
+    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
+    \end{tikzpicture}%
+\hspace{1pt}%
+\begin{tikzpicture}
+    \pgfmathsetmacro{\cardroundingradius}{5mm}
+    \pgfmathsetmacro{\striproundingradius}{3mm}
+    % \pgfmathsetmacro{\cardwidth}{5.9}
+    % \pgfmathsetmacro{\cardheight}{9.2}
+    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
+    \pgfmathsetmacro{\cardheight}{8.6}
+    \pgfmathsetmacro{\stripwidth}{1.2}
+    \pgfmathsetmacro{\strippadding}{0.1}
+    \pgfmathsetmacro{\textpadding}{0.3}
+    \pgfmathsetmacro{\ruleheight}{0.1}
+    \providecommand{\stripfontsize}{\Huge}
+    \providecommand{\captionfontsize}{\LARGE}
+    \providecommand{\textfontsize}{\Large}
+    \providecommand{\quotefontsize}{\small}
+    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
+    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
+    { 
+    \begin{center} {\fontsize{80pt}{60pt}\selectfont \ding{72}}\\\end{center}
+\begin{center}
+    {\captionfontsize \textsf{\textbf{UNFAIR}}}\end{center}
+        {\textfontsize Deal a card. It only applies to white. Deal a second card. It only applies to black. Deal with it.}
+        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
+        {\quotefontsize \textit{I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson}}\\[-2\baselineskip]
+    };
+    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){C};
+    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
+    \end{tikzpicture}%
+\hspace{1pt}%
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1412,6 +1593,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1472,7 +1654,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1542,6 +1723,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1602,7 +1784,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1663,6 +1844,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1723,7 +1905,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1784,6 +1965,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1844,7 +2026,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1905,6 +2086,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -1965,7 +2147,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -2026,6 +2207,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -2086,7 +2268,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -2147,6 +2328,7 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
+\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -2207,7 +2389,6 @@
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%
-\\[-.5\lineskip]
 \begin{tikzpicture}
     \pgfmathsetmacro{\cardroundingradius}{5mm}
     \pgfmathsetmacro{\striproundingradius}{3mm}
@@ -2265,66 +2446,6 @@
         {\quotefontsize \textit{You can't achieve anything in life without a small amount of sacrifice. ---Shakira}}\\[-2\baselineskip]
     };
     \node[circle,draw,text=black](c) at (.5,\cardheight-.5){?};
-    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
-    \end{tikzpicture}%
-\hspace{1pt}%
-\begin{tikzpicture}
-    \pgfmathsetmacro{\cardroundingradius}{5mm}
-    \pgfmathsetmacro{\striproundingradius}{3mm}
-    % \pgfmathsetmacro{\cardwidth}{5.9}
-    % \pgfmathsetmacro{\cardheight}{9.2}
-    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
-    \pgfmathsetmacro{\cardheight}{8.6}
-    \pgfmathsetmacro{\stripwidth}{1.2}
-    \pgfmathsetmacro{\strippadding}{0.1}
-    \pgfmathsetmacro{\textpadding}{0.3}
-    \pgfmathsetmacro{\ruleheight}{0.1}
-    \providecommand{\stripfontsize}{\Huge}
-    \providecommand{\captionfontsize}{\LARGE}
-    \providecommand{\textfontsize}{\Large}
-    \providecommand{\quotefontsize}{\small}
-    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
-    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
-    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
-    { 
-    \begin{center} {\fontsize{80pt}{60pt}\selectfont \ding{114}}\\\end{center}
-\begin{center}
-    {\captionfontsize \textsf{\textbf{BOUNCE}}}\end{center}
-        {\textfontsize The board continues by reflection in the outer ranks and files.}
-        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
-        {\quotefontsize \textit{Success is how high you bounce when you hit bottom. ---George S. Patton}}\\[-2\baselineskip]
-    };
-    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){I};
-    \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
-    \end{tikzpicture}%
-\hspace{1pt}%
-\begin{tikzpicture}
-    \pgfmathsetmacro{\cardroundingradius}{5mm}
-    \pgfmathsetmacro{\striproundingradius}{3mm}
-    % \pgfmathsetmacro{\cardwidth}{5.9}
-    % \pgfmathsetmacro{\cardheight}{9.2}
-    \pgfmathsetmacro{\cardwidth}{6.1}  % Magic cards are 63x88mm
-    \pgfmathsetmacro{\cardheight}{8.6}
-    \pgfmathsetmacro{\stripwidth}{1.2}
-    \pgfmathsetmacro{\strippadding}{0.1}
-    \pgfmathsetmacro{\textpadding}{0.3}
-    \pgfmathsetmacro{\ruleheight}{0.1}
-    \providecommand{\stripfontsize}{\Huge}
-    \providecommand{\captionfontsize}{\LARGE}
-    \providecommand{\textfontsize}{\Large}
-    \providecommand{\quotefontsize}{\small}
-    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
-    \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
-    \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
-    { 
-    \begin{center} {\fontsize{80pt}{60pt}\selectfont \ding{114}}\\\end{center}
-\begin{center}
-    {\captionfontsize \textsf{\textbf{CYLINDER}}}\end{center}
-        {\textfontsize Pieces may move as if the right and left side of the board are adjacent to each other.}
-        \tikz{\fill (0,0) rectangle (\cardwidth-2*\strippadding-2*\textpadding,\ruleheight);}\\
-        {\quotefontsize \textit{Everything in nature takes its form from the sphere, the cone and the cylinder. ---Paul Cezanne}}\\[-2\baselineskip]
-    };
-    \node[circle,draw,text=black](c) at (.5,\cardheight-.5){I};
     \node[circle,draw,text=black](c) at (\cardwidth-.5,\cardheight-.5){?};
     \end{tikzpicture}%
 \hspace{1pt}%

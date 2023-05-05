@@ -1,8 +1,55 @@
 { "text_cards":
   [
     {
+      "caption": "SITH",
+      "description": "If one \\Bishop\\ is captured, the other is as well. When dropped both must be placed on adjacent squares.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
+      "symbol": "\\Bishop"
+    },
+    {
+      "caption": "AGENT SMITH",
+      "description": "Your \\Queen\\ may switch positions with any friendly \\NoKing\\ piece.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Me, me, me. ---Agent Smith",
+      "symbol": "\\Queen"
+    },
+    {
+      "caption": "FAIR UNFAIR",
+      "description": "Reveal cards until two '+' cards are found. The first applies to white, the second applies to black.",
+      "origin": "C",
+      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
+      "symbol": "\u262f"
+    },
+    {
+      "caption": "BOUNCE",
+      "description": "The board continues by reflection in the outer ranks and files.",
+      "origin": "I",
+      "genre": "+",
+      "quote": "Success is how high you bounce when you hit bottom. ---George S. Patton",
+      "symbol": "\\Board"
+    },
+    {
+      "caption": "CYLINDER",
+      "description": "Pieces may move as if the right and left side of the board are adjacent to each other.",
+      "origin": "I",
+      "genre": "+",
+      "quote": "\\tiny Everything in nature takes its form from the sphere, the cone and the cylinder. ---Paul Cezanne",
+      "symbol": "\\Board"
+    },
+    {
+      "caption": "CHAMELEON",
+      "description": "{\\Sym\\KMI\\Move: \\Same\\newline\\KMI\\Attack:} \\KMI\\ takes X only as X would take.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Everybody in life is a chameleon. ---Melanie Chisholm",
+      "symbol": "\\KMI"
+    },
+    {
       "caption": "NO STALLING",
-      "description": "Captured pieces are placed in a staging area. You may only remove a piece from the staging area if your partner has a piece there.",
+      "description": "\\small Captured pieces are placed in a staging area. You may not drop a piece from the staging area if your partner has two or more pieces staged than than you.",
       "origin": "C",
       "genre": "+",
       "quote": "\\tiny Patience is not simply the ability to wait - it's how we behave while we're waiting. ---Joyce Meyer",
@@ -123,8 +170,6 @@
       "origin": "C",
       "genre": "+",
       "quote": "When danger reared it's ugly head, he bravely turned his tail and fled. ---Sir Robin's minstrel",
-      "symbol": "\u2295\\Bishop",
-      "symbol": "\\Bishop\u2020",
       "symbol": "\\Bishop"
     },
     {
@@ -145,7 +190,7 @@
     },
     {
       "caption": "META RULES 2",
-      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\\item Action=Move, Attack or Drop\\end{enumerate}\n",
+      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\\item Action=Move, Attack or Drop\\item Retreat=Move away from an adjacent piece and capture\\end{enumerate}\n",
       "origin": "C",
       "quote": "",
       "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
@@ -554,20 +599,6 @@
       "description": "You may take your own pieces. Draw another card.",
       "quote": "You can't achieve anything in life without a small amount of sacrifice. ---Shakira",
       "symbol": "\\ding{72}+"
-    },
-    {
-      "caption": "BOUNCE",
-      "description": "The board continues by reflection in the outer ranks and files.",
-      "origin": "I",
-      "quote": "Success is how high you bounce when you hit bottom. ---George S. Patton",
-      "symbol": "\\ding{114}"
-    },
-    {
-      "caption": "CYLINDER",
-      "description": "Pieces may move as if the right and left side of the board are adjacent to each other.",
-      "origin": "I",
-      "quote": "Everything in nature takes its form from the sphere, the cone and the cylinder. ---Paul Cezanne",
-      "symbol": "\\ding{114}"
     },
     {
       "caption": "PROFESSIONAL COURTESY",
