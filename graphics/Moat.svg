@@ -49,6 +49,6 @@ M 80,-50 L 70,-50 L 70,-40 L 80,-40 z
 M 10,-40 L 0,-40 L 0,-30 L 10,-30 z
 M 40,-40 L 30,-40 L 30,-30 L 40,-30 z
 M 50,-30 L 70,-30 L 70,-40 L 50,-40 z
-" stroke="black" fill="lightblue" stroke-width="0"/>
+" stroke="black" fill="#008DCB" stroke-width="0"/>
 </svg>
 

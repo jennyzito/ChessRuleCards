@@ -66,7 +66,7 @@ if __name__ == '__main__':
     svg_board = scad2svg(board(x,y,square))
     svg_board = setSVGproperty(svg_board, fill='black', stroke_width=0)
     svg_moat = scad2svg(moat(x,y,square))
-    svg_moat = setSVGproperty(svg_moat, fill='lightblue', stroke_width=0)
+    svg_moat = setSVGproperty(svg_moat, fill='#008DCB', stroke_width=0)
     svg_back = joinSCAD_SVG(svg_bb, svg_back)
     total = joinSCAD_SVG(svg_back, svg_board)
     total = joinSCAD_SVG(total, svg_moat)
