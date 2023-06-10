@@ -1,6 +1,14 @@
 { "text_cards":
   [
     {
+      "caption": "CHINESE CANNON",
+      "description": "A rook takes by throwing a friendly piece so that it jumps the rook in a rook direction.",
+      "genre": "\\diff",
+      "origin": "I",
+      "quote": "I spend most of my life feeling like I've been shot out of a cannon. ---Molly Ivins",
+      "symbol": "\\Rook"
+    },
+    {
       "caption": "MINOR X",
       "description": "\\Sym\\KI$\\Move^+\\Attack^+$: \\PM[1,1]",
       "origin": "C",
