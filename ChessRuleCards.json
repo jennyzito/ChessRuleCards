@@ -1,8 +1,48 @@
 { "text_cards":
   [
     {
-      "caption": "SITH",
-      "description": "If one \\Bishop\\ is captured, the other is as well. When dropped both must be placed on adjacent squares.",
+      "caption": "MOVE SWAP",
+      "description": "Two friendly {\\Sym\\NoKing} may swap places if one can move to or take the other.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Trading is very competitive and you have to be able to handle getting your butt kicked. ---Paul Tudor Jones",
+      "symbol": "\\NoKing"
+    },
+    {
+      "caption": "SUPREME SACRIFICE",
+      "description": "You may remove any number of friendly pieces before your turn.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny The speed of your success is limited only by your dedication and what you're willing to sacrifice. ---Nathan W. Morris",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "10x8 BOARD",
+      "description": "Add an additional rank on the top and bottom.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny He who joyfully marches to music in rank and file has already earned my contempt. He has been given a large brain by mistake, since for him the spinal cord would suffice. ---Albert Einstein",
+      "symbol": "\\Board+"
+    },
+    {
+      "caption": "FORCE DROP",
+      "description": "You may drop one of your opponent pieces for your turn.",
+      "origin": "C",
+      "genre":"+",
+      "quote": "Perhaps not willingly, but pain can make a man do things he wouldn't willingly do. ---Anne Bishop, Daughter of the Blood",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "SITH v1",
+      "description": "As a premove, your opponent can have one \\Rook\\ attack the other.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
+      "symbol": "\\Rook"
+    },
+    {
+      "caption": "SITH v2",
+      "description": "If one \\Rook\\ is captured, the other is as well. Drop both on the same turn.",
       "origin": "C",
       "genre":"\\diff",
       "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
@@ -10,7 +50,7 @@
     },
     {
       "caption": "AGENT SMITH",
-      "description": "Your \\Queen\\ may switch positions with any friendly \\NoKing\\ piece.",
+      "description": "Your {\\Sym\\Queen}\\ may switch positions with any friendly {\\Sym\\NoKing}\\ piece.",
       "origin": "C",
       "genre": "+",
       "quote": "Me, me, me. ---Agent Smith",
@@ -18,7 +58,7 @@
     },
     {
       "caption": "FAIR UNFAIR",
-      "description": "Reveal cards until two '+' cards are found. The first applies to white, the second applies to black.",
+      "description": "Reveal cards until two matching type cards are found {\\Sym(+,-,\\diff)}. The first applies to white, the second applies to black.",
       "origin": "C",
       "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
       "symbol": "\u262f"
@@ -133,14 +173,6 @@
       "symbol": "\\Board+"
     },
     {
-      "caption": "10x8 BOARD",
-      "description": "Add and additional rank on the top and bottom.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "\\tiny He who joyfully marches to music in rank and file has already earned my contempt. He has been given a large brain by mistake, since for him the spinal cord would suffice. ---Albert Einstein",
-      "symbol": "\\Board+"
-    },
-    {
       "caption": "FLOOR IS LAVA",
       "description": "Pieces ending their turn on the four central squares die. Pieces may move over lava.",
       "origin": "C",
@@ -190,7 +222,7 @@
     },
     {
       "caption": "META RULES 2",
-      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\\item Action=Move, Attack or Drop\\item Retreat=Move away from an adjacent piece and capture\\end{enumerate}\n",
+      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\\item Action=Move, Attack or Drop\\item Retreat=Move away from an adjacent piece and capture\\item You may not make a move that undoes a move made by the opponent.\\end{enumerate}\n",
       "origin": "C",
       "quote": "",
       "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
@@ -460,13 +492,6 @@
       "symbol": "\\ding{72}"
     },
     {
-      "caption": "MOVE SWAP",
-      "description": "Two friendly pieces may swap places if one can move to or take the other.",
-      "origin": "C",
-      "quote": "Trading is very competitive and you have to be able to handle getting your butt kicked. ---Paul Tudor Jones",
-      "symbol": "\\ding{72}"
-    },
-    {
       "caption": "CHINESE CHECKERS",
       "description": "Pawns take normally, but move like Chinese checkers.",
       "origin": "C",
@@ -640,13 +665,6 @@
       "origin": "C",
       "quote": "Life is nothing without a little chaos to make it interesting. ---Amelia Atwater-Rhodes",
       "symbol": "+++"
-    },
-    {
-      "caption": "SUPREME SACRIFICE",
-      "description": "You may remove any number of friendly pieces before your turn.",
-      "origin": "C",
-      "quote": "The speed of your success is limited only by your dedication and what you're willing to sacrifice. ---Nathan W. Morris",
-      "symbol": "\\ding{72}"
     },
     {
       "caption": "EXTINCTION",
