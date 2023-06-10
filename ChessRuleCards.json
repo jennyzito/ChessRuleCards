@@ -1,6 +1,45 @@
 { "text_cards":
   [
     {
+      "caption": "SACRIFICE",
+      "description": "You may take your own pieces. Draw another card.",
+      "quote": "You can't achieve anything in life without a small amount of sacrifice. ---Shakira",
+      "genre": "+",
+      "symbol": "\\inlinegraphics{Blood_drop_plain}+"
+    },
+    {
+      "caption": "CAMOUFLAGE",
+      "description": "You can move through friendly pieces on your color squares.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Three things cannot be long hidden: the sun, the moon, and the truth. ---Buddha",
+      "symbol": "\\inlinegraphics{Camouflage}"
+    },
+    {
+      "caption": "FLOOR IS LAVA",
+      "description": "Pieces ending their turn on the four central squares die. Pieces may move over lava.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "\\tiny Zeal is a volcano, the peak of which the grass of indecisiveness does not grow. ---Khalil Gibran",
+      "symbol": "\\inlinegraphics{FloorIsLava}+"
+    },
+    {
+      "caption": "8x10 BOARD",
+      "description": "The legal playing area includes an additional file on the right and left.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "The Bureau doesn't have any secret files. ---W. Mark Felt",
+      "symbol": "\\inlinegraphics{8x10}+"
+    },
+    {
+      "caption": "10x10 BOARD",
+      "description": "The legal playing area now surrounds the board.",
+      "origin": "I",
+      "genre": "+",
+      "quote": "I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin",
+      "symbol": "\\inlinegraphics{10x10}+"
+    },
+    {
       "caption": "MOVE SWAP",
       "description": "Two friendly {\\Sym\\NoKing} may swap places if one can move to or take the other.",
       "origin": "C",
@@ -14,7 +53,7 @@
       "origin": "C",
       "genre": "+",
       "quote": "\\tiny The speed of your success is limited only by your dedication and what you're willing to sacrifice. ---Nathan W. Morris",
-      "symbol": "\\ding{72}"
+      "symbol": "\\inlinegraphics{Give_Blood}"
     },
     {
       "caption": "10x8 BOARD",
@@ -22,15 +61,15 @@
       "origin": "C",
       "genre": "+",
       "quote": "\\tiny He who joyfully marches to music in rank and file has already earned my contempt. He has been given a large brain by mistake, since for him the spinal cord would suffice. ---Albert Einstein",
-      "symbol": "\\Board+"
+      "symbol": "\\inlinegraphics{10x8}+"
     },
     {
       "caption": "FORCE DROP",
       "description": "You may drop one of your opponent pieces for your turn.",
       "origin": "C",
       "genre":"+",
-      "quote": "Perhaps not willingly, but pain can make a man do things he wouldn't willingly do. ---Anne Bishop, Daughter of the Blood",
-      "symbol": "\\ding{72}"
+      "quote": "\\tiny Perhaps not willingly, but pain can make a man do things he wouldn't willingly do. ---Anne Bishop, Daughter of the Blood",
+      "symbol": "\\inlinegraphics{falling}"
     },
     {
       "caption": "SITH v1",
@@ -164,23 +203,6 @@
       "symbol": "\\KI"
     },
     {
-      "caption": "8x10 BOARD",
-      "description": "The legal playing area includes an additional file on the right and left.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "The Bureau doesn't have any secret files. ---W. Mark Felt",
-      "symbol": "\\ding{114}+",
-      "symbol": "\\Board+"
-    },
-    {
-      "caption": "FLOOR IS LAVA",
-      "description": "Pieces ending their turn on the four central squares die. Pieces may move over lava.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "\\tiny Zeal is a volcano, the peak of which the grass of indecisiveness does not grow. ---Khalil Gibran",
-      "symbol": "\\Board+"
-    },
-    {
       "caption": "BLOCKADE",
       "description": "At the end of a Rook action, it may be inverted. Upside-down rooks move normally, but cannot be taken or attack.",
       "origin": "C",
@@ -194,7 +216,7 @@
       "origin": "C",
       "genre":"\\diff",
       "quote": "The thing worse than rebellion is the thing that causes rebellion. ---Frederick Douglass",
-      "symbol": "\u2659"
+      "symbol": "\\Pawn"
     },
     {
       "caption": "RUNAWAYS",
@@ -228,14 +250,6 @@
       "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
     },
     {
-      "caption": "10x10 BOARD",
-      "description": "The legal playing area now surrounds the board.",
-      "origin": "I",
-      "genre": "+",
-      "quote": "I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin",
-      "symbol": "\\Board+"
-    },
-    {
       "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
       "caption": "BISHOP CHAMPION",
       "description": "Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.",
@@ -245,7 +259,7 @@
       "genre":"\\diff",
       "quote": "Every absurdity has a champion to defend it. ---Oliver Goldsmith",
       "graphic": "\\hspace{1cm}\\includegraphics{CHAMPION.pdf}",
-      "symbol": "\u2657"
+      "symbol": "\\Bishop"
     },
     {
       "caption": "BISHOP COCHAMPION",
@@ -255,7 +269,7 @@
       "genre":"\\diff",
       "quote": "Between two evils, I always pick the one I've never tried before. ---Mae West",
       "graphic": "\\hspace{1cm}\\includegraphics{COCHAMPION.pdf}",
-      "symbol": "\u2657"
+      "symbol": "\\Bishop"
     },
     {
       "caption": "PENALTY BOX",
@@ -272,7 +286,7 @@
       "genre": "+",
       "quote": "Graphic needed.",
       "graphic": "\\hspace{1cm}\\includegraphics{MINORXKNIGHT.pdf}",
-      "symbol": "\u2658"
+      "symbol": "\\Knight"
     },
     {
       "caption": "CAVALRY",
@@ -280,7 +294,7 @@
       "origin": "C",
       "genre": "+",
       "quote": "It's hard to lead a cavalry charge if you think you look funny on a horse. ---Adlai Stevenson",
-      "symbol": "\u2658"
+      "symbol": "\\Knight"
     },
     {
       "caption": "DROP DELAY",
@@ -296,7 +310,7 @@
       "origin": "C",
       "genre": "+",
       "quote": "You'll all be very, very sorry. ---Louis Winthorpe",
-      "symbol": "\u2658\u2657"
+      "symbol": "\\Knight\\Bishop"
     },
     {
       "caption": "CHINESE SHOGI PAWNS",
@@ -304,7 +318,7 @@
       "origin": "S",
       "genre": "X",
       "quote": "If there is mate with a Pawn drop, there is a legal mate too. ---Shogi proverb",
-      "symbol": "\u2659"
+      "symbol": "\\Pawn"
     },
     {
       "caption": "RETREATER",
@@ -313,7 +327,7 @@
       "origin": "U",
       "genre": "X",
       "quote": "He who fights and runs away, lives to fight another day. ---Proverb",
-      "symbol": "\u2657"
+      "symbol": "\\Bishop"
     },
     {
       "caption": "BISHOP LONG LEAPER",
@@ -321,7 +335,7 @@
       "description": "\\Sym\\Bishop$\\Move$: \\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\Jump\\Queen\\Move",
       "origin": "U",
       "quote": "That's one small step for a man, one giant leap for mankind. ---Neil Armstrong",
-      "symbol": "\u2657"
+      "symbol": "\\Bishop"
     },
     {
       "caption": "IT FOLLOWS",
@@ -525,13 +539,6 @@
       "symbol": "\u2654"
     },
     {
-      "caption": "CAMOUFLAGE",
-      "description": "You can move through friendly pieces on your color squares.",
-      "origin": "C",
-      "quote": "Three things cannot be long hidden: the sun, the moon, and the truth. ---Buddha",
-      "symbol": "\\ding{72}"
-    },
-    {
       "caption": "PRECOCIOUS PAWNS",
       "description": "Pawns start advanced one rank. Draw another card.",
       "origin": "I",
@@ -618,12 +625,6 @@
       "origin": "C",
       "quote": "You never advance without losing something en passant, and you lose it because you're paying so much attention to the new thing. ---Ninette de Valois",
       "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "SACRIFICE",
-      "description": "You may take your own pieces. Draw another card.",
-      "quote": "You can't achieve anything in life without a small amount of sacrifice. ---Shakira",
-      "symbol": "\\ding{72}+"
     },
     {
       "caption": "PROFESSIONAL COURTESY",
