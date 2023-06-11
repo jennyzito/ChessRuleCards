@@ -1,6 +1,64 @@
 { "text_cards":
   [
     {
+      "caption": "CROWNED BISHOP",
+      "description": "\\Sym\\Bishop$\\Move^+\\Attack^+$: \\King\\Move\\Attack",
+      "description": "\\Sym\\Bishop$\\Move^+$: \\King\\Move\\newline\\Sym\\Bishop$\\Attack^+$: \\King\\Attack",
+      "origin": "I",
+      "genre":"+",
+      "quote": "In the land of the blind the one-eyed man is king. ---Efren Ramirez",
+      "symbol": "\\Bishop"
+    },
+    {
+      "caption": "NIGHT WIZARD",
+      "description": "\\Sym\\Knight\\Move: \u00B1[1,1],[1,3]\\newline \\Knight\\Attack: \\Same",
+      "origin": "\u03a9",
+      "genre":"\\diff",
+      "quote": "Do not meddle in the affairs of Wizards, for they are subtle and quick to anger. ---J. R. R. Tolkien",
+      "symbol": "\\Knight"
+    },
+    {
+      "caption": "CROWNED LONG LEAPER",
+      "description": "\\Sym\\Bishop$\\Move$: \\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\Jump\\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\King\\Attack",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Jump! ---Van Halen",
+      "symbol": "\\Bishop"
+    },
+    {
+      "caption": "CROWNED RETREATER",
+      "description": "\\Sym\\Bishop$\\Move$: \\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\Back\\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\King\\Attack",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "He who fights and runs away, lives to fight another day. ---Proverb",
+      "symbol": "\\Bishop"
+    },
+    {
+      "caption": "BISHOP-KNIGHT SWAP",
+      "description": "\\Sym\\Knight\\Attack: \\Bishop\\Attack\\newline\\Bishop\\Attack: \\Knight\\Attack", 
+      "quote": "It's time to bait a trap. ---Katie Reus",
+      "origin": "C",
+      "genre":"\\diff",
+      "symbol": "\\Knight\\Bishop"
+    },
+    {
+      "caption": "REARGUARD",
+      "description": "Whenever a Queen moves (not drop), it may summon a pawn to the square behind it.",
+      "origin": "C",
+      "genre":"+",
+      "quote": "If you think you're going to be a backup, you're going to be a backup. ---Nick Foles",
+      "symbol": "\\Queen"
+    },
+    {
+      "caption": "CHAMELEON",
+      "description": "{\\Sym\\KMI\\Move: \\Same\\newline\\KMI\\Attack:} \\KMI\\ takes X only as X would take.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Everybody in life is a chameleon. ---Melanie Chisholm",
+      "quote": "I could spend the rest of my life in copying a chair. ---Alberto Giacometti",
+      "symbol": "\\KI"
+    },
+    {
       "caption": "XIANGQI KNIGHTS",
       "description": "Knights move/take by moving first one square orthogonally and then one square diagonally.",
       "origin": "I",
@@ -175,14 +233,6 @@
       "genre": "+",
       "quote": "Success is how high you bounce when you hit bottom. ---George S. Patton",
       "symbol": "\\Board"
-    },
-    {
-      "caption": "CHAMELEON",
-      "description": "{\\Sym\\KMI\\Move: \\Same\\newline\\KMI\\Attack:} \\KMI\\ takes X only as X would take.",
-      "origin": "C",
-      "genre":"\\diff",
-      "quote": "Everybody in life is a chameleon. ---Melanie Chisholm",
-      "symbol": "\\KMI"
     },
     {
       "caption": "NO STALLING",
@@ -404,20 +454,6 @@
       "symbol": "\u2659\u2654"
     },
     {
-      "caption": "CROWNED LONG LEAPER",
-      "description": "\\Sym\\Bishop$\\Move$: \\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\Jump\\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\King\\Attack",
-      "origin": "C",
-      "quote": "Jump! ---Van Halen",
-      "symbol": "\u2657"
-    },
-    {
-      "caption": "CROWNED RETREATER",
-      "description": "\\Sym\\Bishop$\\Move$: \\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\Back\\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\King\\Attack",
-      "origin": "C",
-      "quote": "He who fights and runs away, lives to fight another day. ---Proverb",
-      "symbol": "\u2657"
-    },
-    {
       "caption": "SHOGI PAWNS",
       "description": "Pawns take one square forward and may not move two squares initially. Drop only in file without friendly pawns.",
       "origin": "S",
@@ -439,21 +475,6 @@
       "symbol": "\u2656"
     },
     {
-      "caption": "CROWNED BISHOP",
-      "description": "\\Sym\\Bishop$\\Move^+\\Attack^+$: \\King\\Move\\Attack",
-      "description": "\\Sym\\Bishop$\\Move^+$: \\King\\Move\\newline\\Sym\\Bishop$\\Attack^+$: \\King\\Attack",
-      "origin": "I",
-      "quote": "In the land of the blind the one-eyed man is king. ---Efren Ramirez",
-      "symbol": "\u2657"
-    },
-    {
-      "caption": "NIGHT WIZARD",
-      "description": "\\Sym\\Knight\\Move: \u00B1[1,1],[1,3]\\newline \\Knight\\Attack: \\Same",
-      "origin": "\u03a9",
-      "quote": "Do not meddle in the affairs of Wizards, for they are subtle and quick to anger. ---J. R. R. Tolkien",
-      "symbol": "\u2658"
-    },
-    {
       "caption": "GENTLEMEN'S AGREEMENT",
       "description": "You may not drop for check.",
       "origin": "C",
@@ -468,23 +489,11 @@
       "symbol": "\\ding{72}"
     },
     {
-      "caption": "BISHOP-KNIGHT SWAP",
-      "description": "\\Sym\\Knight\\Attack: \\Bishop\\Attack\\newline\\Bishop\\Attack: \\Knight\\Attack", 
-      "quote": "It's time to bait a trap. ---Katie Reus",
-      "symbol": "\u2658\u2657"
-    },
-    {
       "caption": "PRISON BREAK",
       "description": "\\small All knights start off the board in jail. If a bishop moves/attacks, ending on the last rank, knights of the same color are now available to be dropped by the owner.",
       "quote": "\\tiny Preparation can only take you so far. After that, you have to take a few leaps of faith. ---Michael Scofield",
       "origin": "C",
       "symbol": "\u2658\u2657"
-    },
-    {
-      "caption": "REARGUARD",
-      "description": "Whenever a Queen moves (not drop), it may summon a pawn to the square behind it.",
-      "quote": "If you think you're going to be a backup, you're going to be a backup. ---Nick Foles",
-      "symbol": "\u2655"
     },
     {
       "caption": "UNFAIR",
@@ -610,13 +619,6 @@
       "quote": "These guys are playing checkers. I'm out here playing chess. When they figure it out, it's too late. ---Max Holloway",
       "symbol": "\u2659",
       "origin": "C"
-    },
-    {
-      "caption": "BISHOP CHAMELEON",
-      "description": "Bishops move normally, but only takes X as X would take. Bishops attack each other normally.",
-      "origin": "U",
-      "quote": "I could spend the rest of my life in copying a chair. ---Alberto Giacometti",
-      "symbol": "\u2657"
     },
     {
       "caption": "MOVE TWICE",

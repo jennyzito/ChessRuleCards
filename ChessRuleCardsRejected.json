@@ -1,6 +1,13 @@
 { "text_cards":
   [
     {
+      "caption": "BISHOP CHAMELEON",
+      "description": "Bishops move normally, but only takes X as X would take. Bishops attack each other normally.",
+      "origin": "U",
+      "quote": "I could spend the rest of my life in copying a chair. ---Alberto Giacometti",
+      "symbol": "\u2657"
+    },
+    {
       "caption": "CHINESE CANNON",
       "description": "A rook takes by throwing a friendly piece so that it jumps the rook in a rook direction.",
       "genre": "\\diff",
