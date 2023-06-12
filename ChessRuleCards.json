@@ -1,13 +1,344 @@
 { "text_cards":
   [
     {
-      "caption": "CROWNED BISHOP",
-      "description": "\\Sym\\Bishop$\\Move^+\\Attack^+$: \\King\\Move\\Attack",
-      "description": "\\Sym\\Bishop$\\Move^+$: \\King\\Move\\newline\\Sym\\Bishop$\\Attack^+$: \\King\\Attack",
+      "caption": "MINOR TENET",
+      "description": "\\KI\\ and \\KII\\ move and take backwards like the other.",
+      "origin": "C",
+      "genre": "\\diff",
+      "quote": "Bold I'm Fine With. I Thought You Were Gonna Say Nuts. ---Mahir",
+      "symbol": "\\KI\\KII"
+    },
+    {
+      "caption": "KING SWAP",
+      "description": "\\King\\ and \\KI\\ switch actions.",
+      "origin": "C",
+      "genre": "\\diff",
+      "quote": "If I was King for just one day, I would give it all away. --Thompson Twins",
+      "symbol": "\\King\\KI"
+    },
+    {
+      "caption": "ATTACK SWAP",
+      "description": "\\KI\\ and \\KII\\ move the same, but attack like the other.",
+      "origin": "C",
+      "genre": "\\diff",
+      "quote": "The human race has one really effective weapon, and that is laughter. ---Mark Twain",
+      "symbol": "\\KI\\KII"
+    },
+    {
+      "caption": "ROYAL REVERSE",
+      "description": "\\KI\\ may move and take backwards like a \\Queen.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "To the royal guards of this realm, we are all victims in-waiting. ---Cheshire Cat",
+      "symbol": "\\KI"
+    },
+    {
+      "bottomcaption": "Q m,x N+K",
+      "caption": "SUMMONER",
+      "description": "\\KI\\ may summon a friendly \\NoKing\\ to an adjacent square",
+      "quote": "My name is Mortimer Alexander and I am a licensed summoner.\" \"Darn. I'd hoped you were the pizza delivery guy. ---Jana Oliver",
+      "origin": "C",
+      "genre": "+",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "NONABELIAN",
+      "description": "Reveal cards until two non-commuting cards are found. Use those in the most interesting order.",
+      "origin": "C",
+      "genre": "$\\varnothing$",
+      "quote": "\\tiny Anything irreversible should be granted the \"everything\" of our attention. ---Craig D. Lounsbough",
+      "symbol": "\\inlinegraphics{arrows}"
+    },
+    {
+      "caption": "CYLINDER \\KI",
+      "description": "\\KI\\ may act as if it is on a left-right cylinder.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "There are no boundaries -- only possibilities. --- Sakyong Mipham",
+      "symbol": "\\inlinegraphics{cylinder}\\KI"
+    },
+    {
+      "caption": "CYLINDER $\\Rightarrow$",
+      "description": "The right and left side of the board are adjacent to each other. Pieces may not move left from their POV.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "Always choose the right path and speak the truth. ---Mahatma Gandhi",
+      "symbol": "\\inlinegraphics{cylinder}"
+    },
+    {
+      "caption": "JEDI ORDER",
+      "description": "If you only have one \\KI\\ on the board, it can also move and take like a Queen.",
+      "quote": "If you strike me down, I shall become more powerful than you can possibly imagine. ---Obi-Wan Kenobi",
+      "origin": "C",
+      "genre": "+",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "TRADING PLACES",
+      "description": "You may swap the locations of a friendly \\KI\\ and \\KII\\ for your turn.", 
+      "origin": "C",
+      "genre": "+",
+      "quote": "You'll all be very, very sorry. ---Louis Winthorpe",
+      "symbol": "\\KI\\KII"
+    },
+    {
+      "caption": "COPYCAT",
+      "description": "{\\Sym\\KII} may move/take like the last piece the opponent moved.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "I'm starting to see players copy what I do. I'm flattered. ---Dennis Rodman",
+      "symbol": "\\KII"
+    },
+    {
+      "caption": "FAIR UNFAIR",
+      "description": "Reveal cards until two matching type cards are found {\\Sym(+,-,\\diff)}. The first applies to white, the second applies to black.",
+      "origin": "C",
+      "genre": "$\\varnothing$",
+      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
+      "symbol": "\u262f"
+    },
+    {
+      "caption": "FAIR UNFAIR",
+      "description": "Reveal cards until two matching type cards are found {\\Sym(+,-,\\diff)}. The first applies to white, the second applies to black.",
+      "origin": "C",
+      "genre": "$\\varnothing$",
+      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
+      "symbol": "\u262f"
+    },
+    {
+      "caption": "CHAOS",
+      "description": "Deal three more cards.",
+      "origin": "C",
+      "genre": "$\\varnothing$",
+      "quote": "Life is nothing without a little chaos to make it interesting. ---Amelia Atwater-Rhodes",
+      "symbol": "+++"
+    },
+    {
+      "caption": "COMPLICATE",
+      "description": "Deal two more cards.",
+      "origin": "C",
+      "genre": "$\\varnothing$",
+      "quote": "When all else fails, complicate matters. ---Aaron Allston",
+      "symbol": "++"
+    },
+    {
+      "caption": "COMPLICATE",
+      "description": "Deal two more cards.",
+      "origin": "C",
+      "genre": "$\\varnothing$",
+      "quote": "When all else fails, complicate matters. ---Aaron Allston",
+      "symbol": "++"
+    },
+    {
+      "caption": "LONG LEAPER",
+      "description": "Bishops move like a queen, but take by leaping over a piece.",
+      "description": "\\Sym\\KI$\\Move$: \\Queen\\Move\\newline\\Sym\\KII$\\Attack$: \\Jump\\Queen\\Move",
+      "origin": "C",
+      "genre": "\\diff",
+      "quote": "That's one small step for a man, one giant leap for mankind. ---Neil Armstrong",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "CHINESE SHOGI PAWNS",
+      "description": "Pawns take one square forward and move like Chinese checkers. Drop only in file without friendly pawns.",
+      "origin": "S",
+      "genre": "-",
+      "quote": "If there is mate with a Pawn drop, there is a legal mate too. ---Shogi proverb",
+      "symbol": "\\Pawn"
+    },
+    {
+      "caption": "THE ANTS GO MARCHING",
+      "description": "If a non-pawn action was taken, you must move a pawn one square forward if possible.",
+      "quote": "We are not as strong as we think we are. ---Rich Mullins",
+      "origin": "C",
+      "genre": "-",
+      "symbol": "\\Pawn"
+    },
+    {
+      "caption": "CHAIN REACTION",
+      "description": "If a pawn capture is made, another action may be taken with a piece that has not moved yet this turn.",
+      "quote": "We never know which of us will start the chain reaction. But one of us will. ---Colin Beavan",
+      "origin": "C",
+      "genre": "+",
+      "symbol": "\\Pawn"
+    },
+    {
+      "caption": "STRAIGHT FROM THE HORSE'S MOUTH",
+      "description": "\\small After an action, knights may be reoriented to face any of the eight adjacent squares, initially facing forward. Knights may capture pieces on the faced square without moving.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny A team of horses cannot overtake a word that has left the mouth. ---Wu Cheng'en",
+      "symbol": "\\Knight"
+    },
+    {
+      "caption": "MAXIMUM EFFORT",
+      "description": "Pieces must act as far as legally possible.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "Your crazy matches my crazy. Big time. ---Deadpool",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "FAST PAWNS",
+      "description": "Pawns capture normally, but may move any number of squares forward. Draw another card.",
       "origin": "I",
+      "genre": "+",
+      "quote": " In ceremonies of the horsemen, even the pawn must hold a grudge. ---Bob Dylan",
+      "symbol": "\\Pawn+"
+    },
+    {
+      "caption": "LEND ME YOUR HORSE",
+      "description": "Non-pawn pieces protected by a knight may also move/take like a knight.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\"You should know better than to mount another's war-horse\", I said with a smirk. ---Jessica Leake",
+      "symbol": "\\Knight"
+    },
+    {
+      "caption": "BEROLINA PAWNS",
+      "description": "Pawns move diagonally and take forward.",
+      "origin": "I",
+      "genre": "\\diff",
+      "quote": "Berolina is the female personification of Berlin and the allegorical female figure symbolizing the city. ---Wikipedia",
+      "symbol": "\\Pawn"
+    },
+    {
+      "caption": "MOVE TWICE",
+      "description": "Move two different pieces, or any take other action once.",
+      "origin": "I",
+      "genre": "+",
+      "quote": "When someone says you can't do something, do it twice and take pictures. ---Anonymous",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "TAKE TWICE",
+      "description": "Take with two different pieces, or take any other action once.",
+      "quote": "As long as I breathe, I attack. ---Bernaud Hinault",
+      "origin": "C",
+      "genre": "+",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "BRIBE",
+      "description": "On your turn you can do an action by an enemy pawn instead.",
+      "quote": "Never underestimate the effectiveness of a straight cash bribe. ---Claud Cockburn",
+      "origin": "C",
+      "genre": "+",
+      "symbol": "\\Pawn+"
+    },
+    {
+      "caption": "CHECKERS",
+      "description": "Pawns move and take like checkers.",
+      "quote": "These guys are playing checkers. I'm out here playing chess. When they figure it out, it's too late. ---Max Holloway",
+      "genre": "\\diff",
+      "origin": "C",
+      "symbol": "\\Pawn"
+    },
+    {
+      "caption": "PARACHUTE",
+      "description": "You may pick up a friendly piece as a move.",
+      "quote": "Another mode of accumulating power arises from lifting a weight and then allowing it to fall. ---Charles Babbage",
+      "origin": "I",
+      "genre": "+",
+      "symbol": "\\All+"
+    },
+    {
+      "caption": "KING CHAMELEON",
+      "description": "Kings may also move/take like any piece attacking them.",
+      "origin": "I",
+      "genre": "+",
+      "quote": "I can kind of be a chameleon. ---Sasha Spielberg",
+      "symbol": "\\King"
+    },
+    {
+      "caption": "PRECOCIOUS PAWNS",
+      "description": "Pawns start advanced one rank. Draw another card.",
+      "origin": "I",
+      "genre": "-",
+      "quote": "Precocious was not the same as smart, much less the same as wise, and the perfect opposite of informed. ---Lionel Shriver",
+      "symbol": "\\Pawn+"
+    },
+    {
+      "caption": "CHINESE CHECKERS",
+      "description": "Pawns take normally, but move like Chinese checkers.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "\\tiny The Pentagon banned the army from using Chinese-made berets. In a more veiled slap at the Chinese, the Pentagon also banned any alternative form of checkers. ---Jimmy Fallon",
+      "symbol": "\\Pawn"
+    },
+    {
+      "caption": "SIEGE TOWER",
+      "description": "\\small A piece may move legally to where there is a rook. It goes on top making a combined piece. The combination acts as the bottom rook. The piece on top can move off as a normal action. Stacks are ok. Multi-color is ok.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "A siege is an act of war. ---Noam Chomsky",
+      "symbol": "\\Rook"
+    },
+    {
+      "caption": "CONJOINED TWINS",
+      "description": "\\small Pieces may move to another friendly piece to form a single, conjoined piece. Conjoined pieces cannot be separated or conjoined futher.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny There are two things in life for which we are never truly prepared: twins. ---Josh Billings",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "NIGHT KING QUEEN",
+      "description": "Queens move and take like Knight+King.",
+      "description": "\\Sym\\Queen\\Move: (\\Knight+\\King)\\Move\\newline\\Sym\\Queen\\Attack: (\\Knight+\\King)\\Attack", 
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Night's King was only a man by light of day, Old Nan would always say, but the night was his to rule. ---Brandon Stark",
+      "symbol": "\\Queen"
+    },
+    {
+      "caption": "BIAS",
+      "description": "You may only drop pieces on your color.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "If you spend too much time thinking about a thing, you'll never get it done.",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "SHOGI PAWNS",
+      "description": "Pawns take one square forward and may not move two squares initially. Drop only in file without friendly pawns.",
+      "origin": "S",
+      "genre": "-",
+      "quote": "If there is mate with a Pawn drop, there is a legal mate too. ---Shogi proverb",
+      "symbol": "\\Pawn+"
+    },
+    {
+      "caption": "NO CLONING THEOREM",
+      "description": "If your opponent just moved a bishop, rook or queen, you may not act with a piece of the same type.",
+      "description": "You cannot act with a \\NoPawn\\NoKnight\\ piece your opponent just used.",
+      "origin": "C",
+      "genre":"-",
+      "quote": "There should be a list of people who can and cannot clone themselves. ---Ted Danson",
+      "symbol": "\\NoPawn\\NoKnight"
+    },
+    {
+      "caption": "GENTLEMEN'S AGREEMENT",
+      "description": "You may not drop for check.",
+      "origin": "C",
+      "genre":"-",
+      "quote": "A gentleman is simply a patient wolf. ---Lana Turner",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "IT FOLLOWS",
+      "description": "After moving a non-pawn piece, the closest $L_1$ norm pawn to the opponent's king moves one space forward.",
+      "quote": "\\tiny Love make us poets, and the approach of death should make us philosophers.---George Santayana",
+      "origin": "C",
+      "genre":"\\diff",
+      "symbol": "\\Pawn\\King"
+    },
+    {
+      "caption": "CROWNED",
+      "description": "\\Sym\\KI$\\Move^+$: \\King\\Move\\newline\\Sym\\KI$\\Attack^+$: \\King\\Attack",
+      "origin": "C",
       "genre":"+",
       "quote": "In the land of the blind the one-eyed man is king. ---Efren Ramirez",
-      "symbol": "\\Bishop"
+      "symbol": "\\KI"
     },
     {
       "caption": "NIGHT WIZARD",
@@ -19,27 +350,19 @@
     },
     {
       "caption": "CROWNED LONG LEAPER",
-      "description": "\\Sym\\Bishop$\\Move$: \\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\Jump\\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\King\\Attack",
+      "description": "\\Sym\\KI$\\Move$: \\Queen\\Move\\newline\\Sym\\KI$\\Attack$: \\Jump\\Queen\\Move\\newline\\Sym\\KI$\\Attack$: \\King\\Attack",
       "origin": "C",
       "genre":"\\diff",
       "quote": "Jump! ---Van Halen",
-      "symbol": "\\Bishop"
+      "symbol": "\\KI"
     },
     {
       "caption": "CROWNED RETREATER",
-      "description": "\\Sym\\Bishop$\\Move$: \\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\Back\\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\King\\Attack",
+      "description": "\\Sym\\KI$\\Move$: \\Queen\\Move\\newline\\Sym\\KI$\\Attack$: \\Back\\Queen\\Move\\newline\\Sym\\KI$\\Attack$: \\King\\Attack",
       "origin": "C",
       "genre":"\\diff",
       "quote": "He who fights and runs away, lives to fight another day. ---Proverb",
-      "symbol": "\\Bishop"
-    },
-    {
-      "caption": "BISHOP-KNIGHT SWAP",
-      "description": "\\Sym\\Knight\\Attack: \\Bishop\\Attack\\newline\\Bishop\\Attack: \\Knight\\Attack", 
-      "quote": "It's time to bait a trap. ---Katie Reus",
-      "origin": "C",
-      "genre":"\\diff",
-      "symbol": "\\Knight\\Bishop"
+      "symbol": "\\KI"
     },
     {
       "caption": "REARGUARD",
@@ -83,15 +406,6 @@
       "symbol": "\\Rook"
     },
     {
-      "caption": "WEAPON SWAP",
-      "description": "\\Sym\\KII$\\Move^+\\Attack^+$: \\PM[0,1]",
-      "description": "\\KI\\ and \\KII\\ move normally but take like each other.",
-      "origin": "C",
-      "genre": "\\diff",
-      "quote": "The human race has one really effective weapon, and that is laughter. ---Mark Twain",
-      "symbol": "\\KI\\KII"
-    },
-    {
       "caption": "MOAT",
       "description": "Pieces ending their turn on central water squares die. Pieces may move over water.",
       "origin": "C",
@@ -125,7 +439,7 @@
     },
     {
       "caption": "SACRIFICE",
-      "description": "You may take your own pieces. Draw another card.",
+      "description": "You may take your own pieces.",
       "quote": "You can't achieve anything in life without a small amount of sacrifice. ---Shakira",
       "origin": "C",
       "genre": "+",
@@ -205,26 +519,19 @@
     },
     {
       "caption": "SITH v2",
-      "description": "If one \\Rook\\ is captured, the other is as well. Drop both on the same turn.",
+      "description": "If one {\\Sym\\KI}\\ is captured, the other is as well. Drop both on the same turn.",
       "origin": "C",
       "genre":"\\diff",
       "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
-      "symbol": "\\Bishop"
+      "symbol": "\\KI"
     },
     {
       "caption": "AGENT SMITH",
-      "description": "Your may switch positions between a {\\Sym\\KMI} and any friendly {\\Sym\\NoKing}\\ piece.",
+      "description": "Your may switch positions between a {\\KI} and any friendly {\\NoKing}\\ piece.",
       "origin": "C",
       "genre": "+",
       "quote": "Me, me, me. ---Agent Smith",
-      "symbol": "\\KMI"
-    },
-    {
-      "caption": "FAIR UNFAIR",
-      "description": "Reveal cards until two matching type cards are found {\\Sym(+,-,\\diff)}. The first applies to white, the second applies to black.",
-      "origin": "C",
-      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
-      "symbol": "\u262f"
+      "symbol": "\\KI"
     },
     {
       "caption": "BOUNCE",
@@ -244,11 +551,11 @@
     },
     {
       "caption": "TWO FACED",
-      "description": "Rooks may invert after an action. Inverted rooks act like \\KII.",
+      "description": "Rooks may invert after an action. Inverted rooks act like \\KI.",
       "origin": "C",
       "genre": "+",
       "quote": "God has given you one face, and you make yourself another. ---William Shakespeare",
-      "symbol": "{\\Rook}\\KII"
+      "symbol": "{\\Rook}\\KI"
     },
     {
       "caption": "CROWDSURF",
@@ -352,13 +659,6 @@
       "symbol": "\\KII"
     },
     {
-      "caption": "META RULES 2",
-      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\\item Action=Move, Attack or Drop\\item Retreat=Move away from an adjacent piece and capture\\item You may not make a move that undoes a move made by the opponent.\\end{enumerate}\n",
-      "origin": "C",
-      "quote": "",
-      "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
-    },
-    {
       "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
       "caption": "BISHOP CHAMPION",
       "description": "Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.",
@@ -414,251 +714,13 @@
       "symbol": "\\ding{72}"
     },
     {
-      "caption": "TRADING PLACES",
-      "description": "You may swap the locations of a friendly knight and bishop for your turn.", 
-      "origin": "C",
-      "genre": "+",
-      "quote": "You'll all be very, very sorry. ---Louis Winthorpe",
-      "symbol": "\\Knight\\Bishop"
-    },
-    {
-      "caption": "CHINESE SHOGI PAWNS",
-      "description": "Pawns take one square forward and move like Chinese checkers. Drop only in file without friendly pawns.",
-      "origin": "S",
-      "genre": "X",
-      "quote": "If there is mate with a Pawn drop, there is a legal mate too. ---Shogi proverb",
-      "symbol": "\\Pawn"
-    },
-    {
       "caption": "RETREATER",
-      "description": "Bishops move like a queen, but take by moving away from an adjacent piece.",
-      "description": "\\Sym\\Bishop$\\Move$: \\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\Back\\Queen\\Move",
-      "origin": "U",
-      "genre": "X",
+      "description": "\\Sym\\KI$\\Move$: \\Queen\\Move\\newline\\Sym\\KI$\\Attack$: \\Back\\Queen\\Move",
+      "description": "\\KI\\ moves like a \\Queen, but takes by moving away from an adjacent piece.",
+      "origin": "C",
+      "genre": "\\diff",
       "quote": "He who fights and runs away, lives to fight another day. ---Proverb",
-      "symbol": "\\Bishop"
-    },
-    {
-      "caption": "BISHOP LONG LEAPER",
-      "description": "Bishops move like a queen, but take by leaping over a piece.",
-      "description": "\\Sym\\Bishop$\\Move$: \\Queen\\Move\\newline\\Sym\\Bishop$\\Attack$: \\Jump\\Queen\\Move",
-      "origin": "U",
-      "quote": "That's one small step for a man, one giant leap for mankind. ---Neil Armstrong",
-      "symbol": "\\Bishop"
-    },
-    {
-      "caption": "IT FOLLOWS",
-      "description": "After moving a non-pawn piece, the closest $L_1$ norm pawn to the opponent's king moves one space forward.",
-      "quote": "Love make us poets, and the approach of death should make us philosophers.---George Santayana",
-      "origin": "C",
-      "symbol": "\u2659\u2654"
-    },
-    {
-      "caption": "SHOGI PAWNS",
-      "description": "Pawns take one square forward and may not move two squares initially. Drop only in file without friendly pawns.",
-      "origin": "S",
-      "quote": "If there is mate with a Pawn drop, there is a legal mate too. ---Shogi proverb",
-      "symbol": "\u2659+"
-    },
-    {
-      "caption": "NIGHT KING QUEEN",
-      "description": "Queens move and take like Knight+King.",
-      "description": "\\Sym\\Queen\\Move: (\\Knight+\\King)\\Move\\newline\\Sym\\Queen\\Attack: (\\Knight+\\King)\\Attack", 
-      "quote": "Night's King was only a man by light of day, Old Nan would always say, but the night was his to rule. ---Brandon Stark",
-      "symbol": "\u2655"
-    },
-    {
-      "caption": "CROWNED CASTLE",
-      "description": "\\Sym\\Rook$\\Move^+$: \\King\\Move\\newline\\Sym\\Rook$\\Attack^+$: \\King\\Attack",
-      "origin": "I",
-      "quote": "In the land of the skunks, he who has half a nose is king. ---Chris Farley",
-      "symbol": "\u2656"
-    },
-    {
-      "caption": "GENTLEMEN'S AGREEMENT",
-      "description": "You may not drop for check.",
-      "origin": "C",
-      "quote": "A gentleman is simply a patient wolf. ---Lana Turner",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "BIAS",
-      "description": "You may only drop pieces on your color.",
-      "origin": "C",
-      "quote": "If you spend too much time thinking about a thing, you'll never get it done.",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "PRISON BREAK",
-      "description": "\\small All knights start off the board in jail. If a bishop moves/attacks, ending on the last rank, knights of the same color are now available to be dropped by the owner.",
-      "quote": "\\tiny Preparation can only take you so far. After that, you have to take a few leaps of faith. ---Michael Scofield",
-      "origin": "C",
-      "symbol": "\u2658\u2657"
-    },
-    {
-      "caption": "UNFAIR",
-      "description": "Deal a card. It only applies to white. Deal a second card. It only applies to black. Deal with it.",
-      "origin": "C",
-      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "UNFAIR",
-      "description": "Deal a card. It only applies to white. Deal a second card. It only applies to black. Deal with it.",
-      "origin": "C",
-      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "BRIBE",
-      "description": "On your turn you can do an action by an enemy pawn instead.",
-      "quote": "Never underestimate the effectiveness of a straight cash bribe. ---Claud Cockburn",
-      "origin": "C",
-      "symbol": "\u2659+"
-    },
-    {
-      "caption": "NO CLONING THEOREM",
-      "description": "You cannot act with a non-pawn, non-king, non-knight piece your opponent just used.",
-      "description": "If your opponent just moved a bishop, rook or queen, you may not act with a piece of the same type.",
-      "origin": "C",
-      "quote": "There should be a list of people who can and cannot clone themselves. ---Ted Danson",
-      "symbol": "\\fontsize{60pt}{45pt}\\selectfont\u2655\u2656\u2657"
-    },
-    {
-      "caption": "THE ANTS GO MARCHING",
-      "description": "If a non-pawn action was taken, you must move a pawn one square forward if possible.",
-      "quote": "We are not as strong as we think we are. ---Rich Mullins",
-      "origin": "C",
-      "symbol": "\u2659"
-    },
-    {
-      "caption": "UNFAIR",
-      "description": "Deal a card. It only applies to white. Deal a second card. It only applies to black. Deal with it.",
-      "origin": "C",
-      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "META RULES",
-      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item A piece may take at most one action per turn.\n\\item A piece acting like a pawn may always use en passant to capture another piece acting like a pawn.\n\\item A king may only castle when moving as a canonical king.\n\\item Non-king pieces may never castle.\n\\item Only the first + is applied.\n\\item Properties gained on a board are lost when a piece is removed from the board.\n\\PM[x,y] means all 8 possible variations of changing signs and position.\\end{enumerate}\n",
-      "origin": "C",
-      "quote": "",
-      "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
-    },
-    {
-      "caption": "CHAIN REACTION",
-      "description": "If a pawn capture is made, another action may be taken with a piece that has not moved yet this turn.",
-      "quote": "We never know which of us will start the chain reaction. But one of us will. ---Colin Beavan",
-      "origin": "C",
-      "symbol": "\u2659"
-    },
-    {
-      "caption": "STRAIGHT FROM THE HORSE'S MOUTH",
-      "description": "\\small After an action, knights may be reoriented to face any of the eight adjacent squares, initially facing forward. Knights may capture pieces on the faced square without moving.",
-      "origin": "C",
-      "quote": "\\tiny A team of horses cannot overtake a word that has left the mouth. ---Wu Cheng'en",
-      "symbol": "\u2658"
-    },
-    {
-      "caption": "ROYAL REVERSE",
-      "description": "Bishops and Rooks may move and take backwards like an Orthodox Queen.",
-      "origin": "C",
-      "quote": "To the royal guards of this realm, we are all victims in-waiting. ---Cheshire Cat",
-      "symbol": "\u2656\u2657"
-    },
-    {
-      "caption": "CONJOINED TWINS",
-      "description": "\\small Pieces may move to another friendly piece to form a single, conjoined piece. Conjoined pieces cannot be separated or conjoined futher.",
-      "origin": "C",
-      "quote": "\\tiny There are two things in life for which we are never truly prepared: twins. ---Josh Billings",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "CHINESE CHECKERS",
-      "description": "Pawns take normally, but move like Chinese checkers.",
-      "origin": "C",
-      "quote": "\\tiny The Pentagon banned the army from using Chinese-made berets. In a more veiled slap at the Chinese, the Pentagon also banned any alternative form of checkers. ---Jimmy Fallon",
-      "symbol": "\u2659"
-    },
-    {
-      "caption": "MAXIMUM EFFORT",
-      "description": "Pieces must act as far as legally possible.",
-      "origin": "C",
-      "quote": "Your crazy matches my crazy. Big time. ---Deadpool",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "PARACHUTE",
-      "description": "You may pick up a friendly piece as a move.",
-      "quote": "Another mode of accumulating power arises from lifting a weight and then allowing it to fall. ---Charles Babbage",
-      "symbol": "\\ding{72}+"
-    },
-    {
-      "caption": "SIEGE TOWER",
-      "description": "\\small A piece may move legally to where there is a rook. It goes on top making a combined piece. The combination acts as the bottom rook. The piece on top can move off as a normal action. Stacks are ok. Multi-color is ok.",
-      "quote": "A siege is an act of war. ---Noam Chomsky",
-      "symbol": "\u2656"
-    },
-    {
-      "caption": "FAR MIMIC",
-      "description": "Kings act only as any friendly piece which can move to it. No castling.",
-      "quote": "I've been imitated so well I've heard people copy my mistakes. ---Jimi Hendrix",
-      "origin": "C",
-      "symbol": "\u2654"
-    },
-    {
-      "caption": "PRECOCIOUS PAWNS",
-      "description": "Pawns start advanced one rank. Draw another card.",
-      "origin": "I",
-      "quote": "Precocious was not the same as smart, much less the same as wise, and the perfect opposite of informed. ---Lionel Shriver",
-      "symbol": "\u2659+"
-    },
-    {
-      "caption": "CHECKERS",
-      "description": "Pawns move and take like checkers.",
-      "quote": "These guys are playing checkers. I'm out here playing chess. When they figure it out, it's too late. ---Max Holloway",
-      "symbol": "\u2659",
-      "origin": "C"
-    },
-    {
-      "caption": "MOVE TWICE",
-      "description": "Move two different pieces, or any take other action once.",
-      "origin": "I",
-      "quote": "When someone says you can't do something, do it twice and take pictures. ---Anonymous",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "TAKE TWICE",
-      "description": "Take with two different pieces, or take any other action once.",
-      "quote": "As long as I breathe, I attack. ---Bernaud Hinault",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "LEND ME YOUR HORSE",
-      "description": "Non-pawn pieces protected by a knight may also move/take like a knight.",
-      "origin": "C",
-      "quote": "\"You should know better than to mount another's war-horse\", I said with a smirk. ---Jessica Leake",
-      "symbol": "\u2658"
-    },
-    {
-      "caption": "JEDI KNIGHT",
-      "description": "If you only have one knight on the board, it can also move and take like a Queen.",
-      "quote": "If you strike me down, I shall become more powerful than you can possibly imagine. ---Obi-Wan Kenobi",
-      "origin": "C",
-      "symbol": "\u2658"
-    },
-    {
-      "caption": "BEROLINA PAWNS",
-      "description": "Pawns move diagonally and take forward.",
-      "origin": "I",
-      "quote": "Berolina is the female personification of Berlin and the allegorical female figure symbolizing the city. ---Wikipedia",
-      "symbol": "\u2659"
-    },
-    {
-      "caption": "FAST PAWNS",
-      "description": "Pawns capture normally, but may move any number of squares forward. Draw another card.",
-      "quote": " In ceremonies of the horsemen, even the pawn must hold a grudge. ---Bob Dylan",
-      "symbol": "\u2659+"
+      "symbol": "\\KI"
     },
     {
       "caption": "TALLADEGA KNIGHTS",
@@ -672,6 +734,7 @@
       "caption": "TOUCHDOWN",
       "description": "If your king is on the last rank at the end of your turn, you win.",
       "quote": "It's one of those things: I would 100 percent pancake a guy and steal his soul over scoring a touchdown. ---George Kittle",
+      "origin": "I",
       "genre": "+",
       "symbol": "\\King+"
     },
@@ -708,43 +771,12 @@
       "symbol": "\\ding{72}"
     },
     {
-      "caption": "COMPLICATE",
-      "description": "Deal two more cards.",
-      "origin": "C",
-      "genre": "\\diff",
-      "quote": "When all else fails, complicate matters. ---Aaron Allston",
-      "symbol": "++"
-    },
-    {
-      "caption": "COMPLICATE",
-      "description": "Deal two more cards.",
-      "origin": "C",
-      "quote": "Progress is man's ability to complicate simplicity. ---Thor Heyerdahl",
-      "symbol": "++"
-    },
-    {
-      "caption": "CHAOS",
-      "description": "Deal three more cards.",
-      "origin": "C",
-      "genre": "\\diff",
-      "quote": "Life is nothing without a little chaos to make it interesting. ---Amelia Atwater-Rhodes",
-      "symbol": "+++"
-    },
-    {
       "caption": "EXTINCTION",
       "description": "You lose if you lose all of any piece.",
       "origin": "I",
       "genre": "+",
       "quote": "Extinction is the rule. Survival is the exception. ---Carl Sagan",
       "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "MINOR TENET",
-      "description": "Bishops move and take backwards like Knights. Knights move and take backward like Bishops.",
-      "origin": "C",
-      "genre": "\\diff",
-      "quote": "Bold I'm Fine With. I Thought You Were Gonna Say Nuts. ---Mahir",
-      "symbol": "\\Knight\\Bishop"
     },
     {
       "caption": "ARCHBISHOP",
@@ -763,43 +795,18 @@
       "symbol": "\\Queen"
     },
     {
-      "caption": "ROOK-QUEEN SWAP",
-      "description": "Queens and Rooks move normally, but take like each other.",
-      "genre": "\\diff",
-      "origin": "I",
-      "quote": "I am definitely the queen. I definitely see myself as the queen. ---Lil' Kim",
-      "symbol": "\\Rook\\Queen"
-    },
-    {
-      "caption": "KNIGHT-KING SWAP",
-      "description": "Knights and Kings move/take like each other.",
-      "origin": "I",
-      "quote": "If I was King for just one day, I would give it all away. --Thompson Twins",
-      "symbol": "\\Knight\\King"
-    },
-    {
-      "caption": "KING CHAMELEON",
-      "description": "Kings may also move/take like any piece attacking them.",
-      "origin": "I",
-      "quote": "I can kind of be a chameleon. ---Sasha Spielberg",
-      "symbol": "\\King"
-    },
-    {
-      "bottomcaption": "Q m,x N+K",
-      "caption": "SUMMONER",
-      "description": "Bishops may summon a friendly non-King piece to an adjacent square",
-      "quote": "My name is Mortimer Alexander and I am a licensed summoner.\" \"Darn. I'd hoped you were the pizza delivery guy. ---Jana Oliver",
+      "caption": "META RULES",
+      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item A piece may take at most one action per turn.\n\\item A piece acting like a pawn may always use en passant to capture another piece acting like a pawn.\n\\item A king may only castle when moving as a canonical king.\n\\item Non-king pieces may never castle.\n\\item Only the first + is applied.\n\\item Properties gained on a board are lost when a piece is removed from the board.\n\\PM[x,y] means all 8 possible variations of changing signs and position.\\end{enumerate}\n",
       "origin": "C",
-      "genre": "+",
-      "symbol": "\\Bishop"
+      "quote": "",
+      "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
     },
     {
-      "caption": "CLERICAL CLONES",
-      "description": "Bishops may move/take like the last piece the opponent moved.",
+      "caption": "META RULES 2",
+      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\\item Action=Move, Attack or Drop\\item Retreat=Move away from an adjacent piece and capture\\item You may not make a move that undoes a move made by the opponent.\\end{enumerate}\n",
       "origin": "C",
-      "genre": "+",
-      "quote": "I'm starting to see players copy what I do. I'm flattered. ---Dennis Rodman",
-      "symbol": "\\Bishop"
+      "quote": "",
+      "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
     }
   ],
   "graphic_cards":[
