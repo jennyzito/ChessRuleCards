@@ -1,6 +1,110 @@
 { "text_cards":
   [
     {
+      "caption": "PENALTY BOX",
+      "description": "If an enemy \\NoKing\\ piece captured last turn, you may move it to any empty square.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "I believe that people would be alive today if there were a death penalty. ---Nancy Reagan",
+      "symbol": "\\NoKing"
+    },
+    {
+      "caption": "UNION",
+      "description": "Reveal cards until two cards with a \\KI\\ are found. Use the union of the card rules applied in either order.",
+      "origin": "C",
+      "genre": "$\\varnothing$",
+      "quote": "\\tiny Anything irreversible should be granted the \"everything\" of our attention. ---Craig D. Lounsbough",
+      "symbol": "\\inlinegraphics{union}TODO",
+      "symbol": "\\inlinegraphics{arrows}"
+    },
+    {
+      "caption": "REVERSE RIFLE",
+      "description": "Backward attacks by \\KI\\ act like a rifle.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Aim high. You may still miss the target, but at least you won't shoot your foot off. ---Lois McMaster Bujold",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "KNIGHT SWAP",
+      "description": "Two friendly \\NoKing\\ pieces which are a knight move apart may swap places.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Don't swap horses in crossing a stream. --Abraham Lincoln",
+      "symbol": "\\NoKing"
+    },
+    {
+      "caption": "TELEPORTER",
+      "description": "\\KI\\ may move to any open square adjacent to a friendly pawn.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "If I could teleport, I'd probably still be late. --Anonymous",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "COPYCAT",
+      "description": "{\\Sym\\KI} may move/take like the last piece the opponent moved.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "I'm starting to see players copy what I do. I'm flattered. ---Dennis Rodman",
+      "symbol": "\\KI"
+    },
+    {
+      "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
+      "caption": "CHAMPION",
+      "description": "Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.",
+      "description": "\\Sym\\KI\\Move\\Attack: \\PM[0,1], \\PM[2,2], \\PM[2,0]", 
+      "description": "",
+      "origin": "\u03a9",
+      "genre":"\\diff",
+      "quote": "Every absurdity has a champion to defend it. ---Oliver Goldsmith",
+      "graphic": "\\hspace{1cm}\\includegraphics{CHAMPION.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "COCHAMPION",
+      "description": "\\Sym\\KI\\Move\\Attack: \\PM[1,1], \\PM[2,2], \\PM[2,0]", 
+      "description": "",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Between two evils, I always pick the one I've never tried before. ---Mae West",
+      "graphic": "\\hspace{1cm}\\includegraphics{COCHAMPION.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "RUNAWAYS",
+      "description": "\\KI\\ may also take by retreating.\\newline\\KI$\\Attack^+$: \\Back\\KI\\Move",
+      "origin": "C",
+      "genre": "+",
+      "quote": "When danger reared it's ugly head, he bravely turned his tail and fled. ---Sir Robin's minstrel",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "HALF WIZARD",
+      "description": "\\Sym\\Knight\\Move: \u00B1[1,1],[1,3]\\newline \\Knight\\Attack: \\Same",
+      "origin": "\u03a9",
+      "genre":"\\diff",
+      "quote": "Do not meddle in the affairs of Wizards, for they are subtle and quick to anger. ---J. R. R. Tolkien",
+      "symbol": "\\Knight"
+    },
+    {
+      "caption": "MAGNETO",
+      "description": "\\KI\\ cannot attack, but may move any friendly piece from one square they can move to to another.\\newline\\KI\\Attack:$\\varnothing$",
+      "description": "\\KI\\ cannot attack, but may move any friendly piece from one square they can move to to another.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Mankind has always feared what it doesn't understand. ---Magneto",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "URGENCY",
+      "description": "You may only drop pieces you had at the start of your turn.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "\\tiny Patience is not simply the ability to wait - it's how we behave while we're waiting. ---Joyce Meyer",
+      "symbol": "\\ding{72}"
+    },
+    {
       "caption": "MINOR TENET",
       "description": "\\KI\\ and \\KII\\ move and take backwards like the other.",
       "origin": "C",
@@ -42,14 +146,6 @@
       "symbol": "\\KI"
     },
     {
-      "caption": "NONABELIAN",
-      "description": "Reveal cards until two non-commuting cards are found. Use those in the most interesting order.",
-      "origin": "C",
-      "genre": "$\\varnothing$",
-      "quote": "\\tiny Anything irreversible should be granted the \"everything\" of our attention. ---Craig D. Lounsbough",
-      "symbol": "\\inlinegraphics{arrows}"
-    },
-    {
       "caption": "CYLINDER \\KI",
       "description": "\\KI\\ may act as if it is on a left-right cylinder.",
       "origin": "C",
@@ -80,14 +176,6 @@
       "genre": "+",
       "quote": "You'll all be very, very sorry. ---Louis Winthorpe",
       "symbol": "\\KI\\KII"
-    },
-    {
-      "caption": "COPYCAT",
-      "description": "{\\Sym\\KII} may move/take like the last piece the opponent moved.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "I'm starting to see players copy what I do. I'm flattered. ---Dennis Rodman",
-      "symbol": "\\KII"
     },
     {
       "caption": "FAIR UNFAIR",
@@ -325,28 +413,12 @@
       "symbol": "\\All"
     },
     {
-      "caption": "IT FOLLOWS",
-      "description": "After moving a non-pawn piece, the closest $L_1$ norm pawn to the opponent's king moves one space forward.",
-      "quote": "\\tiny Love make us poets, and the approach of death should make us philosophers.---George Santayana",
-      "origin": "C",
-      "genre":"\\diff",
-      "symbol": "\\Pawn\\King"
-    },
-    {
       "caption": "CROWNED",
       "description": "\\Sym\\KI$\\Move^+$: \\King\\Move\\newline\\Sym\\KI$\\Attack^+$: \\King\\Attack",
       "origin": "C",
       "genre":"+",
       "quote": "In the land of the blind the one-eyed man is king. ---Efren Ramirez",
       "symbol": "\\KI"
-    },
-    {
-      "caption": "NIGHT WIZARD",
-      "description": "\\Sym\\Knight\\Move: \u00B1[1,1],[1,3]\\newline \\Knight\\Attack: \\Same",
-      "origin": "\u03a9",
-      "genre":"\\diff",
-      "quote": "Do not meddle in the affairs of Wizards, for they are subtle and quick to anger. ---J. R. R. Tolkien",
-      "symbol": "\\Knight"
     },
     {
       "caption": "CROWNED LONG LEAPER",
@@ -542,14 +614,6 @@
       "symbol": "\\Board"
     },
     {
-      "caption": "NO STALLING",
-      "description": "\\small Captured pieces are placed in a staging area. You may not drop a piece from the staging area if your partner has two or more pieces staged than than you.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "\\tiny Patience is not simply the ability to wait - it's how we behave while we're waiting. ---Joyce Meyer",
-      "symbol": "\\ding{72}"
-    },
-    {
       "caption": "TWO FACED",
       "description": "Rooks may invert after an action. Inverted rooks act like \\KI.",
       "origin": "C",
@@ -580,14 +644,6 @@
       "origin": "C",
       "quote": "\\tiny Would I swap what I have achieved as a cook if I could have been as successful as a footballer? Definitely. ---Gordon Ramsay",
       "symbol": "\\ding{72}",
-      "symbol": "\\NoKing"
-    },
-    {
-      "caption": "KNIGHT SWAP",
-      "description": "\\NoKing${\\Action}^+$: Two friendly \\NoKing\\ pieces which are a standard knight move apart may swap places.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "Don't swap horses in crossing a stream. --Abraham Lincoln",
       "symbol": "\\NoKing"
     },
     {
@@ -632,61 +688,6 @@
       "genre":"\\diff",
       "quote": "The thing worse than rebellion is the thing that causes rebellion. ---Frederick Douglass",
       "symbol": "\\Pawn"
-    },
-    {
-      "caption": "RUNAWAYS",
-      "description": "Bishops may also take by retreating.\\newline\\Bishop$\\Attack^+$: \\Back\\Bishop\\Move",
-      "origin": "C",
-      "genre": "+",
-      "quote": "When danger reared it's ugly head, he bravely turned his tail and fled. ---Sir Robin's minstrel",
-      "symbol": "\\Bishop"
-    },
-    {
-      "caption": "TELEPORTER",
-      "description": "\\KII\\ may move to any open square adjacent to a friendly pawn.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "If I could teleport, I'd probably still be late. --Anonymous",
-      "symbol": "\\KII"
-    },
-    {
-      "caption": "MAGNETO",
-      "description": "\\KII\\ cannot attack, but may move any friendly piece from one square they can move to to another.\\newline\\KII\\Attack:$\\varnothing$",
-      "description": "\\KII\\ cannot attack, but may move any friendly piece from one square they can move to to another.",
-      "origin": "C",
-      "genre":"\\diff",
-      "quote": "Mankind has always feared what it doesn't understand. ---Magneto",
-      "symbol": "\\KII"
-    },
-    {
-      "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
-      "caption": "BISHOP CHAMPION",
-      "description": "Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.",
-      "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[0,1], \\PM[2,2], \\PM[2,0]", 
-      "description": "",
-      "origin": "\u03a9",
-      "genre":"\\diff",
-      "quote": "Every absurdity has a champion to defend it. ---Oliver Goldsmith",
-      "graphic": "\\hspace{1cm}\\includegraphics{CHAMPION.pdf}",
-      "symbol": "\\Bishop"
-    },
-    {
-      "caption": "BISHOP COCHAMPION",
-      "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[1,1], \\PM[2,2], \\PM[2,0]", 
-      "description": "",
-      "origin": "C",
-      "genre":"\\diff",
-      "quote": "Between two evils, I always pick the one I've never tried before. ---Mae West",
-      "graphic": "\\hspace{1cm}\\includegraphics{COCHAMPION.pdf}",
-      "symbol": "\\Bishop"
-    },
-    {
-      "caption": "PENALTY BOX",
-      "description": "If an enemy piece captured last turn, you may move it to any empty square.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "I believe that people would be alive today if there were a death penalty. ---Nancy Reagan",
-      "symbol": "\\ding{72}"
     },
     {
       "caption": "MINOR X KNIGHT",

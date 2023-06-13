@@ -1,6 +1,44 @@
 { "text_cards":
   [
     {
+      "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
+      "caption": "BISHOP CHAMPION",
+      "description": "Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.",
+      "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[0,1], \\PM[2,2], \\PM[2,0]", 
+      "description": "",
+      "origin": "\u03a9",
+      "genre":"\\diff",
+      "quote": "Every absurdity has a champion to defend it. ---Oliver Goldsmith",
+      "graphic": "\\hspace{1cm}\\includegraphics{CHAMPION.pdf}",
+      "symbol": "\\Bishop"
+    },
+    {
+      "caption": "BISHOP COCHAMPION",
+      "description": "\\Sym\\Bishop\\Move\\Attack: \\PM[1,1], \\PM[2,2], \\PM[2,0]", 
+      "description": "",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Between two evils, I always pick the one I've never tried before. ---Mae West",
+      "graphic": "\\hspace{1cm}\\includegraphics{COCHAMPION.pdf}",
+      "symbol": "\\Bishop"
+    },
+    {
+      "caption": "IT FOLLOWS",
+      "description": "After moving a non-pawn piece, the closest $L_1$ norm pawn to the opponent's king moves one space forward.",
+      "quote": "\\tiny Love make us poets, and the approach of death should make us philosophers.---George Santayana",
+      "origin": "C",
+      "genre":"\\diff",
+      "symbol": "\\Pawn\\King"
+    },
+    {
+      "caption": "NO STALLING",
+      "description": "\\small Captured pieces are placed in a staging area. You may not drop a piece from the staging area if your partner has two or more pieces staged than than you.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny Patience is not simply the ability to wait - it's how we behave while we're waiting. ---Joyce Meyer",
+      "symbol": "\\ding{72}"
+    },
+    {
       "caption": "MINOR TENET",
       "description": "Bishops move and take backwards like Knights. Knights move and take backward like Bishops.",
       "origin": "C",
