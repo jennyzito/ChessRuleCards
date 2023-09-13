@@ -1,6 +1,14 @@
 { "text_cards":
   [
     {
+      "caption": "CAVALRY",
+      "description": "A knight can make two captures in one turn.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "It's hard to lead a cavalry charge if you think you look funny on a horse. ---Adlai Stevenson",
+      "symbol": "\\Knight"
+    },
+    {
       "bottomcaption": "B m,x [2,2],[1,0],[2,0]",
       "caption": "BISHOP CHAMPION",
       "description": "Bishops may move/take using a 2 square jump in any direction. They may also move/take one square rectilinearly.",

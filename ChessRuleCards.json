@@ -1,16 +1,94 @@
 { "text_cards":
   [
     {
+      "caption": "BACKGAMMON PAWNS",
+      "description": "You may do two pawn actions in a turn. Pawns may move to a square containing any number of friendly pawns. Pawns sharing a square cannot be captured.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny The only athletic sport I ever mastered was backgammon. --Douglas William Jerold",
+      "symbol": "\\Pawn"
+    },
+    {
+      "caption": "LONG LEAPER",
+      "description": "Bishops move like a queen, but take by leaping over a piece.",
+      "description": "\\Sym\\KI$\\Move$: \\Queen\\Move\\newline\\Sym\\KI$\\Attack$: \\Jump\\Queen\\Move",
+      "origin": "C",
+      "genre": "\\diff",
+      "quote": "That's one small step for a man, one giant leap for mankind. ---Neil Armstrong",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "SILVER GENERAL",
+      "description": "Shogi silver general.",
+      "origin": "I",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1.5cm}\\includegraphics{SilverGeneral.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "GOLD GENERAL",
+      "description": "Shogi gold general.",
+      "origin": "I",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1.5cm}\\includegraphics{GoldGeneral.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "MINOR X",
+      "description": "\\Sym\\KI$\\Move^+\\Attack^+$: \\PM[1,1]",
+      "origin": "I",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MINORX.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "MINOR +",
+      "description": "\\Sym\\KI$\\Move^+\\Attack^+$: \\PM[0,1]",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Graphic needed.",
+      "graphic": "\\hspace{1cm}\\includegraphics{MINORPLUS.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "JEDI ORDER",
+      "description": "If you only have one \\KI\\ on the board, it may also act like a \\Queen.",
+      "quote": "If you strike me down, I shall become more powerful than you can possibly imagine. ---Obi-Wan Kenobi",
+      "origin": "C",
+      "genre": "+",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "NO CLONING",
+      "description": "If your opponent just moved a bishop, rook or queen, you may not act with a piece of the same type.",
+      "description": "You cannot act with a \\NoPawn\\ your opponent just used. A piece cannot be denied on consecutive turns.",
+      "origin": "C",
+      "genre":"-",
+      "quote": "\\tiny There should be a list of people who can and cannot clone themselves. ---Ted Danson",
+      "symbol": "\\NoPawn"
+    },
+    {
+      "caption": "SITH v2",
+      "description": "If one {\\Sym\\KI}\\ is captured, the other is as well. Drop both on the same turn. No more than two sith can be on the board.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
+      "symbol": "\\KI"
+    },
+    {
       "caption": "PENALTY BOX",
       "description": "If an enemy \\NoKing\\ piece captured last turn, you may move it to any empty square.",
       "origin": "C",
       "genre": "+",
-      "quote": "I believe that people would be alive today if there were a death penalty. ---Nancy Reagan",
+      "quote": "\\tiny I believe that people would be alive today if there were a death penalty. ---Nancy Reagan",
       "symbol": "\\NoKing"
     },
     {
       "caption": "UNION",
-      "description": "Reveal cards until two cards with a \\KI\\ are found. Use the union of the card rules applied in either order.",
+      "description": "Reveal two \\KI. Use the union of the card rules applied in either order.",
       "origin": "C",
       "genre": "$\\varnothing$",
       "quote": "\\tiny Anything irreversible should be granted the \"everything\" of our attention. ---Craig D. Lounsbough",
@@ -162,14 +240,6 @@
       "symbol": "\\inlinegraphics{cylinder}"
     },
     {
-      "caption": "JEDI ORDER",
-      "description": "If you only have one \\KI\\ on the board, it can also move and take like a Queen.",
-      "quote": "If you strike me down, I shall become more powerful than you can possibly imagine. ---Obi-Wan Kenobi",
-      "origin": "C",
-      "genre": "+",
-      "symbol": "\\KI"
-    },
-    {
       "caption": "TRADING PLACES",
       "description": "You may swap the locations of a friendly \\KI\\ and \\KII\\ for your turn.", 
       "origin": "C",
@@ -216,15 +286,6 @@
       "genre": "$\\varnothing$",
       "quote": "When all else fails, complicate matters. ---Aaron Allston",
       "symbol": "++"
-    },
-    {
-      "caption": "LONG LEAPER",
-      "description": "Bishops move like a queen, but take by leaping over a piece.",
-      "description": "\\Sym\\KI$\\Move$: \\Queen\\Move\\newline\\Sym\\KII$\\Attack$: \\Jump\\Queen\\Move",
-      "origin": "C",
-      "genre": "\\diff",
-      "quote": "That's one small step for a man, one giant leap for mankind. ---Neil Armstrong",
-      "symbol": "\\KI"
     },
     {
       "caption": "CHINESE SHOGI PAWNS",
@@ -590,14 +651,6 @@
       "symbol": "\\Rook"
     },
     {
-      "caption": "SITH v2",
-      "description": "If one {\\Sym\\KI}\\ is captured, the other is as well. Drop both on the same turn.",
-      "origin": "C",
-      "genre":"\\diff",
-      "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
-      "symbol": "\\KI"
-    },
-    {
       "caption": "AGENT SMITH",
       "description": "Your may switch positions between a {\\KI} and any friendly {\\NoKing}\\ piece.",
       "origin": "C",
@@ -656,15 +709,6 @@
       "symbol": "\\KI"
     },
     {
-      "caption": "MINOR +",
-      "description": "\\Sym\\KII$\\Move^+\\Attack^+$: \\PM[0,1]",
-      "origin": "C",
-      "genre": "+",
-      "quote": "Graphic needed.",
-      "graphic": "\\hspace{1cm}\\includegraphics{MINORPLUS.pdf}",
-      "symbol": "\\KII"
-    },
-    {
       "caption": "MAJOR +",
       "description": "\\Sym\\KI$\\Move^+\\Attack^+$: \\PM[0,2]",
       "origin": "C",
@@ -688,23 +732,6 @@
       "genre":"\\diff",
       "quote": "The thing worse than rebellion is the thing that causes rebellion. ---Frederick Douglass",
       "symbol": "\\Pawn"
-    },
-    {
-      "caption": "MINOR X KNIGHT",
-      "description": "\\Sym\\Knight$\\Move^+\\Attack^+$: \\PM[1,1]",
-      "origin": "I",
-      "genre": "+",
-      "quote": "Graphic needed.",
-      "graphic": "\\hspace{1cm}\\includegraphics{MINORXKNIGHT.pdf}",
-      "symbol": "\\Knight"
-    },
-    {
-      "caption": "CAVALRY",
-      "description": "A knight can make two captures in one turn.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "It's hard to lead a cavalry charge if you think you look funny on a horse. ---Adlai Stevenson",
-      "symbol": "\\Knight"
     },
     {
       "caption": "DROP DELAY",
