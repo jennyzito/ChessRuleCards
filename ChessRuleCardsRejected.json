@@ -1,6 +1,14 @@
 { "text_cards":
   [
     {
+      "caption": "SITH v1",
+      "description": "As a pre-move, your opponent can have one \\Rook\\ attack the other.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
+      "symbol": "\\Rook"
+    },
+    {
       "caption": "CAVALRY",
       "description": "A knight can make two captures in one turn.",
       "origin": "C",

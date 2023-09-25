@@ -1,6 +1,39 @@
 { "text_cards":
   [
     {
+      "caption": "NO CLONING",
+      "description": "If your opponent just moved a bishop, rook or queen, you may not act with a piece of the same type.",
+      "description": "You cannot act with a \\NoPawn\\ your opponent just used. A piece cannot be denied on consecutive turns.",
+      "origin": "C",
+      "genre":"-",
+      "quote": "\\tiny There should be a list of people who can and cannot clone themselves. ---Ted Danson",
+      "symbol": "\\NoPawn"
+    },
+    {
+      "caption": "ASSASSIN",
+      "description": "\\KI\\ capture by moving past an adjacent piece orthogonal to the movement.",
+      "origin": "C",
+      "genre": "\\diff",
+      "quote": "Assassins and presidents invite the same basic question: Just who do you think you are? -- Sarah Vowell",
+      "symbol": "\\KI\\NoKnight"
+    },
+    {
+      "caption": "SITH",
+      "description": "If one {\\KI}\\ is captured, the other is as well. Drop both on the same turn. No more than two sith can be on the board.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
+      "symbol": "\\KI\\NoQueen"
+    },
+    {
+      "caption": "EXTINCTION",
+      "description": "You lose if you lose all of any piece.",
+      "origin": "I",
+      "genre": "-",
+      "quote": "Extinction is the rule. Survival is the exception. ---Carl Sagan",
+      "symbol": "\\ding{72}"
+    },
+    {
       "caption": "BACKGAMMON PAWNS",
       "description": "You may do two pawn actions in a turn. Pawns may move to a square containing any number of friendly pawns. Pawns sharing a square cannot be captured.",
       "origin": "C",
@@ -59,23 +92,6 @@
       "quote": "If you strike me down, I shall become more powerful than you can possibly imagine. ---Obi-Wan Kenobi",
       "origin": "C",
       "genre": "+",
-      "symbol": "\\KI"
-    },
-    {
-      "caption": "NO CLONING",
-      "description": "If your opponent just moved a bishop, rook or queen, you may not act with a piece of the same type.",
-      "description": "You cannot act with a \\NoPawn\\ your opponent just used. A piece cannot be denied on consecutive turns.",
-      "origin": "C",
-      "genre":"-",
-      "quote": "\\tiny There should be a list of people who can and cannot clone themselves. ---Ted Danson",
-      "symbol": "\\NoPawn"
-    },
-    {
-      "caption": "SITH v2",
-      "description": "If one {\\Sym\\KI}\\ is captured, the other is as well. Drop both on the same turn. No more than two sith can be on the board.",
-      "origin": "C",
-      "genre":"\\diff",
-      "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
       "symbol": "\\KI"
     },
     {
@@ -457,15 +473,6 @@
       "symbol": "\\Pawn+"
     },
     {
-      "caption": "NO CLONING THEOREM",
-      "description": "If your opponent just moved a bishop, rook or queen, you may not act with a piece of the same type.",
-      "description": "You cannot act with a \\NoPawn\\NoKnight\\ piece your opponent just used.",
-      "origin": "C",
-      "genre":"-",
-      "quote": "There should be a list of people who can and cannot clone themselves. ---Ted Danson",
-      "symbol": "\\NoPawn\\NoKnight"
-    },
-    {
       "caption": "GENTLEMEN'S AGREEMENT",
       "description": "You may not drop for check.",
       "origin": "C",
@@ -643,14 +650,6 @@
       "symbol": "\\inlinegraphics{falling}"
     },
     {
-      "caption": "SITH v1",
-      "description": "As a pre-move, your opponent can have one \\Rook\\ attack the other.",
-      "origin": "C",
-      "genre":"\\diff",
-      "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
-      "symbol": "\\Rook"
-    },
-    {
       "caption": "AGENT SMITH",
       "description": "Your may switch positions between a {\\KI} and any friendly {\\NoKing}\\ piece.",
       "origin": "C",
@@ -796,14 +795,6 @@
       "origin": "C",
       "genre": "+",
       "quote": "True friends stab you in the front. ---Oscar Wilde",
-      "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "EXTINCTION",
-      "description": "You lose if you lose all of any piece.",
-      "origin": "I",
-      "genre": "+",
-      "quote": "Extinction is the rule. Survival is the exception. ---Carl Sagan",
       "symbol": "\\ding{72}"
     },
     {
