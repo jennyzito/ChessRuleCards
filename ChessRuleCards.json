@@ -1,6 +1,70 @@
 { "text_cards":
   [
     {
+      "caption": "ASSASSIN",
+      "description": "\\KI\\ capture one piece by moving past an adjacent piece orthogonal to the movement.",
+      "origin": "C",
+      "genre": "\\diff",
+      "quote": "Assassins and presidents invite the same basic question: Just who do you think you are? -- Sarah Vowell",
+      "symbol": "\\KI\\NoKnight"
+    },
+    {
+      "caption": "ZEROED",
+      "description": "You may not drop a piece on your board unless there is a matching type on the board. Promoted pieces match.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "If your position is everywhere, your momentum is zero. --Michael Korda",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "DROP DELAY",
+      "description": "You may not use a piece dropped on the previous turn.",
+      "origin": "C",
+      "genre": "--",
+      "quote": "It’s easier to cool down a fanatic than to warm up a corpse. ---Michael L. Brown",
+      "symbol": "\\Drop"
+    },
+    {
+      "caption": "FORCE DROP",
+      "description": "You may drop one of your opponent pieces for your turn.",
+      "origin": "C",
+      "genre":"+",
+      "quote": "\\tiny Perhaps not willingly, but pain can make a man do things he wouldn't willingly do. ---Anne Bishop, Daughter of the Blood",
+      "symbol": "\\Drop"
+    },
+    {
+      "caption": "GENTLEMEN'S AGREEMENT",
+      "description": "You may not drop for check.",
+      "origin": "C",
+      "genre":"-",
+      "quote": "A gentleman is simply a patient wolf. ---Lana Turner",
+      "symbol": "\\Drop"
+    },
+    {
+      "caption": "BIAS",
+      "description": "You may only drop pieces on your color.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "If you spend too much time thinking about a thing, you'll never get it done.",
+      "symbol": "\\Drop"
+    },
+    {
+      "caption": "URGENCY",
+      "description": "You may only drop pieces you had at the start of your turn.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "\\tiny Patience is not simply the ability to wait - it's how we behave while we're waiting. ---Joyce Meyer",
+      "symbol": "\\Drop"
+    },
+    {
+      "caption": "BACKGAMMON PAWNS",
+      "description": "\\Pawn$+$: May do two \\Move/\\Attack. \\Pawn may move to a square with other friendly pawns. \\Pawn sharing a square cannot be captured.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny The only athletic sport I ever mastered was backgammon. --Douglas William Jerold",
+      "symbol": "\\Pawn"
+    },
+    {
       "caption": "NO CLONING",
       "description": "If your opponent just moved a bishop, rook or queen, you may not act with a piece of the same type.",
       "description": "You cannot act with a \\NoPawn\\ your opponent just used. A piece cannot be denied on consecutive turns.",
@@ -8,14 +72,6 @@
       "genre":"-",
       "quote": "\\tiny There should be a list of people who can and cannot clone themselves. ---Ted Danson",
       "symbol": "\\NoPawn"
-    },
-    {
-      "caption": "ASSASSIN",
-      "description": "\\KI\\ capture by moving past an adjacent piece orthogonal to the movement.",
-      "origin": "C",
-      "genre": "\\diff",
-      "quote": "Assassins and presidents invite the same basic question: Just who do you think you are? -- Sarah Vowell",
-      "symbol": "\\KI\\NoKnight"
     },
     {
       "caption": "SITH",
@@ -32,14 +88,6 @@
       "genre": "-",
       "quote": "Extinction is the rule. Survival is the exception. ---Carl Sagan",
       "symbol": "\\ding{72}"
-    },
-    {
-      "caption": "BACKGAMMON PAWNS",
-      "description": "You may do two pawn actions in a turn. Pawns may move to a square containing any number of friendly pawns. Pawns sharing a square cannot be captured.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "\\tiny The only athletic sport I ever mastered was backgammon. --Douglas William Jerold",
-      "symbol": "\\Pawn"
     },
     {
       "caption": "LONG LEAPER",
@@ -189,14 +237,6 @@
       "genre":"\\diff",
       "quote": "Mankind has always feared what it doesn't understand. ---Magneto",
       "symbol": "\\KI"
-    },
-    {
-      "caption": "URGENCY",
-      "description": "You may only drop pieces you had at the start of your turn.",
-      "origin": "C",
-      "genre": "-",
-      "quote": "\\tiny Patience is not simply the ability to wait - it's how we behave while we're waiting. ---Joyce Meyer",
-      "symbol": "\\ding{72}"
     },
     {
       "caption": "MINOR TENET",
@@ -457,28 +497,12 @@
       "symbol": "\\Queen"
     },
     {
-      "caption": "BIAS",
-      "description": "You may only drop pieces on your color.",
-      "origin": "C",
-      "genre": "-",
-      "quote": "If you spend too much time thinking about a thing, you'll never get it done.",
-      "symbol": "\\All"
-    },
-    {
       "caption": "SHOGI PAWNS",
       "description": "Pawns take one square forward and may not move two squares initially. Drop only in file without friendly pawns.",
       "origin": "S",
       "genre": "-",
       "quote": "If there is mate with a Pawn drop, there is a legal mate too. ---Shogi proverb",
       "symbol": "\\Pawn+"
-    },
-    {
-      "caption": "GENTLEMEN'S AGREEMENT",
-      "description": "You may not drop for check.",
-      "origin": "C",
-      "genre":"-",
-      "quote": "A gentleman is simply a patient wolf. ---Lana Turner",
-      "symbol": "\\All"
     },
     {
       "caption": "CROWNED",
@@ -642,14 +666,6 @@
       "symbol": "\\inlinegraphics{10x8}+"
     },
     {
-      "caption": "FORCE DROP",
-      "description": "You may drop one of your opponent pieces for your turn.",
-      "origin": "C",
-      "genre":"+",
-      "quote": "\\tiny Perhaps not willingly, but pain can make a man do things he wouldn't willingly do. ---Anne Bishop, Daughter of the Blood",
-      "symbol": "\\inlinegraphics{falling}"
-    },
-    {
       "caption": "AGENT SMITH",
       "description": "Your may switch positions between a {\\KI} and any friendly {\\NoKing}\\ piece.",
       "origin": "C",
@@ -731,14 +747,6 @@
       "genre":"\\diff",
       "quote": "The thing worse than rebellion is the thing that causes rebellion. ---Frederick Douglass",
       "symbol": "\\Pawn"
-    },
-    {
-      "caption": "DROP DELAY",
-      "description": "You may not use a piece dropped on the previous turn.",
-      "origin": "C",
-      "genre": "--",
-      "quote": "It’s easier to cool down a fanatic than to warm up a corpse. ---Michael L. Brown",
-      "symbol": "\\ding{72}"
     },
     {
       "caption": "RETREATER",
