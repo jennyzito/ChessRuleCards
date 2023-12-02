@@ -1,6 +1,38 @@
 { "text_cards":
   [
     {
+      "caption": "TWO FACED",
+      "description": "Rooks may invert after an action. Inverted rooks act like a \\KI.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "God has given you one face, and you make yourself another. ---William Shakespeare",
+      "symbol": "{\\Rook}\\KI"
+    },
+    {
+      "caption": "POSSESSION",
+      "description": "Non-pawn pieces protected by a {\\KI} may also move/take like a {\\KI}.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "An object in possession seldom retains the same charm that it had in pursuit. --Pliny the Elder",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "CANON CHINESE CANNON",
+      "description": "{\\KI} takes by leaping over any piece and landing on a piece in any direction of movement.",
+      "genre": "\\diff",
+      "origin": "I",
+      "quote": "I spend most of my life feeling like I've been shot out of a cannon. ---Molly Ivins",
+      "symbol": "\\KI\\NoKnight"
+    },
+    {
+      "caption": "DROP BEAR",
+      "description": "If you can legally drop a piece, you must do so.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "The primary prey of Drop Bears are unsuspecting tourists, often Welsh or German but usually US American or Japanese. -- Unknown",
+      "symbol": "\\Drop"
+    },
+    {
       "caption": "ASSASSIN",
       "description": "\\KI\\ capture one piece by moving past an adjacent piece orthogonal to the movement.",
       "origin": "C",
@@ -562,14 +594,6 @@
       "symbol": "\\Pawn"
     },
     {
-      "caption": "CANON CHINESE CANNON",
-      "description": "A rook takes by leaping over any piece and landing on a piece in a rook direction.",
-      "genre": "\\diff",
-      "origin": "I",
-      "quote": "I spend most of my life feeling like I've been shot out of a cannon. ---Molly Ivins",
-      "symbol": "\\Rook"
-    },
-    {
       "caption": "MOAT",
       "description": "Pieces ending their turn on central water squares die. Pieces may move over water.",
       "origin": "C",
@@ -680,14 +704,6 @@
       "genre": "+",
       "quote": "Success is how high you bounce when you hit bottom. ---George S. Patton",
       "symbol": "\\Board"
-    },
-    {
-      "caption": "TWO FACED",
-      "description": "Rooks may invert after an action. Inverted rooks act like \\KI.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "God has given you one face, and you make yourself another. ---William Shakespeare",
-      "symbol": "{\\Rook}\\KI"
     },
     {
       "caption": "CROWDSURF",
