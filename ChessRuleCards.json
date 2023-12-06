@@ -1,6 +1,31 @@
 { "text_cards":
   [
     {
+      "caption": "WILD ELEPHANT",
+      "description": "",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Between two evils, I always pick the one I've never tried before. ---Mae West",
+      "graphic": "\\hspace{1cm}\\includegraphics{WildElephant.pdf}",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "BESERKER",
+      "description": "{\\KI} must take if legal. If a {\\KI} takes, you may act with another piece.",
+      "origin": "C",
+      "genre": "\\diff",
+      "quote": "If you're always worried about crushing the ants beneath you... you won't be able to walk. ---Guts",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "BACKGAMMON PAWNS",
+      "description": "\\Pawn$+$: May do two {\\Move/\\Attack} with different pawns. \\Pawn may move to a square with other friendly pawns. \\Pawn sharing a square cannot be captured.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "\\tiny The only athletic sport I ever mastered was backgammon. --Douglas William Jerold",
+      "symbol": "\\Pawn"
+    },
+    {
       "caption": "TWO FACED",
       "description": "Rooks may invert after an action. Inverted rooks act like a \\KI.",
       "origin": "C",
@@ -87,14 +112,6 @@
       "genre": "-",
       "quote": "\\tiny Patience is not simply the ability to wait - it's how we behave while we're waiting. ---Joyce Meyer",
       "symbol": "\\Drop"
-    },
-    {
-      "caption": "BACKGAMMON PAWNS",
-      "description": "\\Pawn$+$: May do two \\Move/\\Attack. \\Pawn may move to a square with other friendly pawns. \\Pawn sharing a square cannot be captured.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "\\tiny The only athletic sport I ever mastered was backgammon. --Douglas William Jerold",
-      "symbol": "\\Pawn"
     },
     {
       "caption": "NO CLONING",
@@ -233,16 +250,6 @@
       "genre":"\\diff",
       "quote": "Every absurdity has a champion to defend it. ---Oliver Goldsmith",
       "graphic": "\\hspace{1cm}\\includegraphics{CHAMPION.pdf}",
-      "symbol": "\\KI"
-    },
-    {
-      "caption": "COCHAMPION",
-      "description": "\\Sym\\KI\\Move\\Attack: \\PM[1,1], \\PM[2,2], \\PM[2,0]", 
-      "description": "",
-      "origin": "C",
-      "genre":"\\diff",
-      "quote": "Between two evils, I always pick the one I've never tried before. ---Mae West",
-      "graphic": "\\hspace{1cm}\\includegraphics{COCHAMPION.pdf}",
       "symbol": "\\KI"
     },
     {
@@ -838,15 +845,15 @@
       "symbol": "\\Queen"
     },
     {
-      "caption": "META RULES",
-      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item A piece may take at most one action per turn.\n\\item A piece acting like a pawn may always use en passant to capture another piece acting like a pawn.\n\\item A king may only castle when moving as a canonical king.\n\\item Non-king pieces may never castle.\n\\item Only the first + is applied.\n\\item Properties gained on a board are lost when a piece is removed from the board.\n\\PM[x,y] means all 8 possible variations of changing signs and position.\\end{enumerate}\n",
+      "caption": "META RULES 2",
+      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\\item Action=Move, Attack or Drop\\item Retreat=Move away from an adjacent piece and capture\\item You may not make a move that undoes a move made by the opponent.\\item No piece may act twice in a turn.\\end{enumerate}\n",
       "origin": "C",
       "quote": "",
       "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
     },
     {
-      "caption": "META RULES 2",
-      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item 1=NBRQ, 2=BNRQ, -1=RNBQ.\\item Action=Move, Attack or Drop\\item Retreat=Move away from an adjacent piece and capture\\item You may not make a move that undoes a move made by the opponent.\\end{enumerate}\n",
+      "caption": "META RULES",
+      "description": "\\tiny\n\\begin{enumerate}[wide=0pt]\n\\item A piece may take at most one action per turn.\n\\item A piece acting like a pawn may always use en passant to capture another piece acting like a pawn.\n\\item A king may only castle when moving as a canonical king.\n\\item Non-king pieces may never castle.\n\\item Only the first + is applied.\n\\item Properties gained on a board are lost when a piece is removed from the board.\n\\PM[x,y] means all 8 possible variations of changing signs and position.\\end{enumerate}\n",
       "origin": "C",
       "quote": "",
       "symbol": "\\Huge\\ding{72}\\ding{72}\\ding{72}"
