@@ -1,6 +1,22 @@
 { "text_cards":
   [
     {
+      "caption": "TRON",
+      "description": "{\\KI} attacks by rectinlinearly moving $1+$ squares and then moving $1+$ squares orthogonally.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Did anyone see the movie Tron? No. No. No. No. Yes, I mean no. ---Simpsons",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "NOBLESSE OBLIGE",
+      "description": "{\\KI} cannot be attacked by pawns, but also may not take the attack the king.",
+      "origin": "C",
+      "genre":"\\diff",
+      "quote": "Oh, the English, and their STUPID sense of fair play! ---Chauvelin",
+      "symbol": "\\KI"
+    },
+    {
       "caption": "WILD ELEPHANT",
       "description": "",
       "origin": "C",
