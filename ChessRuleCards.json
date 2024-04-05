@@ -1,6 +1,62 @@
 { "text_cards":
   [
     {
+      "caption": "MAXIMUM EFFORT",
+      "description": "Choose to move or take. Pieces must then act as far as legally possible.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "Your crazy matches my crazy. Big time. ---Deadpool",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "MICRO-MANAGER",
+      "description": "Pieces more than one rank in front of the King may not attack.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "\\small I know it was yout idea, but it was my idea to use your idea. --Anonymous",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "ROCK, PAPER, SCISSORS",
+      "description": "Bishops can't take Knights which can't take Rooks which can't take Bishops.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "\\small Lisa: Poor predictable Bart. Always takes 'rock'. \\\\Bart: Good ol' rock. Nuthin' beats that! --The Simpsons",
+      "symbol": "\\fontsize{60pt}{40pt}\\selectfont \\Bishop\\Knight\\Rook"
+    },
+    {
+      "caption": "SUMO PAWNS",
+      "description": "\\Pawn\\Move: A \\Pawn\\ may push any number of \\NoPawn\\ pieces while moving.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "The world is moved along, not only by the mighty shoves of its heroes, but also by the aggregate of the tiny pushes of each honest worker. --Helen Keller",
+      "symbol": "\\Pawn"
+    },
+    {
+      "caption": "BERSERKER",
+      "description": "{\\KI} must take if legal. If a {\\KI} takes, you may act with another piece.",
+      "origin": "C",
+      "genre": "\\diff",
+      "quote": "If you're always worried about crushing the ants beneath you... you won't be able to walk. ---Guts",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "WAR AND PEACE",
+      "description": "You may take a move and attack action with different pieces.",
+      "origin": "C",
+      "genre":"+",
+      "quote": "Only the dead have seen the end of war. --Plato",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "FAMINE",
+      "description": "You may only drop a piece if you have another in supply.",
+      "origin": "C",
+      "genre":"-",
+      "quote": "\\tiny Near the gates and within two cities there will be scourges the like of which was never seen: famine within plague, people put out by steel, crying to the great immortal God for relief. ---Nostradamus",
+      "symbol": "\\Drop"
+    },
+    {
       "caption": "TRON",
       "description": "{\\KI} attacks by rectinlinearly moving $1+$ squares and then moving $1+$ squares orthogonally.",
       "origin": "C",
@@ -10,7 +66,7 @@
     },
     {
       "caption": "NOBLESSE OBLIGE",
-      "description": "{\\KI} cannot be attacked by pawns, but also may not take the attack the king.",
+      "description": "{\\KI} cannot be attacked by pawns, but also may not attack the king.",
       "origin": "C",
       "genre":"\\diff",
       "quote": "Oh, the English, and their STUPID sense of fair play! ---Chauvelin",
@@ -23,14 +79,6 @@
       "genre":"\\diff",
       "quote": "Between two evils, I always pick the one I've never tried before. ---Mae West",
       "graphic": "\\hspace{1cm}\\includegraphics{WildElephant.pdf}",
-      "symbol": "\\KI"
-    },
-    {
-      "caption": "BESERKER",
-      "description": "{\\KI} must take if legal. If a {\\KI} takes, you may act with another piece.",
-      "origin": "C",
-      "genre": "\\diff",
-      "quote": "If you're always worried about crushing the ants beneath you... you won't be able to walk. ---Guts",
       "symbol": "\\KI"
     },
     {
@@ -429,14 +477,6 @@
       "genre": "+",
       "quote": "\\tiny A team of horses cannot overtake a word that has left the mouth. ---Wu Cheng'en",
       "symbol": "\\Knight"
-    },
-    {
-      "caption": "MAXIMUM EFFORT",
-      "description": "Pieces must act as far as legally possible.",
-      "origin": "C",
-      "genre": "-",
-      "quote": "Your crazy matches my crazy. Big time. ---Deadpool",
-      "symbol": "\\All"
     },
     {
       "caption": "FAST PAWNS",
