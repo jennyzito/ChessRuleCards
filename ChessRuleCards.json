@@ -9,6 +9,14 @@
       "symbol": "\\KI"
     },
     {
+      "caption": "BULL RUSH",
+      "description": "\\King\\ may move forward any number of squares and wins if he reaches the last rank.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Don't take the bull by the horns, take him by the tail; then you can let go when you want to. ---Josh Billings",
+      "symbol": "\\inlinegraphics{bullrush}"
+    },
+    {
       "caption": "MAXIMUM EFFORT",
       "description": "Choose to move or take. Pieces must then act as far as legally possible.",
       "origin": "C",
