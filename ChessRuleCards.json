@@ -1,6 +1,143 @@
 { "text_cards":
   [
     {
+      "caption": "TWO FACED",
+      "description": "Rooks may invert after it acts. Inverted rooks act like a \\KI.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "God has given you one face, and you make yourself another. ---William Shakespeare",
+      "symbol": "{\\Rook}\\KI"
+    },
+    {
+      "caption": "MOAT",
+      "description": "Pieces ending their turn on central water squares die. Pieces may move over water.",
+      "origin": "C",
+      "genre": "T",
+      "quote": "\\tiny In business, I look for economic castles protected by unbreachable 'moats'. ---Warren Buffett",
+      "symbol": "\\inlinegraphics{Moat}"
+    },
+    {
+      "caption": "TOUCHDOWN",
+      "description": "If your king is on the last rank at the end of your turn, you win.",
+      "quote": "It's one of those things: I would 100 percent pancake a guy and steal his soul over scoring a touchdown. ---George Kittle",
+      "origin": "I",
+      "genre": "T",
+      "symbol": "\\King"
+    },
+    {
+      "caption": "THREE'S A CROWD",
+      "description": "You may not have more that two of any \\NoPawn\\ on the board, including promoted pieces.",
+      "genre": "T",
+      "origin": "C",
+      "quote": "Every crowd has a silver lining. ---P.T. Barnum",
+      "symbol": "\\NoPawn"
+    },
+    {
+      "caption": "10x8 BOARD",
+      "description": "Add an additional rank on the top and bottom.",
+      "origin": "C",
+      "genre": "T",
+      "quote": "\\tiny He who joyfully marches to music in rank and file has already earned my contempt. He has been given a large brain by mistake, since for him the spinal cord would suffice. ---Albert Einstein",
+      "symbol": "\\inlinegraphics{10x8}"
+    },
+    {
+      "caption": "FLOOR IS LAVA",
+      "description": "Pieces ending their turn on the four central squares die. Pieces may move over lava.",
+      "origin": "C",
+      "genre": "T",
+      "quote": "\\tiny Zeal is a volcano, the peak of which the grass of indecisiveness does not grow. ---Khalil Gibran",
+      "symbol": "\\inlinegraphics{FloorIsLava}"
+    },
+    {
+      "caption": "8x10 BOARD",
+      "description": "The legal playing area includes an additional file on the right and left.",
+      "origin": "C",
+      "genre": "T",
+      "quote": "The Bureau doesn't have any secret files. ---W. Mark Felt",
+      "symbol": "\\inlinegraphics{8x10}"
+    },
+    {
+      "caption": "10x10 BOARD",
+      "description": "The legal playing area now surrounds the board.",
+      "origin": "I",
+      "genre": "T",
+      "quote": "I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin",
+      "symbol": "\\inlinegraphics{10x10}"
+    },
+    {
+      "caption": "SACRIFICE",
+      "description": "You may take your own pieces.",
+      "quote": "You can't achieve anything in life without a small amount of sacrifice. ---Shakira",
+      "origin": "C",
+      "genre": "T",
+      "symbol": "\\inlinegraphics{Blood_drop_plain}"
+    },
+    {
+      "caption": "FAIR UNFAIR",
+      "description": "Reveal cards until two matching type cards are found {\\Sym(+,-,\\diff)}. The first applies to white, the second applies to black.",
+      "origin": "C",
+      "genre": "T",
+      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
+      "symbol": "\u262f"
+    },
+    {
+      "caption": "UNION",
+      "description": "Reveal two \\KI. Use the union of the card rules applied in either order.",
+      "origin": "C",
+      "genre": "T",
+      "quote": "\\tiny Anything irreversible should be granted the \"everything\" of our attention. ---Craig D. Lounsbough",
+      "symbol": "\\inlinegraphics{union}TODO",
+      "symbol": "\\inlinegraphics{arrows}"
+    },
+    {
+      "caption": "EXTINCTION",
+      "description": "You lose if you lose all of any piece.",
+      "origin": "I",
+      "genre": "T",
+      "quote": "Extinction is the rule. Survival is the exception. ---Carl Sagan",
+      "symbol": "\\ding{72}"
+    },
+    {
+      "caption": "GENTLEMEN'S AGREEMENT",
+      "description": "You may not drop for check.",
+      "origin": "C",
+      "genre":"T",
+      "quote": "A gentleman is simply a patient wolf. ---Lana Turner",
+      "symbol": "\\Drop"
+    },
+    {
+      "caption": "ZEROED",
+      "description": "You may not drop a piece on your board unless there is a matching type on the board. Promoted pieces match.",
+      "origin": "C",
+      "genre": "T",
+      "quote": "If your position is everywhere, your momentum is zero. --Michael Korda",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "FRANKLY MY DEAR I DON'T GIVE A DAMN",
+      "description": "You may sacrifice a \\NoPawn\\ to move another piece in it's normal chess manner.",
+      "origin": "C",
+      "genre":"T",
+      "quote": "Tomorrow, I'll think of some way to get him back. ---Scarlett O'Hara",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "MICRO-MANAGER",
+      "description": "Pieces more than one rank in front of the King may not attack.",
+      "origin": "C",
+      "genre": "T",
+      "quote": "\\small I know it was your idea, but it was my idea to use your idea. --Anonymous",
+      "symbol": "\\All"
+    },
+    {
+      "caption": "DROP BEAR",
+      "description": "You must drop if legal. You can't check when you may drop.",
+      "origin": "C",
+      "genre": "-",
+      "quote": "The primary prey of Drop Bears are unsuspecting tourists, often Welsh or German but usually US American or Japanese. -- Unknown",
+      "symbol": "\\Drop"
+    },
+    {
       "caption": "SECOND WIND",
       "description": "If a {\\KI} moves adjacent to another {\\KI}, then it may act again.",
       "origin": "C",
@@ -22,14 +159,6 @@
       "origin": "C",
       "genre": "-",
       "quote": "Your crazy matches my crazy. Big time. ---Deadpool",
-      "symbol": "\\All"
-    },
-    {
-      "caption": "MICRO-MANAGER",
-      "description": "Pieces more than one rank in front of the King may not attack.",
-      "origin": "C",
-      "genre": "-",
-      "quote": "\\small I know it was yout idea, but it was my idea to use your idea. --Anonymous",
       "symbol": "\\All"
     },
     {
@@ -106,14 +235,6 @@
       "symbol": "\\Pawn"
     },
     {
-      "caption": "TWO FACED",
-      "description": "Rooks may invert after an action. Inverted rooks act like a \\KI.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "God has given you one face, and you make yourself another. ---William Shakespeare",
-      "symbol": "{\\Rook}\\KI"
-    },
-    {
       "caption": "POSSESSION",
       "description": "Non-pawn pieces protected by a {\\KI} may also move/take like a {\\KI}.",
       "origin": "C",
@@ -130,28 +251,12 @@
       "symbol": "\\KI\\NoKnight"
     },
     {
-      "caption": "DROP BEAR",
-      "description": "If you can legally drop a piece, you must do so.",
-      "origin": "C",
-      "genre": "-",
-      "quote": "The primary prey of Drop Bears are unsuspecting tourists, often Welsh or German but usually US American or Japanese. -- Unknown",
-      "symbol": "\\Drop"
-    },
-    {
       "caption": "ASSASSIN",
       "description": "\\KI\\ capture one piece by moving past an adjacent piece orthogonal to the movement.",
       "origin": "C",
       "genre": "\\diff",
       "quote": "Assassins and presidents invite the same basic question: Just who do you think you are? -- Sarah Vowell",
       "symbol": "\\KI\\NoKnight"
-    },
-    {
-      "caption": "ZEROED",
-      "description": "You may not drop a piece on your board unless there is a matching type on the board. Promoted pieces match.",
-      "origin": "C",
-      "genre": "-",
-      "quote": "If your position is everywhere, your momentum is zero. --Michael Korda",
-      "symbol": "\\All"
     },
     {
       "caption": "DROP DELAY",
@@ -167,14 +272,6 @@
       "origin": "C",
       "genre":"+",
       "quote": "\\tiny Perhaps not willingly, but pain can make a man do things he wouldn't willingly do. ---Anne Bishop, Daughter of the Blood",
-      "symbol": "\\Drop"
-    },
-    {
-      "caption": "GENTLEMEN'S AGREEMENT",
-      "description": "You may not drop for check.",
-      "origin": "C",
-      "genre":"-",
-      "quote": "A gentleman is simply a patient wolf. ---Lana Turner",
       "symbol": "\\Drop"
     },
     {
@@ -209,14 +306,6 @@
       "genre":"\\diff",
       "quote": "Always two, there are. No more, no less. A master and an apprentice. ---Yoda",
       "symbol": "\\KI\\NoQueen"
-    },
-    {
-      "caption": "EXTINCTION",
-      "description": "You lose if you lose all of any piece.",
-      "origin": "I",
-      "genre": "-",
-      "quote": "Extinction is the rule. Survival is the exception. ---Carl Sagan",
-      "symbol": "\\ding{72}"
     },
     {
       "caption": "LONG LEAPER",
@@ -278,15 +367,6 @@
       "genre": "+",
       "quote": "\\tiny I believe that people would be alive today if there were a death penalty. ---Nancy Reagan",
       "symbol": "\\NoKing"
-    },
-    {
-      "caption": "UNION",
-      "description": "Reveal two \\KI. Use the union of the card rules applied in either order.",
-      "origin": "C",
-      "genre": "$\\varnothing$",
-      "quote": "\\tiny Anything irreversible should be granted the \"everything\" of our attention. ---Craig D. Lounsbough",
-      "symbol": "\\inlinegraphics{union}TODO",
-      "symbol": "\\inlinegraphics{arrows}"
     },
     {
       "caption": "REVERSE RIFLE",
@@ -421,14 +501,6 @@
       "genre": "+",
       "quote": "You'll all be very, very sorry. ---Louis Winthorpe",
       "symbol": "\\KI\\KII"
-    },
-    {
-      "caption": "FAIR UNFAIR",
-      "description": "Reveal cards until two matching type cards are found {\\Sym(+,-,\\diff)}. The first applies to white, the second applies to black.",
-      "origin": "C",
-      "genre": "$\\varnothing$",
-      "quote": "I know the world isn't fair, but why isn't it ever unfair in my favor? ---Bill Watterson",
-      "symbol": "\u262f"
     },
     {
       "caption": "FAIR UNFAIR",
@@ -673,14 +745,6 @@
       "symbol": "\\Pawn"
     },
     {
-      "caption": "MOAT",
-      "description": "Pieces ending their turn on central water squares die. Pieces may move over water.",
-      "origin": "C",
-      "genre": "-",
-      "quote": "\\tiny In business, I look for economic castles protected by unbreachable 'moats'. ---Warren Buffett",
-      "symbol": "\\inlinegraphics{Moat}+"
-    },
-    {
       "caption": "INSANE CYLINDER",
       "description": "Pieces do not move/take backwards. The top and bottom of the board are considered adjacent.",
       "origin": "I",
@@ -705,44 +769,12 @@
       "symbol": "\\inlinegraphics{cylinder}"
     },
     {
-      "caption": "SACRIFICE",
-      "description": "You may take your own pieces.",
-      "quote": "You can't achieve anything in life without a small amount of sacrifice. ---Shakira",
-      "origin": "C",
-      "genre": "+",
-      "symbol": "\\inlinegraphics{Blood_drop_plain}+"
-    },
-    {
       "caption": "CAMOUFLAGE",
       "description": "You can move through friendly pieces on your color squares.",
       "origin": "C",
       "genre": "+",
       "quote": "Three things cannot be long hidden: the sun, the moon, and the truth. ---Buddha",
       "symbol": "\\inlinegraphics{Camouflage}"
-    },
-    {
-      "caption": "FLOOR IS LAVA",
-      "description": "Pieces ending their turn on the four central squares die. Pieces may move over lava.",
-      "origin": "C",
-      "genre": "-",
-      "quote": "\\tiny Zeal is a volcano, the peak of which the grass of indecisiveness does not grow. ---Khalil Gibran",
-      "symbol": "\\inlinegraphics{FloorIsLava}+"
-    },
-    {
-      "caption": "8x10 BOARD",
-      "description": "The legal playing area includes an additional file on the right and left.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "The Bureau doesn't have any secret files. ---W. Mark Felt",
-      "symbol": "\\inlinegraphics{8x10}+"
-    },
-    {
-      "caption": "10x10 BOARD",
-      "description": "The legal playing area now surrounds the board.",
-      "origin": "I",
-      "genre": "+",
-      "quote": "I don't have anything against walls. You know what it is? I like open spaces. ---Dion Dublin",
-      "symbol": "\\inlinegraphics{10x10}+"
     },
     {
       "caption": "MOVE SWAP",
@@ -759,14 +791,6 @@
       "genre": "+",
       "quote": "\\tiny The speed of your success is limited only by your dedication and what you're willing to sacrifice. ---Nathan W. Morris",
       "symbol": "\\inlinegraphics{Give_Blood}"
-    },
-    {
-      "caption": "10x8 BOARD",
-      "description": "Add an additional rank on the top and bottom.",
-      "origin": "C",
-      "genre": "+",
-      "quote": "\\tiny He who joyfully marches to music in rank and file has already earned my contempt. He has been given a large brain by mistake, since for him the spinal cord would suffice. ---Albert Einstein",
-      "symbol": "\\inlinegraphics{10x8}+"
     },
     {
       "caption": "AGENT SMITH",
@@ -791,14 +815,6 @@
       "origin": "C",
       "quote": "\\tiny The joy of surfing is so many things combined, from the physical exertion of it to the challenge of it, to the mental side of the sport. ---Kelly Slater",
       "symbol": "\\NoKing"
-    },
-    {
-      "caption": "THREE'S A CROWD",
-      "description": "You may not have more that two of any \\NoPawn\\ on the board, including promoted pieces.",
-      "genre": "-",
-      "origin": "C",
-      "quote": "Every crowd has a silver lining. ---P.T. Barnum",
-      "symbol": "\\NoPawn"
     },
     {
       "caption": "NEAR SWAP",
@@ -859,14 +875,6 @@
       "genre": "+",
       "quote": "If you ain't first, you're last. ---Ricky Bobby",
       "symbol": "\\Knight"
-    },
-    {
-      "caption": "TOUCHDOWN",
-      "description": "If your king is on the last rank at the end of your turn, you win.",
-      "quote": "It's one of those things: I would 100 percent pancake a guy and steal his soul over scoring a touchdown. ---George Kittle",
-      "origin": "I",
-      "genre": "+",
-      "symbol": "\\King+"
     },
     {
       "caption": "SUMO KING",

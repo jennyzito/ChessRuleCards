@@ -141,7 +141,8 @@ def Magic_TikZ_card(card):
     \providecommand{\captionfontsize}{\LARGE}
     \providecommand{\textfontsize}{\Large}
     \providecommand{\quotefontsize}{\small}
-    \draw[line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
+    \draw[fill=''',
+    r''', line width=2mm,rounded corners=\cardroundingradius] (0,0) rectangle (\cardwidth,\cardheight);
     \draw[line width=2mm] (0,0) rectangle (\cardwidth,\cardheight);
     \node[text width=(\cardwidth-\strippadding-2*\textpadding)*1cm,below right,inner sep=0] at (\strippadding+\textpadding,\cardheight-\textpadding) 
     { 
@@ -171,7 +172,11 @@ def Magic_TikZ_card(card):
         genre = card['genre']
     if 'graphic' in card:
         card['quote'] = card['graphic']
-    CARD_DATA = [card['symbol'],card['caption'], card['description'], card['quote'], origin, genre]
+    if genre == 'T':
+        color = 'blue!40!white'
+    else:
+        color = 'white'
+    CARD_DATA = [color, card['symbol'],card['caption'], card['description'], card['quote'], origin, genre]
     # CARD_DATA = [card['stripcolor'], striptext, card['caption'], card['description'], card['bottomcaption'], card['quote']]
     CARD_TEX = itertools.chain(*itertools.zip_longest(CARD_TEMPLATE, CARD_DATA, fillvalue=''))
     # for v in CARD_TEX:
