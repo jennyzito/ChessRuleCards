@@ -1,6 +1,54 @@
 { "text_cards":
   [
     {
+      "caption": "NERFED",
+      "description": "Choose a nerf from the deck. Place a token under each \\KI. Any piece that takes a nerfed piece gains the token.",
+      "origin": "C",
+      "genre": "\\diff",
+      "quote": "Why you no good, scruffy looking, nerf herder! ---George Lucas",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "SPIDERMAN",
+      "description": "\\KI\\Move+: May also move to board edge in an \\Queen\\ direction.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "Go web! Fly! Up, up, and away web! Shazaam! Go! Go! Go web go! Tally ho. ---Spider-Man",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "ELDER WAND",
+      "description": "\\small Place a token under \\KI\\ that grants that piece the corresponding buff. Any capturing piece gains the tokened buff.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "If it's true, what you say, that he has the Elder Wand, I'm afraid you really don't stand a chance. ---Olivander",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "SIEGE",
+      "description": "\\small You may place or remove a token under any piece. This piece cannot move and attacks by removing pieces at squares it attacks. One siege token per army.",
+      "origin": "C",
+      "genre": "+",
+      "quote": "The skillful leader subdues the enemy's troops without any fighting. ---Sun Tzu",
+      "symbol": "\\KI"
+    },
+    {
+      "caption": "CASTLES FOR EVERYONE",
+      "description": "\\small Any two \\NoKing\\ pieces may castle. Move piece one two squares in a rectilinear direction, and piece two on the other side",
+      "origin": "C",
+      "genre": "+",
+      "quote": "I'm going to build castles from the rubble of your love. ---Freya Ridings",
+      "symbol": "\\NoKing"
+    },
+    {
+      "caption": "DEVIL'S BARGAIN",
+      "description": "You may sacrifice three pawns on your board to remove any \\NoKing\\ piece.",
+      "origin": "C",
+      "genre": "T",
+      "quote": "The devil can cite Scripture for his purpose.  ---William Shakespeare",
+      "symbol": "\\Pawn\\hspace{-0.3em}\\Pawn\\hspace{-0.3em}\\Pawn"
+    },
+    {
       "caption": "TWO FACED",
       "description": "Rooks may invert after it acts. Inverted rooks act like a \\KI.",
       "origin": "C",
