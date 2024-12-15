@@ -1,5 +1,5 @@
 # Chess Rule Cards
-A deck of alternate chess rules. Deal one of two cards. Designed to work with Fischer Random Bughouse.
+A deck of alternate chess rules. Deal one or two cards. Designed to work with Fischer Random Bughouse.
 
 # How to make
 Print out PDF file to make cards.
